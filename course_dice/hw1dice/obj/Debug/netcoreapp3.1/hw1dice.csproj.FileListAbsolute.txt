@@ -1,0 +1,17 @@
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\hw1dice\hw1dice\bin\Debug\netcoreapp3.1\hw1dice.exe
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\hw1dice\hw1dice\bin\Debug\netcoreapp3.1\hw1dice.deps.json
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\hw1dice\hw1dice\bin\Debug\netcoreapp3.1\hw1dice.runtimeconfig.json
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\hw1dice\hw1dice\bin\Debug\netcoreapp3.1\hw1dice.runtimeconfig.dev.json
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\hw1dice\hw1dice\bin\Debug\netcoreapp3.1\hw1dice.dll
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\hw1dice\hw1dice\bin\Debug\netcoreapp3.1\hw1dice.pdb
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\hw1dice\hw1dice\obj\Debug\netcoreapp3.1\hw1dice.csproj.AssemblyReference.cache
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\hw1dice\hw1dice\obj\Debug\netcoreapp3.1\hw1dice.Form1.resources
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\hw1dice\hw1dice\obj\Debug\netcoreapp3.1\hw1dice.csproj.GenerateResource.cache
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\hw1dice\hw1dice\obj\Debug\netcoreapp3.1\hw1dice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\hw1dice\hw1dice\obj\Debug\netcoreapp3.1\hw1dice.AssemblyInfoInputs.cache
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\hw1dice\hw1dice\obj\Debug\netcoreapp3.1\hw1dice.AssemblyInfo.cs
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\hw1dice\hw1dice\obj\Debug\netcoreapp3.1\hw1dice.csproj.CoreCompileInputs.cache
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\hw1dice\hw1dice\obj\Debug\netcoreapp3.1\hw1dice.dll
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\hw1dice\hw1dice\obj\Debug\netcoreapp3.1\hw1dice.pdb
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\hw1dice\hw1dice\obj\Debug\netcoreapp3.1\hw1dice.genruntimeconfig.cache
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\hw1dice\hw1dice\obj\Debug\netcoreapp3.1\hw1dice.Form2.resources
