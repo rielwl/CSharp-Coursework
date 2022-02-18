@@ -1,0 +1,16 @@
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\hw2_2048\hw2_2048\bin\Debug\netcoreapp3.1\hw2_2048.exe
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\hw2_2048\hw2_2048\bin\Debug\netcoreapp3.1\hw2_2048.deps.json
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\hw2_2048\hw2_2048\bin\Debug\netcoreapp3.1\hw2_2048.runtimeconfig.json
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\hw2_2048\hw2_2048\bin\Debug\netcoreapp3.1\hw2_2048.runtimeconfig.dev.json
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\hw2_2048\hw2_2048\bin\Debug\netcoreapp3.1\hw2_2048.dll
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\hw2_2048\hw2_2048\bin\Debug\netcoreapp3.1\hw2_2048.pdb
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\hw2_2048\hw2_2048\obj\Debug\netcoreapp3.1\hw2_2048.csproj.AssemblyReference.cache
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\hw2_2048\hw2_2048\obj\Debug\netcoreapp3.1\hw2_2048.Form1.resources
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\hw2_2048\hw2_2048\obj\Debug\netcoreapp3.1\hw2_2048.csproj.GenerateResource.cache
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\hw2_2048\hw2_2048\obj\Debug\netcoreapp3.1\hw2_2048.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\hw2_2048\hw2_2048\obj\Debug\netcoreapp3.1\hw2_2048.AssemblyInfoInputs.cache
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\hw2_2048\hw2_2048\obj\Debug\netcoreapp3.1\hw2_2048.AssemblyInfo.cs
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\hw2_2048\hw2_2048\obj\Debug\netcoreapp3.1\hw2_2048.csproj.CoreCompileInputs.cache
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\hw2_2048\hw2_2048\obj\Debug\netcoreapp3.1\hw2_2048.dll
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\hw2_2048\hw2_2048\obj\Debug\netcoreapp3.1\hw2_2048.pdb
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\hw2_2048\hw2_2048\obj\Debug\netcoreapp3.1\hw2_2048.genruntimeconfig.cache
