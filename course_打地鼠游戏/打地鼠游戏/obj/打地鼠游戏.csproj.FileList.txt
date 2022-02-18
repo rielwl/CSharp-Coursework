@@ -1,0 +1,8 @@
+bin\Debug\打地鼠游戏.exe
+bin\Debug\打地鼠游戏.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\打地鼠游戏.Form1.resources
+obj\Debug\打地鼠游戏.Properties.Resources.resources
+obj\Debug\打地鼠游戏.csproj.GenerateResource.Cache
+obj\Debug\打地鼠游戏.exe
+obj\Debug\打地鼠游戏.pdb
