@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <title>首页 - 班级博客 - 博客园</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="shortcut icon" href="//common.cnblogs.com/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/amazeui.min.css" />
+    <link rel="stylesheet" href="/bundles/site.overwrite.min.css?v=WkwYmip9JFY4zyIR01J9aR31HiheUNHQX7HH-IJKhLo" />
+    
+    <link rel="stylesheet" href="/bundles/site.square.min.css?v=U1m2qKZjys7lCKX28NQY12orGaGWAE6dA_O_GOpuGso" />
+    
+
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/amazeui.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.AMUI.progress.start();
+        });
+
+        $(window).load(function () {
+            $.AMUI.progress.done();
+        });
+
+        function login(anchor) {
+            var returnUri = location.href;
+            if (anchor && returnUri.indexOf("#" + anchor) < 0) {
+                returnUri += "#" + anchor;
+            }
+            location.href = "https://account.cnblogs.com/signin?returnUrl=" + encodeURIComponent(returnUri);
+            return false;
+        }
+
+        function logout() {
+            if (confirm("确认退出吗？")) {
+                $.ajax({
+                    type: "POST",
+                    url: "https://account.cnblogs.com/signout",
+                    xhrFields: {
+                        withCredentials: true
+                    },
+                    complete: function (xhr) {
+                        if (xhr.status == 200) {
+                            location.reload(true);
+                        }
+                    },
+                });
+            }
+            return false;
+        }
+
+    </script>
+</head>
+<body>
+    
+    <header class="am-topbar am-topbar-fixed-top">
+        <div class="am-container">
+            <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-secondary am-show-sm-only" data-am-collapse="{target: '#collapse-head'}">
+                <span class="am-sr-only">导航切换</span><span class="iconfont">&#xe61e;</span>
+            </button>
+            <div class="am-collapse am-topbar-collapse" id="collapse-head">
+                <ul class="am-nav am-nav-pills am-topbar-nav" id="navigation-bar">
+                    <li class="am-active">
+                        <a href="/">首页</a>
+                    </li>
+                    <li class="">
+                        <a href="/campus">校区</a>
+                    </li>
+                    <li class="">
+                        <a href="/schoolclass">班级</a>
+                    </li>
+                    <li class="">
+                        <a href="/posts">博文</a>
+                    </li>
+                    <li class="">
+                        <a href="/comment">评论</a>
+                    </li>
+                    <li class="">
+                        <a href="/homework">作业</a>
+                    </li>
+                </ul>
+                <div class="am-topbar-right">
+        <button onclick="window.location.href='//www.cnblogs.com'" class="am-btn am-btn-success am-topbar-btn am-btn-sm"><span class="iconfont">&#xe63e;</span> 博客园</button>
+    <button onclick="login()" class="am-btn am-btn-primary am-topbar-btn am-btn-sm"><span class="iconfont">&#xe60b;</span> 登录</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+
+
+<div class="am-g am-container wrapper">
+    <div class="am-u-md-12">
+            <div id="schoolclass">
+                <h1 class="titlebar am-margin-top-sm">
+                    活跃班级<span class="iconfont titlebar-icon">&#xe610;</span>
+                    <span class="titlebar-line"></span>
+                    <a href="/schoolclass?sort=active" title="更多班级" class="titlebar-more">
+                        更多 &gt;
+                    </a>
+                </h1>
+                <ul class="am-avg-lg-3 am-margin-top-xl am-margin-bottom-lg">
+                        <li>
+                            <div class="am-gallery-item square-class-list">
+                                <div class="list-avatar">
+                                    <a href="/campus/njxxgc/assemblyprogramming2" target="_blank">
+                                        <img class="am-circle" src="//common.cnblogs.com/images/icons/edu-class2.png">
+                                    </a>
+                                </div>
+                                <ul>
+                                    <li class="of-hidden">
+                                        <strong>
+                                            <a href="/campus/njxxgc/assemblyprogramming2" title="汇编语言程序设计-2019计科(3)(4)(5)" target="_blank">汇编语言程序设计-2019计科(3)(4)(5)</a>
+                                        </strong>
+                                    </li>
+                                    <li>
+                                        <a class="am-badge am-badge-success am-round" href="/campus/njxxgc">南京信息工程大学</a>
+                                    </li>
+                                    <li>
+                                        <a class="am-badge am-badge-success am-round" href="/campus/njxxgc"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-gallery-item square-class-list">
+                                <div class="list-avatar">
+                                    <a href="/campus/besti/2021-2022-1fois" target="_blank">
+                                        <img class="am-circle" src="//common.cnblogs.com/images/icons/edu-class1.png">
+                                    </a>
+                                </div>
+                                <ul>
+                                    <li class="of-hidden">
+                                        <strong>
+                                            <a href="/campus/besti/2021-2022-1fois" title="2021-2022-1信息安全专业导论" target="_blank">2021-2022-1信息安全专业导论</a>
+                                        </strong>
+                                    </li>
+                                    <li>
+                                        <a class="am-badge am-badge-success am-round" href="/campus/besti">北京电子科技学院</a>
+                                    </li>
+                                    <li>
+                                        <a class="am-badge am-badge-success am-round" href="/campus/besti">网络空间安全系</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-gallery-item square-class-list">
+                                <div class="list-avatar">
+                                    <a href="/campus/njxxgc/OOP" target="_blank">
+                                        <img class="am-circle" src="https://img2020.cnblogs.com/edu/1268917/202110/1268917-20211016233235900-838555766.png">
+                                    </a>
+                                </div>
+                                <ul>
+                                    <li class="of-hidden">
+                                        <strong>
+                                            <a href="/campus/njxxgc/OOP" title="面向对象程序设计-2020级" target="_blank">面向对象程序设计-2020级</a>
+                                        </strong>
+                                    </li>
+                                    <li>
+                                        <a class="am-badge am-badge-success am-round" href="/campus/njxxgc">南京信息工程大学</a>
+                                    </li>
+                                    <li>
+                                        <a class="am-badge am-badge-success am-round" href="/campus/njxxgc"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-gallery-item square-class-list">
+                                <div class="list-avatar">
+                                    <a href="/campus/gzcc/jk" target="_blank">
+                                        <img class="am-circle" src="//common.cnblogs.com/images/icons/edu-class4.png">
+                                    </a>
+                                </div>
+                                <ul>
+                                    <li class="of-hidden">
+                                        <strong>
+                                            <a href="/campus/gzcc/jk" title="计科1901" target="_blank">计科1901</a>
+                                        </strong>
+                                    </li>
+                                    <li>
+                                        <a class="am-badge am-badge-success am-round" href="/campus/gzcc">广州商学院</a>
+                                    </li>
+                                    <li>
+                                        <a class="am-badge am-badge-success am-round" href="/campus/gzcc"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-gallery-item square-class-list">
+                                <div class="list-avatar">
+                                    <a href="/campus/njxxgc/assemblyprogramming1" target="_blank">
+                                        <img class="am-circle" src="//common.cnblogs.com/images/icons/edu-class1.png">
+                                    </a>
+                                </div>
+                                <ul>
+                                    <li class="of-hidden">
+                                        <strong>
+                                            <a href="/campus/njxxgc/assemblyprogramming1" title="汇编语言程序设计-2019计科(1)(2)网工(1)(2)" target="_blank">汇编语言程序设计-2019计科(1)(2)网工(1)(2)</a>
+                                        </strong>
+                                    </li>
+                                    <li>
+                                        <a class="am-badge am-badge-success am-round" href="/campus/njxxgc">南京信息工程大学</a>
+                                    </li>
+                                    <li>
+                                        <a class="am-badge am-badge-success am-round" href="/campus/njxxgc"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-gallery-item square-class-list">
+                                <div class="list-avatar">
+                                    <a href="/campus/njxxgc/ComputerProgramming" target="_blank">
+                                        <img class="am-circle" src="https://img2020.cnblogs.com/edu/1268917/202110/1268917-20211016232700283-211535045.png">
+                                    </a>
+                                </div>
+                                <ul>
+                                    <li class="of-hidden">
+                                        <strong>
+                                            <a href="/campus/njxxgc/ComputerProgramming" title="程序设计基础-2021级" target="_blank">程序设计基础-2021级</a>
+                                        </strong>
+                                    </li>
+                                    <li>
+                                        <a class="am-badge am-badge-success am-round" href="/campus/njxxgc">南京信息工程大学</a>
+                                    </li>
+                                    <li>
+                                        <a class="am-badge am-badge-success am-round" href="/campus/njxxgc"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                </ul>
+            </div>
+            <div id="blogpost">
+                <h1 class="titlebar">
+                    作业博文<span class="iconfont titlebar-icon">&#xe60c;</span>
+                    <span class="titlebar-line"></span>
+                    <a href="/posts?filter=quality" title="更多博文" class="titlebar-more">
+                        更多 &gt;
+                    </a>
+                </h1>
+                <div class="am-u-md-12">
+                    <ul class="am-list">
+                                <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-bottom-right">
+                                    <h3 class="am-list-item-hd">
+                                        <a href="https://www.cnblogs.com/quhaoyang/p/15615060.html" target="_blank">实验3 转移指令跳转原理及其简单应用编程</a>
+                                    </h3>
+                                        <div class="am-u-sm-12 am-padding-left-0 am-list-main">
+                                            <div class="am-list-item-text description">1. 实验任务1 此部分书写内容： 给出程序task1.asm源码，及，运行截图 assume cs:code, ds:data data segment x db 1, 9, 3 len1 equ $ - x y dw 1, 9, 3 len2 equ $ - y data ends code s </div>
+                                        </div>
+                                    <div class="am-u-sm-12 am-text-sm">
+                                        <div class="am-fr">
+                                            <i class="iconfont">&#xe61f;</i><a title="班级" href="/campus/njxxgc/assemblyprogramming1" target="_blank"> 汇编语言程序设计-2019计科(1)(2)网工(1)(2)(南京信息工程大学)</a>&nbsp;
+                                            <i class="iconfont">&#xe614;</i><a title="发布人" href="https://www.cnblogs.com/quhaoyang/" target="_blank"> 计科QHY</a>&nbsp;
+                                            <span title="发布时间">
+                                                <i class="iconfont">&#xe616;</i> 2021-11-28 15:08
+                                            </span>&nbsp;
+                                            <span title="评论">
+                                                <i class="iconfont">&#xe606;</i> 0
+                                            </span>&nbsp;
+                                            <span title="阅读">
+                                                <i class="iconfont">&#xe641;</i> 1
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-bottom-right">
+                                    <h3 class="am-list-item-hd">
+                                        <a href="https://www.cnblogs.com/wenxinhe/p/15614613.html" target="_blank">2021-2022-1 20211421《信息安全导论》第十周学习总结</a>
+                                    </h3>
+                                        <div class="am-u-sm-12 am-padding-left-0 am-list-main">
+                                            <div class="am-list-item-text description">作业信息 |这个作业属于哪个课程|https://edu.cnblogs.com/campus/besti/2021-2022-1fois| |这个作业要求在哪里|https://www.cnblogs.com/rocedu/p/9577842.html#WEEK09| 学习目标 信息系统 数据库与 </div>
+                                        </div>
+                                    <div class="am-u-sm-12 am-text-sm">
+                                        <div class="am-fr">
+                                            <i class="iconfont">&#xe61f;</i><a title="班级" href="/campus/besti/2021-2022-1fois" target="_blank"> 2021-2022-1信息安全专业导论(北京电子科技学院 - 网络空间安全系)</a>&nbsp;
+                                            <i class="iconfont">&#xe614;</i><a title="发布人" href="https://www.cnblogs.com/wenxinhe/" target="_blank"> ～$～</a>&nbsp;
+                                            <span title="发布时间">
+                                                <i class="iconfont">&#xe616;</i> 2021-11-28 15:03
+                                            </span>&nbsp;
+                                            <span title="评论">
+                                                <i class="iconfont">&#xe606;</i> 0
+                                            </span>&nbsp;
+                                            <span title="阅读">
+                                                <i class="iconfont">&#xe641;</i> 1
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-bottom-right">
+                                    <h3 class="am-list-item-hd">
+                                        <a href="https://www.cnblogs.com/031702638yzm/p/15615215.html" target="_blank">7组-Beta冲刺-总结</a>
+                                    </h3>
+                                        <div class="am-u-sm-12 am-padding-left-0 am-list-main">
+                                            <div class="am-list-item-text description">7组-Beta冲刺-总结 一、基本情况 1.1 组长博客链接： https://www.cnblogs.com/Pollux-75/p/15606765.html 1.2 现场答辩总结： 考虑后端向前端传输图片的安全性问题 前端搜索框输入提示 算法对模糊图像二分识别 前后端交互的资源传输优化 根据座 </div>
+                                        </div>
+                                    <div class="am-u-sm-12 am-text-sm">
+                                        <div class="am-fr">
+                                            <i class="iconfont">&#xe61f;</i><a title="班级" href="/campus/fzu/FZU_SE_K" target="_blank"> 福州大学软工2021 | K 班(福州大学)</a>&nbsp;
+                                            <i class="iconfont">&#xe614;</i><a title="发布人" href="https://www.cnblogs.com/031702638yzm/" target="_blank"> 031702638俞志敏</a>&nbsp;
+                                            <span title="发布时间">
+                                                <i class="iconfont">&#xe616;</i> 2021-11-28 15:01
+                                            </span>&nbsp;
+                                            <span title="评论">
+                                                <i class="iconfont">&#xe606;</i> 0
+                                            </span>&nbsp;
+                                            <span title="阅读">
+                                                <i class="iconfont">&#xe641;</i> 1
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-bottom-right">
+                                    <h3 class="am-list-item-hd">
+                                        <a href="https://www.cnblogs.com/lcl123/p/15615162.html" target="_blank">7组-Beta冲刺-总结</a>
+                                    </h3>
+                                        <div class="am-u-sm-12 am-padding-left-0 am-list-main">
+                                            <div class="am-list-item-text description">一、基本情况 1.1 组长博客链接： https://www.cnblogs.com/Pollux-75/p/15606765.html 1.2 现场答辩总结： 考虑后端向前端传输图片的安全性问题 前端搜索框输入提示 算法对模糊图像二分识别 前后端交互的资源传输优化 根据座位框进行图片分类识别 前端 </div>
+                                        </div>
+                                    <div class="am-u-sm-12 am-text-sm">
+                                        <div class="am-fr">
+                                            <i class="iconfont">&#xe61f;</i><a title="班级" href="/campus/fzu/FZU_SE_K" target="_blank"> 福州大学软工2021 | K 班(福州大学)</a>&nbsp;
+                                            <i class="iconfont">&#xe614;</i><a title="发布人" href="https://www.cnblogs.com/lcl123/" target="_blank"> Gianpaolo</a>&nbsp;
+                                            <span title="发布时间">
+                                                <i class="iconfont">&#xe616;</i> 2021-11-28 14:47
+                                            </span>&nbsp;
+                                            <span title="评论">
+                                                <i class="iconfont">&#xe606;</i> 0
+                                            </span>&nbsp;
+                                            <span title="阅读">
+                                                <i class="iconfont">&#xe641;</i> 0
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-bottom-right">
+                                    <h3 class="am-list-item-hd">
+                                        <a href="https://www.cnblogs.com/20211404yht/p/15615145.html" target="_blank">2021-2022 20211404《信息安全专业导论》第十周学习总结</a>
+                                    </h3>
+                                        <div class="am-u-sm-12 am-padding-left-0 am-list-main">
+                                            <div class="am-list-item-text description">2021-2022-1 20211404 《信息安全专业导论》第十周学习总结 作业信息 |这个作业属于哪个课程|https://edu.cnblogs.com/campus/besti/2021-2022-1fois|这个作业要求在哪里|https://www.cnblogs.com/rocedu/ </div>
+                                        </div>
+                                    <div class="am-u-sm-12 am-text-sm">
+                                        <div class="am-fr">
+                                            <i class="iconfont">&#xe61f;</i><a title="班级" href="/campus/besti/2021-2022-1fois" target="_blank"> 2021-2022-1信息安全专业导论(北京电子科技学院 - 网络空间安全系)</a>&nbsp;
+                                            <i class="iconfont">&#xe614;</i><a title="发布人" href="https://www.cnblogs.com/20211404yht/" target="_blank"> 起个名字费老劲儿了</a>&nbsp;
+                                            <span title="发布时间">
+                                                <i class="iconfont">&#xe616;</i> 2021-11-28 14:43
+                                            </span>&nbsp;
+                                            <span title="评论">
+                                                <i class="iconfont">&#xe606;</i> 0
+                                            </span>&nbsp;
+                                            <span title="阅读">
+                                                <i class="iconfont">&#xe641;</i> 1
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-bottom-right">
+                                    <h3 class="am-list-item-hd">
+                                        <a href="https://www.cnblogs.com/dlBolg/p/15611619.html" target="_blank">实验3 转移指令跳转原理及其简单应用编程</a>
+                                    </h3>
+                                        <div class="am-u-sm-12 am-padding-left-0 am-list-main">
+                                            <div class="am-list-item-text description">实验任务1 程序task1.asm源码，及运行截图 assume cs:code, ds:data data segment x db 1, 9, 3 len1 equ $ - x y dw 1, 9, 3 len2 equ $ - y data ends code segment start: m </div>
+                                        </div>
+                                    <div class="am-u-sm-12 am-text-sm">
+                                        <div class="am-fr">
+                                            <i class="iconfont">&#xe61f;</i><a title="班级" href="/campus/njxxgc/assemblyprogramming2" target="_blank"> 汇编语言程序设计-2019计科(3)(4)(5)(南京信息工程大学)</a>&nbsp;
+                                            <i class="iconfont">&#xe614;</i><a title="发布人" href="https://www.cnblogs.com/dlBolg/" target="_blank"> nxdxml</a>&nbsp;
+                                            <span title="发布时间">
+                                                <i class="iconfont">&#xe616;</i> 2021-11-28 14:40
+                                            </span>&nbsp;
+                                            <span title="评论">
+                                                <i class="iconfont">&#xe606;</i> 0
+                                            </span>&nbsp;
+                                            <span title="阅读">
+                                                <i class="iconfont">&#xe641;</i> 4
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-bottom-right">
+                                    <h3 class="am-list-item-hd">
+                                        <a href="https://www.cnblogs.com/QIAN1219942427/p/15615112.html" target="_blank">实验四 继承</a>
+                                    </h3>
+                                        <div class="am-u-sm-12 am-padding-left-0 am-list-main">
+                                            <div class="am-list-item-text description">task3.cpp代码如下： #include #include &quot;electricCar.hpp&quot; int main() { using namespace std; // test class of Car Car oldcar(&quot;Audi&quot;, &quot;a4&quot;, 2016); c  </div>
+                                        </div>
+                                    <div class="am-u-sm-12 am-text-sm">
+                                        <div class="am-fr">
+                                            <i class="iconfont">&#xe61f;</i><a title="班级" href="/campus/njxxgc/OOP" target="_blank"> 面向对象程序设计-2020级(南京信息工程大学)</a>&nbsp;
+                                            <i class="iconfont">&#xe614;</i><a title="发布人" href="https://www.cnblogs.com/QIAN1219942427/" target="_blank"> voidsora</a>&nbsp;
+                                            <span title="发布时间">
+                                                <i class="iconfont">&#xe616;</i> 2021-11-28 14:34
+                                            </span>&nbsp;
+                                            <span title="评论">
+                                                <i class="iconfont">&#xe606;</i> 0
+                                            </span>&nbsp;
+                                            <span title="阅读">
+                                                <i class="iconfont">&#xe641;</i> 1
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-bottom-right">
+                                    <h3 class="am-list-item-hd">
+                                        <a href="https://www.cnblogs.com/gao0818/p/15615096.html" target="_blank">第十周学习总结</a>
+                                    </h3>
+                                        <div class="am-u-sm-12 am-padding-left-0 am-list-main">
+                                            <div class="am-list-item-text description">学期2021-2022-1 学号20211425 《信息安全专业导论》第十周学习总结 作业信息 |这个作业属于哪个课程|&lt;班级的链接&gt;2020-2021-1信息安全专业导论](https://edu.cnblogs.com/campus/besti/2020-2021-1fois)| |这个作业要求 </div>
+                                        </div>
+                                    <div class="am-u-sm-12 am-text-sm">
+                                        <div class="am-fr">
+                                            <i class="iconfont">&#xe61f;</i><a title="班级" href="/campus/besti/2021-2022-1fois" target="_blank"> 2021-2022-1信息安全专业导论(北京电子科技学院 - 网络空间安全系)</a>&nbsp;
+                                            <i class="iconfont">&#xe614;</i><a title="发布人" href="https://www.cnblogs.com/gao0818/" target="_blank"> gaozheng08</a>&nbsp;
+                                            <span title="发布时间">
+                                                <i class="iconfont">&#xe616;</i> 2021-11-28 14:30
+                                            </span>&nbsp;
+                                            <span title="评论">
+                                                <i class="iconfont">&#xe606;</i> 0
+                                            </span>&nbsp;
+                                            <span title="阅读">
+                                                <i class="iconfont">&#xe641;</i> 0
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-bottom-right">
+                                    <h3 class="am-list-item-hd">
+                                        <a href="https://www.cnblogs.com/yangyuntai/p/15614998.html" target="_blank">2021-2022-1 2021401 《信息安全专业导论》第10周学习总结</a>
+                                    </h3>
+                                        <div class="am-u-sm-12 am-padding-left-0 am-list-main">
+                                            <div class="am-list-item-text description">2021-2022-1 2021401 《信息安全专业导论》第10周学习总结 作业信息 这个作业属于哪个课程 2021-2022-1信息安全专业导论 这个作业要求在哪里 2021-2022-1信息安全专业导论第10周作业 这个作业的目标 信息系统 数据库与SQL 人工智能与专家系统 人工神经网络 模 </div>
+                                        </div>
+                                    <div class="am-u-sm-12 am-text-sm">
+                                        <div class="am-fr">
+                                            <i class="iconfont">&#xe61f;</i><a title="班级" href="/campus/besti/2021-2022-1fois" target="_blank"> 2021-2022-1信息安全专业导论(北京电子科技学院 - 网络空间安全系)</a>&nbsp;
+                                            <i class="iconfont">&#xe614;</i><a title="发布人" href="https://www.cnblogs.com/yangyuntai/" target="_blank"> 20211401</a>&nbsp;
+                                            <span title="发布时间">
+                                                <i class="iconfont">&#xe616;</i> 2021-11-28 14:30
+                                            </span>&nbsp;
+                                            <span title="评论">
+                                                <i class="iconfont">&#xe606;</i> 0
+                                            </span>&nbsp;
+                                            <span title="阅读">
+                                                <i class="iconfont">&#xe641;</i> 2
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-bottom-right">
+                                    <h3 class="am-list-item-hd">
+                                        <a href="https://www.cnblogs.com/Panyuyu/p/15615093.html" target="_blank">实验四 类的继承</a>
+                                    </h3>
+                                        <div class="am-u-sm-12 am-padding-left-0 am-list-main">
+                                            <div class="am-list-item-text description">#ifndef __Car_HPP__ #define __Car_HPP__ #include #include #include using namespace std; class Car { public: Car(){} Car(str    </div>
+                                        </div>
+                                    <div class="am-u-sm-12 am-text-sm">
+                                        <div class="am-fr">
+                                            <i class="iconfont">&#xe61f;</i><a title="班级" href="/campus/njxxgc/OOP" target="_blank"> 面向对象程序设计-2020级(南京信息工程大学)</a>&nbsp;
+                                            <i class="iconfont">&#xe614;</i><a title="发布人" href="https://www.cnblogs.com/Panyuyu/" target="_blank"> Panyunyu</a>&nbsp;
+                                            <span title="发布时间">
+                                                <i class="iconfont">&#xe616;</i> 2021-11-28 14:29
+                                            </span>&nbsp;
+                                            <span title="评论">
+                                                <i class="iconfont">&#xe606;</i> 2
+                                            </span>&nbsp;
+                                            <span title="阅读">
+                                                <i class="iconfont">&#xe641;</i> 2
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="homework">
+                <h1 class="titlebar">
+                    作业动态<span class="iconfont titlebar-icon">&#xe603;</span>
+                    <span class="titlebar-line"></span>
+                    <a href="/homework" title="更多作业" class="titlebar-more">
+                        更多 &gt;
+                    </a>
+                </h1>
+                <div class="am-u-md-12">
+                    <ul class="am-list">
+                            <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-bottom-right">
+                                <h3 class="am-list-item-hd">
+                                    <a href="/campus/njxxgc/assemblyprogramming2/homework/12376" target="_blank">实验3</a>
+                                </h3>
+                                    <div class="feed-avatar">
+                                        <a href="//www.cnblogs.com/ccoo/" target="_blank">
+                                            <img class="am-img-thumbnail" src="//pic.cnblogs.com/avatar/simple_avatar.gif">
+                                        </a>
+                                    </div>
+                                    <div class="avatar-item-text">
+                                        <div class="am-list-item-text description">实验3内容及提交、互评要求，详见课程群--&gt;实验--&gt;实验3文档。 ps: 实验2的互评规则及要求在实验2文档中有详细说明，请在提交截止日期以后一周内及时按要求互评。 互评截止时间为2021/12/10 10:00。</div>
+                                    </div>
+                                <div class="am-u-sm-12 am-text-sm">
+                                    <div class="am-fr">
+                                        <i class="iconfont">&#xe61f;</i><a title="班级" href="/campus/njxxgc/assemblyprogramming2" target="_blank"> 汇编语言程序设计-2019计科(3)(4)(5)(南京信息工程大学)</a>&nbsp;
+                                        <i class="iconfont">&#xe614;</i><a title="发布人" href="//www.cnblogs.com/ccoo/" target="_blank"> cc00</a>&nbsp;
+                                        <span title="发布时间">
+                                            <i class="iconfont">&#xe616;</i> 2021-11-26 10:00
+                                        </span>&nbsp;
+                                        <span title="提交">
+                                            <i class="iconfont">&#xe600;</i> 32
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-bottom-right">
+                                <h3 class="am-list-item-hd">
+                                        <span class="am-badge am-badge-success am-radius" title="已完成">✓</span>
+                                    <a href="/campus/fzu/FZU_SE_K/homework/12372" target="_blank">Beta冲刺（5/5）</a>
+                                </h3>
+                                    <div class="feed-avatar">
+                                        <a href="//www.cnblogs.com/1star/" target="_blank">
+                                            <img class="am-img-thumbnail" src="//pic.cnblogs.com/avatar/2466480/20210716133621.png">
+                                        </a>
+                                    </div>
+                                    <div class="avatar-item-text">
+                                        <div class="am-list-item-text description">Beta冲刺 当前轮次：5 作业要求： 提交作业标题：ID组-Beta冲刺-当前轮次/5 ——例如：1组-Beta冲刺-1/5 每组一份博客，组内共享，每人都需提交 十分钟左右站立会议，控制好时间，不要在此会议上讨论细节问题。 会议全员到场，缺席需说明原因。 “每次追加“：每一轮的Beta冲刺提交的</div>
+                                    </div>
+                                <div class="am-u-sm-12 am-text-sm">
+                                    <div class="am-fr">
+                                        <i class="iconfont">&#xe61f;</i><a title="班级" href="/campus/fzu/FZU_SE_K" target="_blank"> 福州大学软工2021 | K 班(福州大学)</a>&nbsp;
+                                        <i class="iconfont">&#xe614;</i><a title="发布人" href="//www.cnblogs.com/1star/" target="_blank"> 八口八(华颖星)</a>&nbsp;
+                                        <span title="发布时间">
+                                            <i class="iconfont">&#xe616;</i> 2021-11-25 23:30
+                                        </span>&nbsp;
+                                        <span title="提交">
+                                            <i class="iconfont">&#xe600;</i> 113
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-bottom-right">
+                                <h3 class="am-list-item-hd">
+                                        <span class="am-badge am-badge-success am-radius" title="已完成">✓</span>
+                                    <a href="/campus/fzu/FZU_SE_K/homework/12371" target="_blank">Beta冲刺（4/5）</a>
+                                </h3>
+                                    <div class="feed-avatar">
+                                        <a href="//www.cnblogs.com/1star/" target="_blank">
+                                            <img class="am-img-thumbnail" src="//pic.cnblogs.com/avatar/2466480/20210716133621.png">
+                                        </a>
+                                    </div>
+                                    <div class="avatar-item-text">
+                                        <div class="am-list-item-text description">Beta冲刺 当前轮次：4 作业要求： 提交作业标题：ID组-Beta冲刺-当前轮次/5 ——例如：1组-Beta冲刺-1/5 每组一份博客，组内共享，每人都需提交 十分钟左右站立会议，控制好时间，不要在此会议上讨论细节问题。 会议全员到场，缺席需说明原因。 “每次追加“：每一轮的Beta冲刺提交的</div>
+                                    </div>
+                                <div class="am-u-sm-12 am-text-sm">
+                                    <div class="am-fr">
+                                        <i class="iconfont">&#xe61f;</i><a title="班级" href="/campus/fzu/FZU_SE_K" target="_blank"> 福州大学软工2021 | K 班(福州大学)</a>&nbsp;
+                                        <i class="iconfont">&#xe614;</i><a title="发布人" href="//www.cnblogs.com/1star/" target="_blank"> 八口八(华颖星)</a>&nbsp;
+                                        <span title="发布时间">
+                                            <i class="iconfont">&#xe616;</i> 2021-11-24 23:30
+                                        </span>&nbsp;
+                                        <span title="提交">
+                                            <i class="iconfont">&#xe600;</i> 112
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-bottom-right">
+                                <h3 class="am-list-item-hd">
+                                    <a href="/campus/njxxgc/OOP/homework/12378" target="_blank">实验4</a>
+                                </h3>
+                                    <div class="feed-avatar">
+                                        <a href="//www.cnblogs.com/ccoo/" target="_blank">
+                                            <img class="am-img-thumbnail" src="//pic.cnblogs.com/avatar/simple_avatar.gif">
+                                        </a>
+                                    </div>
+                                    <div class="avatar-item-text">
+                                        <div class="am-list-item-text description">实验4内容及提交、互评要求，详见课程群--&gt;实验--&gt;实验4文档。 ps: 实验4的互评规则及要求在实验3文档中有详细说明，请在提交截止日期以后一周内及时按要求互评。 互评截止时间为2021/12/0815:30。</div>
+                                    </div>
+                                <div class="am-u-sm-12 am-text-sm">
+                                    <div class="am-fr">
+                                        <i class="iconfont">&#xe61f;</i><a title="班级" href="/campus/njxxgc/OOP" target="_blank"> 面向对象程序设计-2020级(南京信息工程大学)</a>&nbsp;
+                                        <i class="iconfont">&#xe614;</i><a title="发布人" href="//www.cnblogs.com/ccoo/" target="_blank"> cc00</a>&nbsp;
+                                        <span title="发布时间">
+                                            <i class="iconfont">&#xe616;</i> 2021-11-24 15:30
+                                        </span>&nbsp;
+                                        <span title="提交">
+                                            <i class="iconfont">&#xe600;</i> 76
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-bottom-right">
+                                <h3 class="am-list-item-hd">
+                                    <a href="/campus/njxxgc/ComputerProgramming/homework/12377" target="_blank">实验3</a>
+                                </h3>
+                                    <div class="feed-avatar">
+                                        <a href="//www.cnblogs.com/ccoo/" target="_blank">
+                                            <img class="am-img-thumbnail" src="//pic.cnblogs.com/avatar/simple_avatar.gif">
+                                        </a>
+                                    </div>
+                                    <div class="avatar-item-text">
+                                        <div class="am-list-item-text description">实验3内容及提交、互评要求，详见课程群--&gt;实验--&gt;实验3文档。 ps: 实验3的互评规则及要求在实验2文档中有详细说明，请在提交截止日期以后一周内及时按要求互评。 互评截止时间为2021/12/08 10:00。</div>
+                                    </div>
+                                <div class="am-u-sm-12 am-text-sm">
+                                    <div class="am-fr">
+                                        <i class="iconfont">&#xe61f;</i><a title="班级" href="/campus/njxxgc/ComputerProgramming" target="_blank"> 程序设计基础-2021级(南京信息工程大学)</a>&nbsp;
+                                        <i class="iconfont">&#xe614;</i><a title="发布人" href="//www.cnblogs.com/ccoo/" target="_blank"> cc00</a>&nbsp;
+                                        <span title="发布时间">
+                                            <i class="iconfont">&#xe616;</i> 2021-11-24 10:00
+                                        </span>&nbsp;
+                                        <span title="提交">
+                                            <i class="iconfont">&#xe600;</i> 42
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-bottom-right">
+                                <h3 class="am-list-item-hd">
+                                    <a href="/campus/fzu/DataCollectionandFusionTechnologyPractice/homework/12382" target="_blank">第五次大作业</a>
+                                </h3>
+                                    <div class="feed-avatar">
+                                        <a href="//www.cnblogs.com/KingOfTetris/" target="_blank">
+                                            <img class="am-img-thumbnail" src="//pic.cnblogs.com/avatar/1990678/20210927175604.png">
+                                        </a>
+                                    </div>
+                                    <div class="avatar-item-text">
+                                        <div class="am-list-item-text description">第五次作业 一、作业内容 作业①: 要求： 熟练掌握 Selenium 查找HTML元素、爬取Ajax网页数据、等待HTML元素等内容。 使用Selenium框架爬取京东商城某类商品信息及图片。 候选网站：http://www.jd.com/ 关键词：学生自由选择 输出信息：MYSQL的输出信息如下</div>
+                                    </div>
+                                <div class="am-u-sm-12 am-text-sm">
+                                    <div class="am-fr">
+                                        <i class="iconfont">&#xe61f;</i><a title="班级" href="/campus/fzu/DataCollectionandFusionTechnologyPractice" target="_blank"> 数据采集与融合技术2021(福州大学)</a>&nbsp;
+                                        <i class="iconfont">&#xe614;</i><a title="发布人" href="//www.cnblogs.com/KingOfTetris/" target="_blank"> KingOfTetris(袁茂)</a>&nbsp;
+                                        <span title="发布时间">
+                                            <i class="iconfont">&#xe616;</i> 2021-11-24 08:00
+                                        </span>&nbsp;
+                                        <span title="提交">
+                                            <i class="iconfont">&#xe600;</i> 23
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-bottom-right">
+                                <h3 class="am-list-item-hd">
+                                        <span class="am-badge am-badge-success am-radius" title="已完成">✓</span>
+                                    <a href="/campus/fzu/FZU_SE_K/homework/12370" target="_blank">Beta冲刺 (3/5)</a>
+                                </h3>
+                                    <div class="feed-avatar">
+                                        <a href="//www.cnblogs.com/1star/" target="_blank">
+                                            <img class="am-img-thumbnail" src="//pic.cnblogs.com/avatar/2466480/20210716133621.png">
+                                        </a>
+                                    </div>
+                                    <div class="avatar-item-text">
+                                        <div class="am-list-item-text description">Beta冲刺 当前轮次：3 作业要求： 提交作业标题：ID组-Beta冲刺-当前轮次/5 ——例如：1组-Beta冲刺-1/5 每组一份博客，组内共享，每人都需提交 十分钟左右站立会议，控制好时间，不要在此会议上讨论细节问题。 会议全员到场，缺席需说明原因。 “每次追加“：每一轮的Beta冲刺提交的</div>
+                                    </div>
+                                <div class="am-u-sm-12 am-text-sm">
+                                    <div class="am-fr">
+                                        <i class="iconfont">&#xe61f;</i><a title="班级" href="/campus/fzu/FZU_SE_K" target="_blank"> 福州大学软工2021 | K 班(福州大学)</a>&nbsp;
+                                        <i class="iconfont">&#xe614;</i><a title="发布人" href="//www.cnblogs.com/1star/" target="_blank"> 八口八(华颖星)</a>&nbsp;
+                                        <span title="发布时间">
+                                            <i class="iconfont">&#xe616;</i> 2021-11-23 23:30
+                                        </span>&nbsp;
+                                        <span title="提交">
+                                            <i class="iconfont">&#xe600;</i> 113
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-bottom-right">
+                                <h3 class="am-list-item-hd">
+                                    <a href="/campus/gzcc/jk/homework/12381" target="_blank">08 分布式计算MapReduce--词频统计</a>
+                                </h3>
+                                    <div class="feed-avatar">
+                                        <a href="//www.cnblogs.com/MissDu/" target="_blank">
+                                            <img class="am-img-thumbnail" src="//pic.cnblogs.com/avatar/732808/20150402093952.png">
+                                        </a>
+                                    </div>
+                                    <div class="avatar-item-text">
+                                        <div class="am-list-item-text description">WordCount程序任务： 程序 WordCount 输入 一个包含大量单词的文本文件 输出 文件中每个单词及其出现次数（频数）， 并按照单词字母顺序排序， 每个单词和其频数占一行，单词和频数之间有间隔 1.用你最熟悉的编程环境，编写非分布式的词频统计程序。 读文件 分词（text.split列表</div>
+                                    </div>
+                                <div class="am-u-sm-12 am-text-sm">
+                                    <div class="am-fr">
+                                        <i class="iconfont">&#xe61f;</i><a title="班级" href="/campus/gzcc/jk" target="_blank"> 计科1901(广州商学院)</a>&nbsp;
+                                        <i class="iconfont">&#xe614;</i><a title="发布人" href="//www.cnblogs.com/MissDu/" target="_blank"> MissDu</a>&nbsp;
+                                        <span title="发布时间">
+                                            <i class="iconfont">&#xe616;</i> 2021-11-23 16:00
+                                        </span>&nbsp;
+                                        <span title="提交">
+                                            <i class="iconfont">&#xe600;</i> 18
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-bottom-right">
+                                <h3 class="am-list-item-hd">
+                                    <a href="/campus/njxxgc/assemblyprogramming1/homework/12375" target="_blank">实验3</a>
+                                </h3>
+                                    <div class="feed-avatar">
+                                        <a href="//www.cnblogs.com/ccoo/" target="_blank">
+                                            <img class="am-img-thumbnail" src="//pic.cnblogs.com/avatar/simple_avatar.gif">
+                                        </a>
+                                    </div>
+                                    <div class="avatar-item-text">
+                                        <div class="am-list-item-text description">实验3内容及提交、互评要求，详见课程群--&gt;实验--&gt;实验3文档。 ps: 实验3的互评规则及要求在实验3文档中有详细说明，请在提交截止日期以后一周内及时按要求互评。 互评截止时间为2021/12/07 15:30。</div>
+                                    </div>
+                                <div class="am-u-sm-12 am-text-sm">
+                                    <div class="am-fr">
+                                        <i class="iconfont">&#xe61f;</i><a title="班级" href="/campus/njxxgc/assemblyprogramming1" target="_blank"> 汇编语言程序设计-2019计科(1)(2)网工(1)(2)(南京信息工程大学)</a>&nbsp;
+                                        <i class="iconfont">&#xe614;</i><a title="发布人" href="//www.cnblogs.com/ccoo/" target="_blank"> cc00</a>&nbsp;
+                                        <span title="发布时间">
+                                            <i class="iconfont">&#xe616;</i> 2021-11-23 15:30
+                                        </span>&nbsp;
+                                        <span title="提交">
+                                            <i class="iconfont">&#xe600;</i> 26
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-bottom-right">
+                                <h3 class="am-list-item-hd">
+                                    <a href="/campus/gzcc/jk3/homework/12380" target="_blank">08 分布式计算MapReduce--词频统计</a>
+                                </h3>
+                                    <div class="feed-avatar">
+                                        <a href="//www.cnblogs.com/MissDu/" target="_blank">
+                                            <img class="am-img-thumbnail" src="//pic.cnblogs.com/avatar/732808/20150402093952.png">
+                                        </a>
+                                    </div>
+                                    <div class="avatar-item-text">
+                                        <div class="am-list-item-text description">WordCount程序任务： 程序 WordCount 输入 一个包含大量单词的文本文件 输出 文件中每个单词及其出现次数（频数）， 并按照单词字母顺序排序， 每个单词和其频数占一行，单词和频数之间有间隔 1.用你最熟悉的编程环境，编写非分布式的词频统计程序。 读文件 分词（text.split列表</div>
+                                    </div>
+                                <div class="am-u-sm-12 am-text-sm">
+                                    <div class="am-fr">
+                                        <i class="iconfont">&#xe61f;</i><a title="班级" href="/campus/gzcc/jk3" target="_blank"> 计科1903(广州商学院)</a>&nbsp;
+                                        <i class="iconfont">&#xe614;</i><a title="发布人" href="//www.cnblogs.com/MissDu/" target="_blank"> MissDu</a>&nbsp;
+                                        <span title="发布时间">
+                                            <i class="iconfont">&#xe616;</i> 2021-11-23 14:00
+                                        </span>&nbsp;
+                                        <span title="提交">
+                                            <i class="iconfont">&#xe600;</i> 28
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="overview">
+                <h1 class="titlebar">
+                    统计概览<span class="iconfont titlebar-icon">&#xe637;</span>
+                    <span class="titlebar-line"></span>
+                </h1>
+                <ul class="am-avg-lg-3 am-margin-top-xl am-margin-bottom-lg">
+                    <li>
+                        <div class="am-gallery-item square-over-view">
+                            <h3 class="title">117</h3>
+                            <small>校区</small>
+                            <div class="iconfont">&#xe610;</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="am-gallery-item square-over-view">
+                            <h3 class="title">645</h3>
+                            <small>班级</small>
+                            <div class="iconfont">&#xe639;</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="am-gallery-item square-over-view">
+                            <h3 class="title">33077</h3>
+                            <small>成员</small>
+                            <div class="iconfont">&#xe6bf;</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="am-gallery-item square-over-view">
+                            <h3 class="title">5116</h3>
+                            <small>作业</small>
+                            <div class="iconfont">&#xe603;</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="am-gallery-item square-over-view">
+                            <h3 class="title">173094</h3>
+                            <small>博文</small>
+                            <div class="iconfont">&#xe60c;</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="am-gallery-item square-over-view">
+                            <h3 class="title">130514</h3>
+                            <small>评论</small>
+                            <div class="iconfont">&#xe62b;</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    </div>
+</div>
+
+    <footer class="footer">
+        <p>
+            Copyright &copy;2021
+            <a href="//www.cnblogs.com" target="_blank">Cnblogs, Inc.</a>
+            <span id="powered_by">Powered by .NET Core on Kubernetes</span>.
+            <a href="https://github.com/cnblogs/edu/issues" target="_blank">
+                <span class="iconfont">&#xe620;问题反馈</span>
+            </a>&nbsp;
+            <a href="https://edu.cnblogs.com/lib/document/document.html" target="_blank">帮助文档</a>&nbsp;
+            <a href="https://beian.miit.gov.cn/" target="_blank">沪ICP备09004260号-1</a>
+        </p>
+    </footer>
+    <script type="text/javascript" src="/bundles/common.min.js?v=tFfg4O1b9_4B2ulTPlKZmunn2Z_gJBvOgSYnbWgDDIA"></script>
+    
+    <script type="text/javascript">
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments);
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-48445196-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>      </svg>
+                    <span id="digg_count_15605597">0</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/rossiXYZ/p/15605597.html#commentform">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_comment"></use>
+                    </svg>
+                    <span>0</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/rossiXYZ/p/15605597.html">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_views"></use>
+                    </svg>
+                    <span>13</span>
+                </a>
+                <span id="digg_tip_15605597" class="digg-tip" style="color: red"></span>
+            </footer>
+        </section>
+        <figure>
+        </figure>
+    </article>
+    <article class="post-item" data-post-id="15614460">
+        <section class="post-item-body">
+            <div class="post-item-text">
+                <a class="post-item-title" href="https://www.cnblogs.com/lianngkyle/p/15614460.html" target="_blank">k8s statefulset controller源码分析</a>
+                <p class="post-item-summary">
+                        <a href="https://www.cnblogs.com/lianngkyle/">
+                            <img src="https://pic.cnblogs.com/face/2393007/20210511203037.png" class="avatar" alt="博主头像" />
+                        </a>
+                    statefulset controller是kube-controller-manager组件中众多控制器中的一个，是 statefulset 资源对象的控制器，其通过对statefulset、pod资源的监听，当资源发生变化时会触发 statefulset controller 对相应的stat... ...
+                </p>
+            </div>
+            <footer class="post-item-foot">
+                <a href="https://www.cnblogs.com/lianngkyle/" class="post-item-author"><span>良凯尔</span></a>
+                <span class="post-meta-item">
+                    <span>2021-11-28 10:34</span>
+                </span>
+                <a id="digg_control_15614460" class="post-meta-item btn " href="javascript:void(0)" onclick="DiggPost('lianngkyle', 15614460, 684057, 1);return false;">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_digg"></use>
+                    </svg>
+                    <span id="digg_count_15614460">0</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/lianngkyle/p/15614460.html#commentform">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_comment"></use>
+                    </svg>
+                    <span>0</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/lianngkyle/p/15614460.html">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_views"></use>
+                    </svg>
+                    <span>23</span>
+                </a>
+                <span id="digg_tip_15614460" class="digg-tip" style="color: red"></span>
+            </footer>
+        </section>
+        <figure>
+        </figure>
+    </article>
+    <article class="post-item" data-post-id="15614446">
+        <section class="post-item-body">
+            <div class="post-item-text">
+                <a class="post-item-title" href="https://www.cnblogs.com/JavaArchitect/p/15614446.html" target="_blank">程序员如何获得高并发的经验？</a>
+                <p class="post-item-summary">
+                    要获得高并发经验要去大公司，然后大公司招聘要求高并发经验，感觉这是个死循环，没有高并发经验的人如何才能获取高并发方面的经验呢？ 先说具体的做法。 1 首先得在自己电脑上鼓捣出Redis，kafka，dubbo，mycat等高并发分布式组件的环境，通过这些环境了解分布式组件的基本api。 2 为这些分 ...
+                </p>
+            </div>
+            <footer class="post-item-foot">
+                <a href="https://www.cnblogs.com/JavaArchitect/" class="post-item-author"><span>hsm_computer</span></a>
+                <span class="post-meta-item">
+                    <span>2021-11-28 10:28</span>
+                </span>
+                <a id="digg_control_15614446" class="post-meta-item btn " href="javascript:void(0)" onclick="DiggPost('JavaArchitect', 15614446, 376303, 1);return false;">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_digg"></use>
+                    </svg>
+                    <span id="digg_count_15614446">2</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/JavaArchitect/p/15614446.html#commentform">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_comment"></use>
+                    </svg>
+                    <span>0</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/JavaArchitect/p/15614446.html">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_views"></use>
+                    </svg>
+                    <span>110</span>
+                </a>
+                <span id="digg_tip_15614446" class="digg-tip" style="color: red"></span>
+            </footer>
+        </section>
+        <figure>
+        </figure>
+    </article>
+    <article class="post-item" data-post-id="15614442">
+        <section class="post-item-body">
+            <div class="post-item-text">
+                <a class="post-item-title" href="https://www.cnblogs.com/hans-python/p/15614442.html" target="_blank">第二章 C语言概述</a>
+                <p class="post-item-summary">
+                        <a href="https://www.cnblogs.com/hans-python/">
+                            <img src="https://pic.cnblogs.com/face/723171/20211029143611.png" class="avatar" alt="博主头像" />
+                        </a>
+                    第二章 C语言概述 1. 简单的C程序示例 cat first.c #include &lt;stdio.h&gt; int main(void) { int num; num = 1; printf(&quot;I am a simple &quot;); printf(&quot;Computer. \n&quot;); printf(&quot;My f ...
+                </p>
+            </div>
+            <footer class="post-item-foot">
+                <a href="https://www.cnblogs.com/hans-python/" class="post-item-author"><span>Hans_Wang</span></a>
+                <span class="post-meta-item">
+                    <span>2021-11-28 10:27</span>
+                </span>
+                <a id="digg_control_15614442" class="post-meta-item btn " href="javascript:void(0)" onclick="DiggPost('hans-python', 15614442, 215331, 1);return false;">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_digg"></use>
+                    </svg>
+                    <span id="digg_count_15614442">0</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/hans-python/p/15614442.html#commentform">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_comment"></use>
+                    </svg>
+                    <span>0</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/hans-python/p/15614442.html">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_views"></use>
+                    </svg>
+                    <span>33</span>
+                </a>
+                <span id="digg_tip_15614442" class="digg-tip" style="color: red"></span>
+            </footer>
+        </section>
+        <figure>
+        </figure>
+    </article>
+
+
+                        </div>
+                        <script type="text/javascript">
+                        var aggSiteModel = {"CategoryType":"SiteHome","ParentCategoryId":0,"CategoryId":808,"PageIndex":1,"TotalPostCount":4000,"ItemListActionName":"AggSitePostList"};
+                        </script>
+                        <div id="pager_bottom">
+<div id="paging_block"><div class="pager"><a href="/" class="p_1 current" onclick="aggSite.loadCategoryPostList(1,20);buildPaging(1);return false;">1</a><a href="/sitehome/p/2" class="p_2 middle" onclick="aggSite.loadCategoryPostList(2,20);buildPaging(2);return false;">2</a><a href="/sitehome/p/3" class="p_3 middle" onclick="aggSite.loadCategoryPostList(3,20);buildPaging(3);return false;">3</a><span class="ellipsis">···</span><a href="/sitehome/p/200" class="p_200 last" onclick="aggSite.loadCategoryPostList(200,20);buildPaging(200);return false;">200</a><a href="/sitehome/p/2" onclick="aggSite.loadCategoryPostList(2,20);buildPaging(2);return false;">&gt;</a></div></div><script type="text/javascript">var pagingBuider={"OnlyLinkText":false,"TotalCount":4000,"PageIndex":1,"PageSize":20,"ShowPageCount":1,"SkipCount":0,"UrlFormat":"/sitehome/p/{0}","OnClickJsFunc":"aggSite.loadCategoryPostList()","FirstPageLink":"/","AjaxUrl":"/AggSite/Pager","AjaxCallbak":null,"TopPagerId":"pager_top","IsRenderScript":true};function buildPaging(pageIndex){pagingBuider.PageIndex=pageIndex;$.ajax({url:pagingBuider.AjaxUrl,data:JSON.stringify(pagingBuider),type:'post',dataType:'text',contentType:'application/json; charset=utf-8',success:function (data) { $('#paging_block').html(data); var pagerTop=$('#pager_top');if(pageIndex>1){$(pagerTop).html(data).show();}else{$(pagerTop).hide();}}});}</script>
+                        </div>
+                    </div>
+                    <div id="site_categories_wrapper">
+                        <div id="site_categories_card"></div>
+                    </div>
+                </div>
+
+                <div id="side_right" class="side-right card-list sidebar">
+                        <div id="cnblogs_b1" class="sidebar-image"></div>
+                    <div id="sidebar_bh" class="sidebar-bh">
+                            <a href="https://c.gridsumdissector.com/r/?gid=gad_545_l1cjssko&amp;ck=1057&amp;adk=10643&amp;autorefresh=__AUTOREFRESH__" target="_blank" rel="nofollow">【推荐】新云共未来：火山引擎云产品发布</a>
+                            <img src="https://i.gridsumdissector.com/v/?gscmd=impress&amp;gid=gad_545_l1cjssko&amp;ck=1057&amp;adk=10643&amp;autorefresh=__AUTOREFRESH__&amp;ts=__TS__" style="display:none" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer" class="footer">
+            <div id="friend_link" class="link-list friend-link">
+    友情链接：
+        <a href="https://www.feige.cn?from=boke.20211012.wai.1" target="_blank">短信平台</a>
+    <a href="//www.aliyun.com" target="_blank">阿里云</a>
+    <a href="//cloud.tencent.com" target="_blank">腾讯云</a>
+    <a href="//www.huaweicloud.com" target="_blank">华为云</a>
+    <a href="//cloud.baidu.com" target="_blank">百度云</a>
+    <a href="//www.jdcloud.com" target="_blank">京东云</a>
+    <a href="http://www.ucancode.com/" target="_blank">工控组态源码</a>
+    <a href="//www.shanhaibi.com/" target="_blank">山海鲸可视化</a>
+    <a href="http://www.gcpowertools.com.cn" target="_blank">葡萄城控件</a><a href="//www.chinaz.com/" target="_blank">站长之家</a><a href="http://dev.yesky.com" target="_blank">天极网</a><a href="//wetest.qq.com/?from=links_cnblogs" target="_blank">腾讯WeTest</a>
+</div>
+
+            <div class="footer-splitter"></div>
+            <div id="footer_bottom">
+                <div class="poweredby">Powered by .NET 6 on Kubernetes</div>
+                <div class="about"><a href="//about.cnblogs.com/">关于博客园</a><a href="//about.cnblogs.com/contact">联系我们</a><a href="//about.cnblogs.com/ad">广告服务</a><a href="//about.cnblogs.com/brandzone">专区合作</a><span>&copy;2004-2021</span><a href="https://www.cnblogs.com/">博客园</a><span>保留所有权利</span><a href="https://beian.miit.gov.cn/" target="_blank">沪ICP备09004260号-1</a></div>
+                <div class="beian"><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010602011771" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="//common.cnblogs.com/images/ghs.png" style="float:left;" /><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">浙公网安备 33010602011771号</p></a></div>
+                <div class="report-contact">举报电话：0571-88079867，举报邮箱：contact@cnblogs.com <a href="http://www.shjbzx.cn" target="_blank"><img src="/images/jblogo.png?v=20200730" alt="" /></a></div>
+                <div clas="weixin-mp">
+                    <img src="https://img2020.cnblogs.com/blog/35695/202011/35695-20201110200531630-9844.png" alt="" style="width:50px;" />
+                    <p>博客园公众号</p>
+                </div>
+            </div>
+        </footer>
+        
+    </div>
+    <input type="hidden" id="antiforgery_token" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-476124-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    var kv = getGACustom();
+    if (kv) {
+        gtag('set', kv);
+    }
+    gtag('config', 'UA-476124-1');
+    </script>
+    <script defer src="https://hm.baidu.com/hm.js?866c9be12d4a814454792b1fd0fed295"></script>
+</body>
+</html>
+初长成 | 甲子光年","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6359\u002F69631","isBanner":"0"},{"id":526800000111,"Type":"3","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6359_69637.jpg","Title":"揭秘Google、FB、Netflix、亚马逊的通用增长神器 | 深响","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6359\u002F69637","isBanner":"0"},{"id":526800000094,"Type":"0","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6316_68808.jpg","Title":"提升业务科学决策 字节跳动A\u002FB测试大揭秘","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6316\u002F68808","isBanner":"0"},{"id":526800000098,"Type":"2","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6360_68799.jpg","Title":"火山引擎：两个方法高效提升游戏玩家留存率！","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6360\u002F68799","isBanner":"0"},{"id":526800000093,"Type":"0","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6316_68798.jpg","Title":"字节跳动副总裁杨震原：A\u002FB测试不是万能的，但不会一定不行","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6316\u002F68798","isBanner":"0"},{"id":526800000092,"Type":"0","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6316_68797.jpg","Title":"字节跳动首次揭秘A\u002FB测试：做了70多万场实验，开放给企业客户","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6316\u002F68797","isBanner":"0"},{"id":526800000107,"Type":"3","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6360_67495.jpg","Title":"火山引擎大数据研发治理套件正式发布","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6360\u002F67495","isBanner":"0"},{"id":526800000099,"Type":"2","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6360_68704.jpg","Title":"火山翻译，火力全开！","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6360\u002F68704","isBanner":"0"},{"id":526800000100,"Type":"2","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6360_68700.jpg","Title":"火山引擎：标签画像系统内部实战","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6360\u002F68700","isBanner":"0"},{"id":526800000122,"Type":"2","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6281_68697.jpg","Title":"抖音27天战期：春晚红包背后的技术大考","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6281\u002F68697","isBanner":"0"},{"id":526800000101,"Type":"2","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6360_68691.jpg","Title":"你所做的A\u002FB实验，可能是错的","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6360\u002F68691","isBanner":"0"},{"id":526800000091,"Type":"0","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6316_68678.jpg","Title":"火山引擎：如何通过数据洞察驱动数字化转型？","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6316\u002F68678","isBanner":"0"},{"id":526800000121,"Type":"1","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6281_68676.jpg","Title":"数据驱动业务增长，距离你的企业可以有多近？","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6281\u002F68676","isBanner":"0"},{"id":526800000115,"Type":"3","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6359_68675.jpg","Title":"火山引擎官网迎来全新改版，全线智能产品激发你的增长","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6359\u002F68675","isBanner":"0"},{"id":526800000116,"Type":"3","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6359_68674.jpg","Title":"虚拟形象首秀北京春晚，技术实力护航央视春晚，火山引擎交出牛年首份答卷","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6359\u002F68674","isBanner":"0"},{"id":526800000134,"Type":"2","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6360_66908.jpg","Title":"火山引擎推出数据玩家，提供游戏玩家分析与运营解决方案","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6360\u002F66908","isBanner":"0"},{"id":526800000132,"Type":"2","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6360_66660.jpg","Title":"支撑抖音“跳动”数年后，火山引擎新一代视频点播服务正式对外开放","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6360\u002F66660","isBanner":"0"},{"id":526800000131,"Type":"1","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6281_66829.jpg","Title":"Ohayoo X 火山引擎丨1个大胆方案，实现广告收入与用户留存的双增长","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6281\u002F66829","isBanner":"0"},{"id":526800000130,"Type":"1","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6281_67286.jpg","Title":"为什么延长了用户支付路径，收入反而增长7%","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6281\u002F67286","isBanner":"0"},{"id":526800000129,"Type":"1","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6281_67285.jpg","Title":"拆解一个公式，让激励视频广告收入提升近10%","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6281\u002F67285","isBanner":"0"},{"id":526800000128,"Type":"1","Description":"心心App，美妆鉴别服务的开创者，1得物旗下的美妆鉴别与交易平台，致力于通过专业的美妆鉴别服务，为用户提供全新正品的购物体验。火山引擎如何为其用户提供新的购买体验，让购买转化率提升超过12%","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002Fxinxin1.jpg","Title":"心心App X 火山引擎丨一个电商新玩法，让购买转化率提升超过12%","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6281\u002F66795","isBanner":"1"},{"id":526800000127,"Type":"1","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6281_69696.jpg","Title":"倾听玩家声音一定可以带来增长吗？","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6281\u002F69696","isBanner":"0"},{"id":526800000126,"Type":"1","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6281_69695.jpg","Title":"4个关键环节，从此告别佛系增长","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6281\u002F69695","isBanner":"0"},{"id":526800000120,"Type":"1","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6281_66668.jpg","Title":"一句文案的调整，让红包活动参与人数增加117%","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6281\u002F66668","isBanner":"0"},{"id":526800000119,"Type":"1","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6281_66667.jpg","Title":"3个关键步骤，让潜在风险转化为10%的留存提升","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6281\u002F66667","isBanner":"0"},{"id":526800000118,"Type":"1","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6281_66664.jpg","Title":"面对一言难尽的增长结果，只需一个诀窍就可以逆风翻盘","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6281\u002F66664","isBanner":"0"},{"id":526800000117,"Type":"3","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6359_68672.jpg","Title":"火山引擎在机器写作和机器翻译方面的最新进展","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6359\u002F68672","isBanner":"0"},{"id":526800000110,"Type":"3","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6359_66818.jpg","Title":"火山引擎携手中国电信翼支付，共建5G时代下的内容合作新场景","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6359\u002F66818","isBanner":"0"},{"id":526800000109,"Type":"3","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002Fmeetup3.jpg","Title":"亿级DAU背后的音视频技术最佳实践","Link":"https:\u002F\u002Fwww.volcengine.com\u002Factivity\u002Fmeetup\u002F3","isBanner":"0"},{"id":526800000108,"Type":"3","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002Fmeetup2.jpg","Title":"抖音春晚红包场景下的技术揭秘","Link":"https:\u002F\u002Fwww.volcengine.com\u002Factivity\u002Fmeetup\u002F2","isBanner":"0"},{"id":526800000105,"Type":"2","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6360_67383.jpg","Title":"抖音春晚幕后 ：支撑 12 亿红包雨的云原生基础设施","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6360\u002F67383","isBanner":"0"},{"id":526800000104,"Type":"2","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6360_68667.jpg","Title":"2021年“智能增长”六问，火山引擎一一解答","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6360\u002F68667","isBanner":"0"},{"id":526800000103,"Type":"2","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6360_68668.jpg","Title":"字节跳动在联邦学习领域的探索及实践","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6360\u002F68668","isBanner":"0"},{"id":526800000102,"Type":"2","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6360_68670.jpg","Title":"从字节跳动机器学习平台，到火山引擎智能中台","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6360\u002F68670","isBanner":"0"},{"id":526800000097,"Type":"2","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6360_66694.jpg","Title":"火山引擎推出直播SaaS服务：千万级并发无卡顿之下，企业的挑战只剩活动策划","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6360\u002F66694","isBanner":"0"},{"id":526800000096,"Type":"2","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6360_66687.jpg","Title":"火山引擎推出数据发现者，为企业提供一站式数据平台","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6360\u002F66687","isBanner":"0"},{"id":526800000095,"Type":"2","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6360_66923.jpg","Title":"寻求增长，不妨从A\u002FB实验说起","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6360\u002F66923","isBanner":"0"},{"id":526800000090,"Type":"0","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6316_68673.jpg","Title":"持续、务实、敏捷的企业增长，从何而来？","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6316\u002F68673","isBanner":"0"},{"id":526800000089,"Type":"0","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6316_68671.jpg","Title":"消费场景正在进化，如何抓住业务增长新机遇？","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6316\u002F68671","isBanner":"0"},{"id":526800000088,"Type":"0","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6316_66921.jpg","Title":"零售品牌怎么用个性化体验拉动增长？","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6316\u002F66921","isBanner":"0"},{"id":526800000087,"Type":"0","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6316_66916.jpg","Title":"想要实现持续增长？不妨从产品体验说起","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6316\u002F66916","isBanner":"0"},{"id":526800000086,"Type":"0","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6316_66907.jpg","Title":"关于企业直播，你关心的问题都在这里","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6316\u002F66907","isBanner":"0"},{"id":526800000085,"Type":"0","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6316_66905.jpg","Title":"4个数据驱动用户增长的痛点背后，有3套最优解","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6316\u002F66905","isBanner":"0"},{"id":526800000084,"Type":"0","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F66316_66666.jpg","Title":"下一代的线上购物形态会是什么？","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F66316\u002F66666","isBanner":"0"},{"id":526800000083,"Type":"0","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6316_66820.jpg","Title":"三大抓手，迅速构建以人为中心的精细化运营能力","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6316\u002F66820","isBanner":"0"},{"id":526800000082,"Type":"0","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6316_66830.jpg","Title":"如何精细化运营？数据驱动是关键！","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6316\u002F66830","isBanner":"0"},{"id":526800000081,"Type":"0","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6316_66826.jpg","Title":"如何将互联网增长方法应用于金融？","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6316\u002F66826","isBanner":"0"},{"id":526800000080,"Type":"0","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6316_66821-1.jpg","Title":"深入硬件层、内核态与用户态，一文看懂火山引擎云原生操作系统！","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6316\u002F66821","isBanner":"0"},{"id":526800000079,"Type":"0","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6316_66794.jpg","Title":"火山引擎的全链路企业数字化增长之道","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6316\u002F66794","isBanner":"0"},{"id":526800000078,"Type":"0","Description":"字节跳动旗下数字服务与智能科技品牌火山引擎与亿咖通科技宣布达成战略合作，火山引擎将充分发挥旗下火山车娱产品在内容生态领域的优势，携手亿咖通科技丰富智能座舱用户的内容生态体验","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002Fyikatong1.jpg","Title":"火山引擎与亿咖通科技达成战略合作，全面提升车载场景内容体验","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6316\u002F66793","isBanner":"1"}],"categoryList":[],"docDetail":{"menuLeafLinkedListMap":{},"menuTree":{"children":[]},"menuTreeNodeMap":{},"formattedCategory":[],"isContentCategory":true,"curLib":{},"contentDoc":{"ContentBanner":"","Type":""}},"docsSearch":{"query":"","hasSearched":false,"isLoading":true,"activeType":"all","lastQuery":"","searchResult":[],"currentSearchResult":{"Type":"all","DocList":[],"Category":[],"Limit":10,"Offset":0,"Total":0},"searchCategoryOptions":[{"value":"-1","label":"全部"}],"activeCategoryOption":"-1"}},"env":{"domain":"www.volcengine.com","host":"www.volcengine.com","staticSuffix":"","service":{"user":{"host":"\u002F\u002Fconsole.volcengine.com"},"console":{"host":"\u002F\u002Fconsole.volcengine.com"},"player":{"host":"\u002F\u002Fi.snssdk.com\u002Fvideo\u002Furls\u002F1\u002Ftoutiao\u002Fmp4\u002F"}},"partnerDomain":"\u002F\u002Fpartner.volcengine.com"},"content":{"lists":[{"id":526800000135,"Type":"3","Description":"","Cover":"http:\u002F\u002Fportal.volccdn.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F%E9%A3%9E%E4%B9%A620211015-103321.jpg","Title":"智能时代的算法技术实践","Link":"https:\u002F\u002Fwww.volcengine.com\u002Factivities\u002Fmeetup5","isBanner":"0"},{"id":526800000125,"Type":"1","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6281_68811.jpg","Title":"4天完成50余场全球直播，其实很简单","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6281\u002F68811","isBanner":"0"},{"id":526800000124,"Type":"1","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6281_68810.jpg","Title":"火山引擎携手航旅纵横，共建机场服务新商业","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6281\u002F68810","isBanner":"0"},{"id":526800000123,"Type":"1","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6281_68809.jpg","Title":"飞一样的办公效率，更美！","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6281\u002F68809","isBanner":"0"},{"id":526800000133,"Type":"2","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6360_66670.jpg","Title":"业务想要乘风破浪？还看火山引擎互动特效","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6360\u002F66670","isBanner":"0"},{"id":526800000112,"Type":"3","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6359_69632.jpg","Title":"A\u002FB测试应当成为一种企业增长行为 | 钛媒体","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6359\u002F69632","isBanner":"0"},{"id":526800000114,"Type":"3","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6359_69629.jpg","Title":"火山引擎——字节跳动To B没有性感的「故事」| TO B新势力","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6359\u002F69629","isBanner":"0"},{"id":526800000113,"Type":"3","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6359_69631.jpg","Title":"字节跳动再to B，火山引擎初长成 | 甲子光年","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6359\u002F69631","isBanner":"0"},{"id":526800000111,"Type":"3","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6359_69637.jpg","Title":"揭秘Google、FB、Netflix、亚马逊的通用增长神器 | 深响","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6359\u002F69637","isBanner":"0"},{"id":526800000094,"Type":"0","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6316_68808.jpg","Title":"提升业务科学决策 字节跳动A\u002FB测试大揭秘","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6316\u002F68808","isBanner":"0"},{"id":526800000098,"Type":"2","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6360_68799.jpg","Title":"火山引擎：两个方法高效提升游戏玩家留存率！","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6360\u002F68799","isBanner":"0"},{"id":526800000093,"Type":"0","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6316_68798.jpg","Title":"字节跳动副总裁杨震原：A\u002FB测试不是万能的，但不会一定不行","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6316\u002F68798","isBanner":"0"},{"id":526800000092,"Type":"0","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6316_68797.jpg","Title":"字节跳动首次揭秘A\u002FB测试：做了70多万场实验，开放给企业客户","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6316\u002F68797","isBanner":"0"},{"id":526800000107,"Type":"3","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6360_67495.jpg","Title":"火山引擎大数据研发治理套件正式发布","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6360\u002F67495","isBanner":"0"},{"id":526800000099,"Type":"2","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6360_68704.jpg","Title":"火山翻译，火力全开！","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6360\u002F68704","isBanner":"0"},{"id":526800000100,"Type":"2","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6360_68700.jpg","Title":"火山引擎：标签画像系统内部实战","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6360\u002F68700","isBanner":"0"},{"id":526800000122,"Type":"2","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6281_68697.jpg","Title":"抖音27天战期：春晚红包背后的技术大考","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6281\u002F68697","isBanner":"0"},{"id":526800000101,"Type":"2","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6360_68691.jpg","Title":"你所做的A\u002FB实验，可能是错的","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6360\u002F68691","isBanner":"0"},{"id":526800000091,"Type":"0","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6316_68678.jpg","Title":"火山引擎：如何通过数据洞察驱动数字化转型？","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6316\u002F68678","isBanner":"0"},{"id":526800000121,"Type":"1","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6281_68676.jpg","Title":"数据驱动业务增长，距离你的企业可以有多近？","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6281\u002F68676","isBanner":"0"},{"id":526800000115,"Type":"3","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6359_68675.jpg","Title":"火山引擎官网迎来全新改版，全线智能产品激发你的增长","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6359\u002F68675","isBanner":"0"},{"id":526800000116,"Type":"3","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6359_68674.jpg","Title":"虚拟形象首秀北京春晚，技术实力护航央视春晚，火山引擎交出牛年首份答卷","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6359\u002F68674","isBanner":"0"},{"id":526800000134,"Type":"2","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6360_66908.jpg","Title":"火山引擎推出数据玩家，提供游戏玩家分析与运营解决方案","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6360\u002F66908","isBanner":"0"},{"id":526800000132,"Type":"2","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6360_66660.jpg","Title":"支撑抖音“跳动”数年后，火山引擎新一代视频点播服务正式对外开放","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6360\u002F66660","isBanner":"0"},{"id":526800000131,"Type":"1","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6281_66829.jpg","Title":"Ohayoo X 火山引擎丨1个大胆方案，实现广告收入与用户留存的双增长","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6281\u002F66829","isBanner":"0"},{"id":526800000130,"Type":"1","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6281_67286.jpg","Title":"为什么延长了用户支付路径，收入反而增长7%","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6281\u002F67286","isBanner":"0"},{"id":526800000129,"Type":"1","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6281_67285.jpg","Title":"拆解一个公式，让激励视频广告收入提升近10%","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6281\u002F67285","isBanner":"0"},{"id":526800000128,"Type":"1","Description":"心心App，美妆鉴别服务的开创者，1得物旗下的美妆鉴别与交易平台，致力于通过专业的美妆鉴别服务，为用户提供全新正品的购物体验。火山引擎如何为其用户提供新的购买体验，让购买转化率提升超过12%","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002Fxinxin1.jpg","Title":"心心App X 火山引擎丨一个电商新玩法，让购买转化率提升超过12%","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6281\u002F66795","isBanner":"1"},{"id":526800000127,"Type":"1","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6281_69696.jpg","Title":"倾听玩家声音一定可以带来增长吗？","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6281\u002F69696","isBanner":"0"},{"id":526800000126,"Type":"1","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6281_69695.jpg","Title":"4个关键环节，从此告别佛系增长","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6281\u002F69695","isBanner":"0"},{"id":526800000120,"Type":"1","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6281_66668.jpg","Title":"一句文案的调整，让红包活动参与人数增加117%","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6281\u002F66668","isBanner":"0"},{"id":526800000119,"Type":"1","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6281_66667.jpg","Title":"3个关键步骤，让潜在风险转化为10%的留存提升","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6281\u002F66667","isBanner":"0"},{"id":526800000118,"Type":"1","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6281_66664.jpg","Title":"面对一言难尽的增长结果，只需一个诀窍就可以逆风翻盘","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6281\u002F66664","isBanner":"0"},{"id":526800000117,"Type":"3","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6359_68672.jpg","Title":"火山引擎在机器写作和机器翻译方面的最新进展","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6359\u002F68672","isBanner":"0"},{"id":526800000110,"Type":"3","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6359_66818.jpg","Title":"火山引擎携手中国电信翼支付，共建5G时代下的内容合作新场景","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6359\u002F66818","isBanner":"0"},{"id":526800000109,"Type":"3","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002Fmeetup3.jpg","Title":"亿级DAU背后的音视频技术最佳实践","Link":"https:\u002F\u002Fwww.volcengine.com\u002Factivity\u002Fmeetup\u002F3","isBanner":"0"},{"id":526800000108,"Type":"3","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002Fmeetup2.jpg","Title":"抖音春晚红包场景下的技术揭秘","Link":"https:\u002F\u002Fwww.volcengine.com\u002Factivity\u002Fmeetup\u002F2","isBanner":"0"},{"id":526800000105,"Type":"2","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6360_67383.jpg","Title":"抖音春晚幕后 ：支撑 12 亿红包雨的云原生基础设施","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6360\u002F67383","isBanner":"0"},{"id":526800000104,"Type":"2","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6360_68667.jpg","Title":"2021年“智能增长”六问，火山引擎一一解答","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6360\u002F68667","isBanner":"0"},{"id":526800000103,"Type":"2","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6360_68668.jpg","Title":"字节跳动在联邦学习领域的探索及实践","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6360\u002F68668","isBanner":"0"},{"id":526800000102,"Type":"2","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6360_68670.jpg","Title":"从字节跳动机器学习平台，到火山引擎智能中台","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6360\u002F68670","isBanner":"0"},{"id":526800000097,"Type":"2","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6360_66694.jpg","Title":"火山引擎推出直播SaaS服务：千万级并发无卡顿之下，企业的挑战只剩活动策划","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6360\u002F66694","isBanner":"0"},{"id":526800000096,"Type":"2","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6360_66687.jpg","Title":"火山引擎推出数据发现者，为企业提供一站式数据平台","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6360\u002F66687","isBanner":"0"},{"id":526800000095,"Type":"2","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6360_66923.jpg","Title":"寻求增长，不妨从A\u002FB实验说起","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6360\u002F66923","isBanner":"0"},{"id":526800000090,"Type":"0","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6316_68673.jpg","Title":"持续、务实、敏捷的企业增长，从何而来？","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6316\u002F68673","isBanner":"0"},{"id":526800000089,"Type":"0","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6316_68671.jpg","Title":"消费场景正在进化，如何抓住业务增长新机遇？","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6316\u002F68671","isBanner":"0"},{"id":526800000088,"Type":"0","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6316_66921.jpg","Title":"零售品牌怎么用个性化体验拉动增长？","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6316\u002F66921","isBanner":"0"},{"id":526800000087,"Type":"0","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6316_66916.jpg","Title":"想要实现持续增长？不妨从产品体验说起","Link":"https:\u002F\u002Fwww.volcengine.com\u002Fdocs\u002F6316\u002F66916","isBanner":"0"},{"id":526800000086,"Type":"0","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6316_66907.jpg","Title":"关于企业直播，你关心的问题都在这里","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6316\u002F66907","isBanner":"0"},{"id":526800000085,"Type":"0","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6316_66905.jpg","Title":"4个数据驱动用户增长的痛点背后，有3套最优解","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6316\u002F66905","isBanner":"0"},{"id":526800000084,"Type":"0","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F66316_66666.jpg","Title":"下一代的线上购物形态会是什么？","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F66316\u002F66666","isBanner":"0"},{"id":526800000083,"Type":"0","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6316_66820.jpg","Title":"三大抓手，迅速构建以人为中心的精细化运营能力","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6316\u002F66820","isBanner":"0"},{"id":526800000082,"Type":"0","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6316_66830.jpg","Title":"如何精细化运营？数据驱动是关键！","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6316\u002F66830","isBanner":"0"},{"id":526800000081,"Type":"0","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6316_66826.jpg","Title":"如何将互联网增长方法应用于金融？","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6316\u002F66826","isBanner":"0"},{"id":526800000080,"Type":"0","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6316_66821-1.jpg","Title":"深入硬件层、内核态与用户态，一文看懂火山引擎云原生操作系统！","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6316\u002F66821","isBanner":"0"},{"id":526800000079,"Type":"0","Description":"","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002F6316_66794.jpg","Title":"火山引擎的全链路企业数字化增长之道","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6316\u002F66794","isBanner":"0"},{"id":526800000078,"Type":"0","Description":"字节跳动旗下数字服务与智能科技品牌火山引擎与亿咖通科技宣布达成战略合作，火山引擎将充分发挥旗下火山车娱产品在内容生态领域的优势，携手亿咖通科技丰富智能座舱用户的内容生态体验","Cover":"https:\u002F\u002Fsf1-ttcdn-tos.pstatp.com\u002Fobj\u002Fvolcfe\u002FGrowthLab\u002Fyikatong1.jpg","Title":"火山引擎与亿咖通科技达成战略合作，全面提升车载场景内容体验","Link":"https:\u002F\u002Fwww.volcengine.cn\u002Fdocs\u002F6316\u002F66793","isBanner":"1"}]},"firstPage":{"bgColor":"rgba(0, 0, 0, 1)","showSidebar":false,"fullPageSlide":{"from":0,"to":0,"status":"end"}}}},"context":{"pageConfig":{"pattern":"\u002F","env":"prod"},"request":{"params":{},"query":{"utm_source":"ad","utm_medium":"c0","utm_term":"bokeyuan","utm_campaign":"20211244","utm_content":"cloudlaunch","gsadid":"gad_545_4aplmo5c"},"pathname":"\u002Fevent\u002Fcloud\u002F"}},"renderLevel":2}</script>
+        
+      
+
+</body></html>!1:"getUntrustedUpdateValue"in a};ms.prototype.getUntrustedUpdateValue=ms.prototype.ij;var ns=[],os=!1,ps=!1,qs=function(a){return m[J.W].push(a)},rs=function(a,b,c){a.eventCallback=b;c&&(a.eventTimeout=c);return qs(a)},ss=function(a,b){var c=Vg[J.W],d=c?c.subscribers:1,e=0,f=!1,g=void 0;b&&(g=m.setTimeout(function(){f||(f=!0,a());g=void 0},b));return function(){++e===d&&(g&&(m.clearTimeout(g),g=void 0),f||(a(),f=!0))}};
+function ts(a){var b=a._clear;Oa(a,function(d,e){"_clear"!==d&&(b&&rh(d,void 0),rh(d,e))});ch||(ch=a["gtm.start"]);var c=a["gtm.uniqueEventId"];if(!a.event)return!1;c||(c=hh(),a["gtm.uniqueEventId"]=c,rh("gtm.uniqueEventId",c));return Rn(a)}function us(){var a=ns[0];if(null==a||"object"!==typeof a)return!1;if(a.event)return!0;if(Pa(a)){var b=a[0];if("config"===b||"event"===b||"js"===b)return!0}return!1}
+function vs(){for(var a=!1;!ps&&0<ns.length;){if(!os&&us()){var b={},c=(b.event="gtm.init_consent",b),d={},e=(d.event="gtm.init",d),f=ns[0]["gtm.uniqueEventId"];f&&(c["gtm.uniqueEventId"]=f-2,e["gtm.uniqueEventId"]=f-1);ns.unshift(c,e);os=!0}ps=!0;delete lh.eventModel;nh();var g=ns.shift();if(null!=g){var h=ls(g);if(h){var k=g;g=ls(k)?k.getUntrustedUpdateValue():void 0;sh()}try{if(Ea(g))try{g.call(ph)}catch(w){}else if(Ia(g)){var n=
+g;if(Ga(n[0])){var p=n[0].split("."),r=p.pop(),t=n.slice(1),u=oh(p.join("."),2);if(void 0!==u&&null!==u)try{u[r].apply(u,t)}catch(w){}}}else{if(Pa(g)){a:{var q=g;if(q.length&&Ga(q[0])){var v=Pr[q[0]];if(v&&(!h||!Qr[q[0]])){g=v(q);break a}}g=void 0}if(!g){ps=!1;continue}}a=ts(g)||a}}finally{h&&nh(!0)}}ps=!1}return!a}
+function ws(){var b=vs();try{Rr(J.J)}catch(c){}return b}
+var ys=function(){var a=Yb(J.W,[]),b=Yb("google_tag_manager",{});b=b[J.W]=b[J.W]||{};im(function(){b.gtmDom||(b.gtmDom=!0,a.push({event:"gtm.dom"}))});Wr(function(){b.gtmLoad||(b.gtmLoad=!0,a.push({event:"gtm.load"}))});b.subscribers=(b.subscribers||0)+1;var c=a.push;a.push=function(){var e;if(0<Vg.SANDBOXED_JS_SEMAPHORE){e=[];for(var f=0;f<arguments.length;f++)e[f]=new ms(arguments[f])}else e=[].slice.call(arguments,0);var g,h=!0;
+h=!1;g=h;!g&&ns.push.apply(ns,e);var k=c.apply(a,e);g&&ns.push.apply(ns,e);if(300<this.length)for(Ug(4);300<this.length;)this.shift();var n="boolean"!==typeof k||k;return vs()&&n};var d=a.slice(0);ns.push.apply(ns,d);if(xs()){
+I(ws)}},xs=function(){var a=!0;return a};function zs(a){if(null==a||0===a.length)return!1;var b=Number(a),c=ab();return b<c+3E5&&b>c-9E5};var As=function(a){Vg.addTargetToGroup?Vg.addTargetToGroup(a):(Vg.pendingDefaultTargets=Vg.pendingDefaultTargets||[],Vg.pendingDefaultTargets.push(a))};var Bs=function(){var a=[];return a};var Cs={};Cs.ud=new String("undefined");
+var Fs=function(a,b,c){var d={event:b,"gtm.element":a,"gtm.elementClasses":oc(a,"className"),"gtm.elementId":a["for"]||hc(a,"id")||"","gtm.elementTarget":a.formTarget||oc(a,"target")||""};c&&(d["gtm.triggers"]=c.join(","));d["gtm.elementUrl"]=(a.attributes&&a.attributes.formaction?a.formAction:"")||a.action||oc(a,"href")||a.src||a.code||a.codebase||"";return d},Gs=function(a){Vg.hasOwnProperty("autoEventsSettings")||(Vg.autoEventsSettings={});var b=Vg.autoEventsSettings;b.hasOwnProperty(a)||(b[a]=
+{});return b[a]},Hs=function(a,b,c){Gs(a)[b]=c},Is=function(a,b,c,d){var e=Gs(a),f=bb(e,b,d);e[b]=c(f)},Js=function(a,b,c){var d=Gs(a);return bb(d,b,c)};var Ps=!!m.MutationObserver,Qs=void 0,Rs=function(a){if(!Qs){var b=function(){var c=H.body;if(c)if(Ps)(new MutationObserver(function(){for(var e=0;e<Qs.length;e++)I(Qs[e])})).observe(c,{childList:!0,subtree:!0});else{var d=!1;fc(c,"DOMNodeInserted",function(){d||(d=!0,I(function(){d=!1;for(var e=0;e<Qs.length;e++)I(Qs[e])}))})}};Qs=[];H.body?b():I(b)}Qs.push(a)};
+var bt=function(a,b,c){function d(){var g=a();f+=e?(ab()-e)*g.playbackRate/1E3:0;e=ab()}var e=0,f=0;return{createEvent:function(g,h,k){var n=a(),p=n.Ze,r=void 0!==k?Math.round(k):void 0!==h?Math.round(n.Ze*h):Math.round(n.Jg),t=void 0!==h?Math.round(100*h):0>=p?0:Math.round(r/p*100),u=H.hidden?!1:.5<=ij(c);d();var q=void 0;void 0!==b&&(q=[b]);var v=Fs(c,"gtm.video",q);v["gtm.videoProvider"]="youtube";v["gtm.videoStatus"]=g;v["gtm.videoUrl"]=n.url;v["gtm.videoTitle"]=n.title;v["gtm.videoDuration"]=
+Math.round(p);v["gtm.videoCurrentTime"]=Math.round(r);v["gtm.videoElapsedTime"]=Math.round(f);v["gtm.videoPercent"]=t;v["gtm.videoVisible"]=u;return v},jh:function(){e=ab()},Zb:function(){d()}}};var ct=m.clearTimeout,dt=m.setTimeout,S=function(a,b,c,d){if(Wn()){b&&I(b)}else return bc(a,b,c,d)},et=function(){return new Date},ft=function(){return m.location.href},gt=function(a){return tj(vj(a),"fragment")},ht=function(a){return uj(vj(a))},it=function(a,b){return oh(a,b||2)},jt=function(a,b,c){return b?rs(a,b,c):qs(a)},kt=function(a,b){m[a]=b},V=function(a,b,c){b&&(void 0===m[a]||c&&!m[a])&&(m[a]=b);return m[a]},
+lt=function(a,b,c){return Xj(a,b,void 0===c?!0:!!c)},mt=function(a,b,c){return 0===gk(a,b,c)},nt=function(a,b){if(Wn()){b&&I(b)}else dc(a,b)},ot=function(a){return!!Js(a,"init",!1)},pt=function(a){Hs(a,"init",!0)},qt=function(a){var b=ah,c="?id="+encodeURIComponent(a)+"&l="+J.W;Vn()&&(c+="&sign="+J.zd,Xb&&(b=Xb.replace(/^(?:https?:\/\/)?/i,"").split(/[?#]/)[0]));var d=dp("https://","http://",b+c);S(d)},rt=function(a,
+b,c){nn&&(Kc(a)||Bn(c,b,a))};
+function Pt(a,b){a=String(a);b=String(b);var c=a.length-b.length;return 0<=c&&a.indexOf(b,c)==c}var Qt=new La;function Rt(a,b,c){var d=c?"i":void 0;try{var e=String(b)+d,f=Qt.get(e);f||(f=new RegExp(b,d),Qt.set(e,f));return f.test(a)}catch(g){return!1}}
+function St(a,b){function c(g){var h=vj(g),k=tj(h,"protocol"),n=tj(h,"host",!0),p=tj(h,"port"),r=tj(h,"path").toLowerCase().replace(/\/$/,"");if(void 0===k||"http"==k&&"80"==p||"https"==k&&"443"==p)k="web",p="default";return[k,n,p,r]}for(var d=c(String(a)),e=c(String(b)),f=0;f<d.length;f++)if(d[f]!==e[f])return!1;return!0}
+function Tt(a){return Ut(a)?1:0}
+function Ut(a){var b=a.arg0,c=a.arg1;if(a.any_of&&Ia(c)){for(var d=0;d<c.length;d++){var e=Gc(a,{});Gc({arg1:c[d],any_of:void 0},e);if(Tt(e))return!0}return!1}switch(a["function"]){case "_cn":return 0<=String(b).indexOf(String(c));case "_css":var f;a:{if(b){var g=["matches","webkitMatchesSelector","mozMatchesSelector","msMatchesSelector","oMatchesSelector"];try{for(var h=0;h<g.length;h++)if(b[g[h]]){f=b[g[h]](c);break a}}catch(k){}}f=!1}return f;case "_ew":return Pt(b,c);case "_eq":return String(b)==
+String(c);case "_ge":return Number(b)>=Number(c);case "_gt":return Number(b)>Number(c);case "_lc":return 0<=String(b).split(",").indexOf(String(c));case "_le":return Number(b)<=Number(c);case "_lt":return Number(b)<Number(c);case "_re":return Rt(b,c,a.ignore_case);case "_sw":return 0==String(b).indexOf(String(c));case "_um":return St(b,c)}return!1};function Vt(a,b){var c=this;};function Wt(a,b,c){};function Xt(a,b,c,d){};function Yt(a){};
+function bu(a){};var cu={},du=[],eu={},fu=0,gu=0;
+function nu(a,b){}
+function uu(a,b){}
+;
+function zu(a){};var Au={},Bu=[];
+var Iu=function(a,b){};
+
+function Pu(a,b){};var Qu=/^\s*$/,Ru,Su=!1;
+function cv(a,b){}function dv(a,b,c){};var ev=["www.youtube.com","www.youtube-nocookie.com"],fv,gv=!1,hv=0;
+function rv(a,b){}function sv(a,b){return!0};function tv(a,b,c){};function uv(a,b){var c;return c};function vv(a){};function wv(a){};function xv(a){Q(G(this),["listener:!Fn"],arguments);ug(this,"process_dom_events","window","load");Wr(Ic(a))};function yv(a){var b;return b};function zv(a,b){var c;var d=!1;var e=Hc(c,this.g,d);void 0===e&&void 0!==c&&Ug(45);return e};function Av(a){var b;return b};function Bv(a,b){var c=null,d=!1;return Hc(c,this.g,d)};function Cv(a){var b;var g=!1;return Hc(b,this.g,g)};
+function Hv(a,b){return b};function Iv(a){return!1}
+var Jv;function Kv(a){var b=!1;return b};var Lv=function(a){var b;return b};function Mv(a,b){b=void 0===b?!0:b;var c;return c};function Nv(){var a=[];return Hc(a)};function Ov(a){var b=null;return b};function Pv(a,b){var c;return c};function Qv(a,b){var c;return c};function Rv(a,b){var c;return c};function Sv(a){var b="";return b};function Tv(a,b){var c;return c};function Uv(a){var b="";return b};function Vv(){ug(this,"get_user_agent");return m.navigator.userAgent};function Wv(a,b){};var Xv={};function Yv(a,b,c,d,e,f){f?e[f]?(e[f][0].push(c),e[f][1].push(d)):(e[f]=[[c],[d]],bc(a,function(){for(var g=e[f][0],h=0;h<g.length;h++)I(g[h]);g.push=function(k){I(k);return 0}},function(){for(var g=e[f][1],h=0;h<g.length;h++)I(g[h]);e[f]=null},b)):bc(a,c,d,b)}
+function Zv(a,b,c,d){}var $v=Object.freeze({dl:1,id:1}),aw={};
+function bw(a,b,c,d){};function cw(a){var b=!0;return b};var dw=function(){return!1},ew={getItem:function(a){var b=null;return b},setItem:function(a,
+b){return!1},removeItem:function(a){}};var fw=["textContent","value","tagName","children","childElementCount"];
+function gw(a){var b;return b};function hw(){};function iw(a,b){var c;return c};function jw(a){var b=void 0;return b};function kw(a,b){var c=!1;return c};function lw(){var a="";return a};function mw(){var a="";return a};var nw=Object.freeze(["config","event","get","set"]);
+function ow(a,b,c){};function pw(){};function qw(a,b,c,d){d=void 0===d?!1:d;};function rw(a,b,c){};function sw(a,b,c,d){var e=this;d=void 0===d?!0:d;var f=!1;return f};function tw(a){Q(G(this),["consentSettings:!DustMap"],arguments);for(var b=a.Ab(),c=b.length(),d=0;d<c;d++){var e=b.get(d);e!==R.Yd&&ug(this,"access_consent",e,"write")}ii(Ic(a))};function uw(a,b,c){return!1};function vw(a,b,c){Q(G(this),["targetId:!string","name:!string","value:!*"],arguments);var d=fj(a)||{};d[b]=Ic(c,this.g);var e=a;dj||ej();cj[e]=d;};function ww(a,b,c){}
+;var xw=function(a){for(var b=[],c=0,d=0;d<a.length;d++){var e=a.charCodeAt(d);128>e?b[c++]=e:(2048>e?b[c++]=e>>6|192:(55296==(e&64512)&&d+1<a.length&&56320==(a.charCodeAt(d+1)&64512)?(e=65536+((e&1023)<<10)+(a.charCodeAt(++d)&1023),b[c++]=e>>18|240,b[c++]=e>>12&63|128):b[c++]=e>>12|224,b[c++]=e>>6&63|128),b[c++]=e&63|128)}return b};function yw(a,b,c,d){var e=this;};function zw(a,b,c){}
+;var Aw={},Bw={};Aw.getItem=function(a){var b=null;return b};
+Aw.setItem=function(a,b){};
+Aw.removeItem=function(a){};Aw.clear=function(){};var Cw=function(a){var b;return b};function Dw(a){Q(G(this),["consentSettings:!DustMap"],arguments);var b=Ic(a),c;for(c in b)b.hasOwnProperty(c)&&ug(this,"access_consent",c,"write");var d=this.g.g;ki(b,d&&d.eventId)};var Ew=function(){var a=new Jg;Wn()?(a.add("injectHiddenIframe",Ca),a.add("injectScript",Ca)):(a.add("injectHiddenIframe",Wv),a.add("injectScript",Zv));var b=rw;a.add("Math",ng());a.add("Object",Hg);a.add("TestHelper",Mg());a.add("addConsentListener",Vt);a.add("addEventCallback",Yt);a.add("aliasInWindow",sv);a.add("assertApi",
+jg);a.add("assertThat",kg);a.add("callInWindow",uv);a.add("callLater",vv);a.add("copyFromDataLayer",zv);a.add("copyFromWindow",Av);a.add("createArgumentsQueue",Bv);a.add("createQueue",Cv);a.add("decodeUri",og);a.add("decodeUriComponent",pg);a.add("encodeUri",qg);a.add("encodeUriComponent",rg);a.add("fail",sg);a.add("fromBase64",Lv,!("atob"in m));a.add("generateRandom",tg);a.add("getContainerVersion",vg);a.add("getCookieValues",Mv);a.add("getQueryParameters",Qv);a.add("getReferrerQueryParameters",
+Rv);a.add("getReferrerUrl",Sv);a.add("getTimestamp",yg);a.add("getTimestampMillis",yg);a.add("getType",zg);a.add("getUrl",Uv);a.add("localStorage",ew,!dw());a.add("isConsentGranted",cw);a.add("logToConsole",hw);a.add("makeInteger",Bg);a.add("makeNumber",Cg);a.add("makeString",Dg);a.add("makeTableMap",Eg);a.add("mock",Gg);a.add("parseUrl",jw);a.add("queryPermission",kw);a.add("readCharacterSet",lw);a.add("readTitle",mw);a.add("sendPixel",b);a.add("setCookie",sw);a.add("setDefaultConsentState",tw);
+a.add("setInWindow",uw);a.add("sha256",yw);a.add("templateStorage",Aw);a.add("toBase64",Cw,!("btoa"in m));a.add("updateConsentState",Dw);Lg(a,"callOnWindowLoad",xv);a.add("JSON",Ag(function(c){var d=this.g.g;d&&d.log.call(this,"error",c)}));Lg(a,"internal.appendRemoteConfigParameter",tv);Lg(a,"internal.getRemoteConfigParameter",Tv);Lg(a,"internal.setRemoteConfigParameter",ww);Lg(a,"internal.sortRemoteConfigParameters",zw);Lg(a,"internal.evaluateMatchingRules",
+Kv),Lg(a,"internal.registerGtagCommandListener",ow);Lg(a,"internal.addGaSendListener",zu);Lg(a,"internal.evaluateFilteringRules",Iv);Lg(a,"internal.getProductSettingsParameter",Pv);Lg(a,"internal.setProductSettingsParameter",
+vw);Lg(a,"internal.addHistoryChangeListener",Iu);
+Lg(a,"internal.sendGtagEvent",qw);Wn()?Lg(a,"internal.injectScript",Ca):Lg(a,"internal.injectScript",bw);Lg(a,"internal.locateUserData",gw);
+Lg(a,"internal.addFormInteractionListener",nu);Lg(a,"internal.addFormSubmitListener",uu);Lg(a,"internal.getFlags",xg);return function(c){var d;if(a.g.hasOwnProperty(c))d=a.get(c,this);else{var e;if(e=a.o.hasOwnProperty(c)){var f=!1,g=this.g.g;if(g){var h=g.Jc();if(h){0!==h.indexOf("__cvt_")&&(f=!0);}}e=f}if(e){var k=
+a.o.hasOwnProperty(c)?a.o[c]:void 0;d=k}else throw Error(c+" is not a valid API name.");}return d}};var Fw=function(){return!1},Gw=function(){var a={};return function(b,c,d){}};var Hw;
+function Iw(){var a=Hw;return function(b,c,d){var e=d&&d.event;Jw(c);var f=new sb;Oa(c,function(r,t){var u=Hc(t);void 0===u&&void 0!==t&&Ug(44);f.set(r,u)});a.g.g.F=mf();var g={Ii:yf(b),eventId:void 0!==e?e.id:void 0,Ac:void 0!==e?function(r){return e.kb.Ac(r)}:void 0,Jc:function(){return b},log:function(){},tk:{index:d&&d.index,type:d&&d.type}};if(Fw()){var h=
+Gw(),k=void 0,n=void 0;g.Ea={Bc:{},bc:function(r,t,u){1===t&&(k=r);7===t&&(n=u);h(r,t,u)},pf:Fg()};g.log=function(r,t){if(k){var u=Array.prototype.slice.call(arguments,1);h(k,4,{level:r,source:n,message:u})}}}var p=oe(a,g,[b,f]);a.g.g.F=void 0;p instanceof pa&&"return"===p.g&&(p=p.o);return Ic(p)}}function Jw(a){var b=a.gtmOnSuccess,c=a.gtmOnFailure;Ea(b)&&(a.gtmOnSuccess=function(){I(b)});Ea(c)&&(a.gtmOnFailure=function(){I(c)})}
+function Kw(){Hw.g.g.N=function(a,b,c){Vg.SANDBOXED_JS_SEMAPHORE=Vg.SANDBOXED_JS_SEMAPHORE||0;Vg.SANDBOXED_JS_SEMAPHORE++;try{return a.apply(b,c)}finally{Vg.SANDBOXED_JS_SEMAPHORE--}}}function Lw(a){void 0!==a&&Oa(a,function(b,c){for(var d=0;d<c.length;d++){var e=c[d].replace(/^_*/,"");gh[e]=gh[e]||[];gh[e].push(b)}})};var Mw=encodeURI,X=encodeURIComponent,Nw=ec;var Ow=function(a,b){if(!a)return!1;var c=tj(vj(a),"host");if(!c)return!1;for(var d=0;b&&d<b.length;d++){var e=b[d]&&b[d].toLowerCase();if(e){var f=c.length-e.length;0<f&&"."!=e.charAt(0)&&(f--,e="."+e);if(0<=f&&c.indexOf(e,f)==f)return!0}}return!1};
+var Pw=function(a,b,c){for(var d={},e=!1,f=0;a&&f<a.length;f++)a[f]&&a[f].hasOwnProperty(b)&&a[f].hasOwnProperty(c)&&(d[a[f][b]]=a[f][c],e=!0);return e?d:null};
+var Zx={};Zx[R.Pb]="";Zx[R.ra]="";Zx[R.Ha]="";Zx[R.ia]="auto";Zx[R.ab]="/";Zx[R.qa]=63072E3;Zx[R.vc]=30;Zx[R.od]=1E4;Zx[R.Vb]=!0;var $x=function(a,b,c,d,e,f){f=void 0===f?!1:f;this.s=a;this.eventName=b;this.C=c;this.K=d.eventModel;this.Bi=d.containerConfig;this.o=d;this.Na=d.getWithConfig(R.rb)?1:7;this.Ge=d.getWithConfig(R.sb)?1:7;this.N=e;this.ob=this.Fe=this.zg=this.F=this.vg=this.xg=this.td=!1;this.Gb=0;this.Ke=this.Le=this.sd=!1;this.Oe=void 0;this.Xb=0;this.ug=this.Je=this.yg=this.g=this.Ie=
+this.He=void 0;this.Ji=f};l=$x.prototype;l.Ia=function(a,b){void 0===this.B(a)&&(this.K[a]=b)};l.lh=function(a,b){b<=this.Na&&(this.K[R.rb]=a,this.Na=b)};l.mh=function(a,b){b<=this.Ge&&(this.K[R.sb]=a,this.Ge=b)};l.B=function(a){return void 0!==this.K[a]?this.K[a]:void 0!==this.o.getWithConfig(a)?this.o.getWithConfig(a):void 0!==this.N[a]?this.N[a]:Zx[a]};l.getRemoteConfig=function(a){return void 0!==this.o.remoteConfig[a]?this.o.remoteConfig[a]:this.N[a]};l.Md=function(a){var b=this.Fb(R.gd,this.N[R.gd]);
+if(b&&void 0!==b[a||this.eventName])return b[a||this.eventName]};l.Fb=function(a,b){var c=fj(this.s);if(c&&c.hasOwnProperty(a))return c[a];return b};l.Rg=function(){var a=this.B(R.Aa);if("object"===typeof a)return a};l.Sg=function(){return!!this.Rg()};l.abort=function(){throw"ABORT";};l.Ua=function(){return!(!0!==this.B(R.sc)&&"true"!==this.B(R.sc)||!this.B(R.sa))};l.Aj=
+function(){return this.F||!!this.B(R.Yf)};
+var ay=!1,by=function(){ay=!0;ay=!0;},cy=function(a){var b=!1;b=a.eventName===R.mc&&Zh()&&a.Ua();return!(!Wb.sendBeacon||a.sd||a.Le||a.F||a.Fe||a.ob||b||ay)};var dy=function(a){Sg("GA4_EVENT",a)};
+var fy=function(a){return!a||ey.test(a)||R.ki.hasOwnProperty(a)},gy=function(a){var b=a[R.xe];if(b)return b;var c=a[R.wb];if(Ga(c)){if("function"===typeof URL)try{return(new URL(c)).pathname}catch(e){return}var d=vj(c);return d.hostname?tj(d,"path"):void 0}},hy=function(a,b,c){if(c)switch(c.type){case "event_name":return a;case "const":return c.const_value;case "event_param":var d=c.event_param.param_name,e=b[d];
+return e}},iy=function(a,b,c){for(var d=c.event_param_ops||[],e=0;e<d.length;e++){var f=d[e];if(f.edit_param){var g=f.edit_param.param_name,h=hy(a,b,f.edit_param.param_value),k;if(h){var n=Number(h);k=isNaN(n)?h:n}else k=h;b[g]=k}else f.delete_param&&delete b[f.delete_param.param_name]}},jy=function(a,b){var c=b.values||[],d=hy(a.eventName,a.K,c[0]),e=hy(a.eventName,a.K,c[1]),f=b.type;if("eqi"===f||"swi"===f||"ewi"===f||"cni"===f)d="string"===typeof d?d.toLowerCase():d,e="string"===typeof e?e.toLowerCase():
+e;var g=!1;switch(f){case "eq":case "eqi":g=String(d)==String(e);break;case "sw":case "swi":g=0==String(d).indexOf(String(e));break;case "ew":case "ewi":g=Pt(d,e);break;case "cn":case "cni":g=0<=String(d).indexOf(String(e));break;case "lt":g=Number(d)<Number(e);break;case "le":g=Number(d)<=Number(e);break;case "gt":g=Number(d)>Number(e);break;case "ge":g=Number(d)>=Number(e);break;case "re":case "rei":g=Rt(d,e,"rei"===f)}return!!b.negate!==g},ky=function(a,b){var c=b.event_name_predicate;if(c&&!jy(a,
+c))return!1;var d=b.conditions||[];if(0===d.length)return!0;for(var e=0;e<d.length;e++){for(var f=d[e].predicates||[],g=!0,h=0;h<f.length;h++)if(!jy(a,f[h])){g=!1;break}if(g)return!0}return!1},ey=/^(_|ga_|google_|gtag\.|firebase_).*$/,ly=!1;ly=!0;
+var my=function(a){var b=0,c=0;return{start:function(){b=ab()},stop:function(){c=this.get()},get:function(){var d=0;a.kf()&&(d=ab()-b);return d+c}}},ny=function(){this.g=void 0;this.o=0;this.isActive=this.isVisible=this.s=!1;this.F=this.C=void 0};l=ny.prototype;l.ni=function(a){var b=this;if(!this.g){this.s=H.hasFocus();this.isVisible=!H.hidden;this.isActive=!0;var c=function(d,e,f){fc(d,e,function(g){b.g.stop();f(g);b.kf()&&b.g.start()})};c(m,"focus",function(){b.s=!0});c(m,"blur",function(){b.s=
+!1});c(m,"pageshow",function(d){b.isActive=!0;d.persisted&&Ug(56);b.F&&b.F()});c(m,"pagehide",function(){b.isActive=!1;b.C&&b.C()});c(H,"visibilitychange",function(){b.isVisible=!H.hidden});a.Ua()&&-1===(Wb.userAgent||"").indexOf("Firefox")&&-1===(Wb.userAgent||"").indexOf("FxiOS")&&c(m,"beforeunload",function(){by()});this.xf();this.o=0}};l.xf=function(){this.o+=
+this.Ld();this.g=my(this);this.kf()&&this.g.start()};l.Zj=function(a){a.Xb=this.Ld()};l.lj=function(a){a.Xb=0;this.xf();this.o=0};l.kf=function(){return this.s&&this.isVisible&&this.isActive};l.fj=function(){return this.o+this.Ld()};l.Ld=function(){return this.g&&this.g.get()||0};l.Nj=function(a){this.C=a};l.hh=function(a){this.F=a};function oy(){return m.gaGlobal=m.gaGlobal||{}}var py=function(){var a=oy();a.hid=a.hid||Ka();return a.hid},qy=function(a,b){var c=oy();if(void 0==c.vid||b&&!c.from_cookie)c.vid=a,c.from_cookie=b};
+var ty=function(a,b){var c=!0;return c},vy=function(a){var b;return b},ry=function(a,b,c){var d=String(c.B(R.ia)),e=String(c.B(R.ab)),f=Number(c.B(R.qa)),g=c.B(R.Qb),h={Ka:R.I,domain:d,path:e,expires:f?new Date(ab()+1E3*f):void 0,flags:""+c.B(R.Ha)};if(!1===g&&wy(c)===b)return!0;
+var k=nk(b,xy[0],d,e);return 1!==gk(a,k,h)},uy=function(a,b){var c=""+b.B(R.ia),d=""+b.B(R.ab),e=mk(a,c,d,xy,R.I);if(!e){var f=String(b.B(R.Pb));f&&f!=a&&(e=mk(f,c,d,xy,R.I))}return e},sy=function(a){return a.B(R.ra)+"_ga_ecid"},zy=function(a,b){return ry(yy(b),a,b)},wy=function(a){return uy(yy(a),a)},yy=function(a){return String(a.B(R.ra))+"_ga"},xy=["GA1"];
+var Cy=function(a,b){var c=Ay(b),d=String(b.B(R.ia)),e=String(b.B(R.ab)),f=Number(b.B(R.qa)),g=nk(a,By[0],d,e),h={Ka:R.I,domain:d,path:e,expires:f?new Date(ab()+1E3*f):void 0,flags:String(b.B(R.Ha))};return 1!==gk(c,g,h)},Dy=function(a){var b=Ay(a),c=String(a.B(R.ia)),d=String(a.B(R.ab));return mk(b,c,d,By,R.I)},By=["GS1"],Ay=function(a){return String(a.B(R.ra))+"_ga_"+a.s.substr(2)},Ey=function(a){var b;var c=a.K[R.wc],d=a.K[R.ze],e=!!a.K[R.ld];if(c&&d){var f=[c,d,Sa(a.K[R.ye]),a.C,a.Gb];b=f.join(".")}else b=void 0;return b};
+var Fy=function(a){var b=a.B(R.ja),c=a.getRemoteConfig(R.ja);if(c===b)return c;var d=Gc(b);c&&c[R.O]&&(d[R.O]=(d[R.O]||[]).concat(c[R.O]));return d},Gy=function(a,b,c,d){var e=al(!0);if("1"!==e._up)return{};var f=e[b],g=e[d],h;a.g&&(h=e[c]);return{clientId:f,Mg:h,kh:g}},Hy=function(a,b,c,d){var e=al(!0),f=e[b];f&&(a.lh(f,2),zy(f,a));var g=e._z;g&&(a.Ie=g);var h=e[c];a.g&&h&&(a.mh(h,2),ty(h,a));var k=e[d];k&&Cy(k,a);return a.g?!!(f&&h&&k):!(!f||!k)},Iy,Jy=!1,Ky=[0,1,2,3];var Ly=!1,My=function(a){var b=Fy(a)||{},c=yy(a),d=sy(a),e=Ay(a);il(b[R.Tb],!!b[R.O])&&Hy(a,c,d,e)&&(Ly=!0);if(b[R.O]){var f=function(){var g={},h=wy(a);h&&(g[c]=h);if(a.g){var k=vy(a);k&&(g[d]=k)}var n=Dy(a);n&&(g[e]=n);var p=Xj("FPLC",void 0,void 0,R.I);p.length&&(g._fplc=p[0]);
+return g};Jy?fl(f,b[R.O],b[R.Ub],!!b[R.vb],Iy):fl(f,b[R.O],b[R.Ub],!!b[R.vb])}},Oy=function(a){if(!a.B(R.hb))return{};var b=yy(a),c=sy(a),d=Ay(a);gl(function(){var e;if(li("analytics_storage"))e={};else{var f={},g=(f._up="1",f[b]=a.K[R.rb],f[d]=Ey(a),f);a.g&&(g[c]=a.K[R.sb]);e=g}return e},1);if(!li("analytics_storage")&&Ny())return Gy(a,b,c,d);return{}},Ny=function(){var a=sj(m.location,
+"host"),b=sj(vj(H.referrer),"host");return a&&b?a===b||0<=a.indexOf("."+b)||0<=b.indexOf("."+a)?!0:!1:!1};var Py=function(){var a=ab(),b=a+864E5,c=20,d=5E3;return function(){var e=ab();e>=b&&(b=e+864E5,d=5E3);if(1>d)return!1;c=Math.min(c+(e-a)/1E3*5,20);a=e;if(1>c)return!1;d--;c--;return!0}};var Qy=!1;Qy=!0;var Ry=""+Ka(),Sy=!1,Ty=void 0;var Uy=function(){if(Ea(m.__uspapi)){var a="";try{m.__uspapi("getUSPData",1,function(b,c){if(c&&b){var d=b.uspString;d&&RegExp("^[\\da-zA-Z-]{1,20}$").test(d)&&(a=d)}})}catch(b){}return a}};
+var Vy=function(a,b){if(b.Ua()){var c=Uy();c&&(a.us_privacy=c);var d=Go();d&&(a.gdpr=d);var e=Eo();e&&(a.gdpr_consent=e)}},Xy=function(a,b){if(Zh()&&(a.gcs=mi(),b.Je&&(a.gcu="1"),b.Ua())){$h()&&(a.gcd=ni());var c=b.B(R.V);a.adr=void 0!==c&&!1!==c?"1":"0";b.Je&&(a.gcut=Wy[b.ug||""]);}},Yy=function(a,b,c){void 0===c&&(c={});if("object"===typeof b)for(var d in b)Yy(a+"."+d,b[d],c);else c[a]=b;return c},
+Zy=function(a){var b="https://www.google-analytics.com/g/collect",c=Sn(a.B(R.sa),"/g/collect");if(c)return c;var d=!0;li(R.D)&&li(R.I)||(d=!1);var e=!1!==a.B(R.Fa);e=!0;var f=a.Fb(R.eb,a.B(R.eb)),g=a.Fb(R.Sb,a.B(R.Sb));f&&!g&&e&&!1!==a.B(R.nc)&&vq()&&d&&(b="https://analytics.google.com/g/collect");return b},$y=!1;$y=!0;
+var az={},Wy=(az[R.D]="1",az[R.I]="2",az),bz={};bz[R.hi]="tid";bz[R.rb]="cid";bz[R.ub]="ul";bz[R.se]="_fid";bz[R.hg]="tt";bz[R.ue]="ir";var cz={};cz[R.wc]="sid";cz[R.ze]="sct";cz[R.ye]="seg";cz[R.wb]="dl";cz[R.Qa]="dr";cz[R.md]="dt";cz[R.da]="cu";cz[R.yb]="uid";var dz={};dz[R.Nf]="cc";dz[R.Of]="ci";dz[R.Pf]="cm";dz[R.Qf]="cn";dz[R.Rf]="cs";dz[R.Sf]="ck";var ez=function(a,b,
+c){function d(z,A){if(void 0!==A&&!R.ii.hasOwnProperty(z)){null===A&&(A="");var C;if("_"===z.charAt(0)){e[z]=Ef(A,300)}else if(bz[z])C=bz[z],e[C]=Ef(A,300);else if(cz[z])C=cz[z],g[C]=Ef(A,300);else if(!t(z,A)){r(z,A)}}}var e={},f={},g={};e.v="2";e.tid=a.s;e.gtm=$n();e._p=py();a.Oe&&(e.sr=a.Oe);a.Ie&&(e._z=a.Ie);c&&(e.em=c);a.ob&&(e._gaz=1);Xy(e,a);Vy(e,a);a.yg&&(e.gtm_up="1");if($y){var h=lb($i(a.o,R.X,1),".");h&&(e.gdid=h)}f.en=Ef(a.eventName,40);a.td&&(f._fv=a.xg?2:1);a.vg&&(f._nsi=1);
+a.F&&(f._ss=a.zg?2:1);a.sd&&(f._c=1);0<a.Xb&&(f._et=a.Xb);if(a.Ke){var k=a.B(R.aa);if(Ia(k))for(var n=0;n<k.length&&200>n;n++)f["pr"+(n+1)]=Jf(k[n])}a.He&&(f._eu=a.He);if($y){var p=lb($i(a.o,R.X,2),".");p&&(f.edid=p)}for(var r=function(z,A){z=Ef(z,40);var C="ep."+z,E="epn."+z;z=Ha(A)?E:C;var D=Ha(A)?C:E;f.hasOwnProperty(D)&&delete f[D];f[z]=Ef(A,100)},t=function(z,A){var C=z.split(".");if(z===R.Aa&&"object"!==typeof A)return r(z,A),!0;if(C[0]===R.Aa){if((1<C.length||"object"===typeof A)&&a.Ua()){var E=
+Yy(z,A);Oa(E,function(D,F){return void r(D,F)})}return!0}return!1},u=0;u<R.jg.length;++u){var q=R.jg[u];d(q,a.B(q))}a.Ke&&d(R.da,a.B(R.da));Oa(a.Bi,d);Oa(a.K,d);var y=a.B(R.Ra)||{};
+!1!==a.B(R.Fa)&&uq()||(y._npa="1");Oa(y,function(z,A){if(void 0!==A&&(null===A&&(A=""),b[z]!==A)){if(z!==R.yb||g.uid){var C=(Ha(A)?"upn.":"up.")+Ef(z,24);f[C]=Ef(A,36)}else g.uid=Ef(A,36);b[z]=A}});var x=!1;return Lf.call(this,{Wa:e,Ib:g,K:f},Zy(a),a.Ua(),x)||this};la(ez,Lf);
+
+var fz=function(a,b){return a.replace(/\$\{([^\}]+)\}/g,function(c,d){return b[d]||c})},gz=function(a){var b=a.search;return a.protocol+"//"+a.hostname+a.pathname+(b?b+"&richsstsse":"?richsstsse")},hz=function(a){var b={},c="",d=a.pathname.indexOf("/g/collect");0<=d&&(c=a.pathname.substring(0,d));b.transport_url=a.protocol+"//"+a.hostname+c;return b},iz=function(a,b){var c=new m.XMLHttpRequest;c.withCredentials=!0;var d=b?"POST":"GET",e="",f=0,
+g=vj(a),h=hz(g),k=gz(g);c.onprogress=function(n){if(200===c.status){e+=c.responseText.substring(f);f=n.loaded;for(var p=fz(e,h),r=p.indexOf("\n\n");-1!==r;){var t;a:{var u=ba(p.substring(0,r).split("\n")),q=u.next().value,v=u.next().value;if(q.startsWith("event: message")&&v.startsWith("data: "))try{t=JSON.parse(v.substring(v.indexOf(":")+1));break a}catch(N){}t=void 0}if(t){var w=t.send_pixel||[];if(Array.isArray(w))for(var y=0;y<w.length;y++){var x=w[y],z=ao('',
+0);if(1===z){var A=Math.floor(2*Math.random())+1,C,E=x,D=A,F=0<E.indexOf("?")?"&":"?";C=""+E+F+"gtmexpsb="+D;2===A?nc(C):ec(C)}else 2===z?nc(x):ec(x)}}p=p.substring(r+2);r=p.indexOf("\n\n")}e=p}};c.open(d,k);c.send(b);};
+var mz=function(a,b,c,d){var e=a+"?"+b;jz&&(d=!(0===e.indexOf("https://www.google-analytics.com/g/collect")||0===e.indexOf("https://analytics.google.com/g/collect")));kz&&d&&!ay?iz(e,c):lz(a,b,c)},nz=function(a){return a&&0===a.indexOf("google.")&&"google.com"!=a?"https://www.%/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&".replace("%",a):void 0},kz=!1;kz=!0;var jz=!1;var oz=function(){this.C=1;this.F={};this.g=new Mf;this.o=-1};oz.prototype.s=function(a,b){var c=this,d;try{d=new ez(a,this.F,b)}catch(n){a.abort()}var e=cy(a);e&&this.g.C(d)||this.flush();if(e&&this.g.add(d)){if(0>this.o){var f=m,g=f.setTimeout,h;a.Ua()?pz?(pz=!1,h=qz):h=rz:h=5E3;this.o=g.call(f,function(){return c.flush()},h)}}else{var k=Uf(d,this.C++);mz(d.o,k.tf,k.body,d.C);sz(d,a.Fe,a.ob,String(a.Fb(R.kd,a.B(R.kd))))}};
+oz.prototype.add=function(a){a.Le?this.N(a):this.s(a)};oz.prototype.flush=function(){if(this.g.events.length){var a=Vf(this.g,this.C++);mz(this.g.g,a.tf,a.body,this.g.o);this.g=new Mf;0<=this.o&&(m.clearTimeout(this.o),this.o=-1)}};oz.prototype.N=function(a){var b=this,c=a.Rg();c?Ni(c,function(d){b.s(a,d)}):this.s(a)};var sz=function(a,b,c,d){function e(h){f.push(h+"="+encodeURIComponent(""+a.Wa[h]))}if(b||c){var f=[];e("tid");e("cid");e("gtm");f.push("aip=1");a.Ib.uid&&f.push("uid="+encodeURIComponent(""+
+a.Ib.uid));b&&(lz("https://stats.g.doubleclick.net/g/collect","v=2&"+f.join("&")),fi("https://stats.g.doubleclick.net/g/collect?v=2&"+f.join("&")));if(c){f.push("z="+Ka());var g=nz(d);g&&ec(g+f.join("&"))}}},lz=function(a,b,c){var d=a+"?"+b;c?Wb.sendBeacon&&Wb.sendBeacon(d,c):nc(d)},qz=ao('',500),rz=ao('',5E3),pz=!0;var tz=window,uz=document,vz=function(a){var b=tz._gaUserPrefs;if(b&&b.ioo&&b.ioo()||a&&!0===tz["ga-disable-"+a])return!0;try{var c=tz.external;if(c&&c._gaUserPrefs&&"oo"==c._gaUserPrefs)return!0}catch(f){}for(var d=Tj("AMP_TOKEN",String(uz.cookie),!0),e=0;e<d.length;e++)if("$OPT_OUT"==d[e])return!0;return uz.getElementById("__gaOptOutExtension")?!0:!1};var wz={};
+var xz=function(a,b){var c=R.D;li(c)||pi(function(){b.Je=!0;b.ug=c;a.Ag(b)},c)};wz.ji="";var yz=function(a,b){this.ob=a;this.Xb=b;this.Na=new oz;this.o=void 0;this.F=new ny;this.g=this.C=this.s=void 0;this.N=!1};l=yz.prototype;l.Hj=function(a,b,c){var d=this,e=!1;if(c.eventModel[R.Wb]){e=!0;if("_"===a.charAt(0))return;a!==R.za&&a!==R.Oa&&fy(a)&&Ug(58);zz(c)}var f=new $x(this.ob,a,b,c,this.Xb,e),g=[R.I],h=!1;h=f.Ua();
+(f.Fb(R.eb,f.B(R.eb))||h)&&g.push(R.D);qi(function(){d.Ij(f)},g)};l.Ij=function(a){this.g=a;try{vz(a.s)&&(Ug(28),a.abort());0<=wz.ji.replace(/\s+/g,"").split(",").indexOf(a.eventName)&&(Ug(33),a.abort());var b=a.Md();b&&b.blacklisted&&(Ug(34),a.abort());var c=H.location.protocol;"http:"!=c&&"https:"!=c&&(Ug(29),a.abort());Wb&&"preview"==Wb.loadPurpose&&(Ug(30),a.abort());var d=Vg.grl;d||(d=Py(),Vg.grl=d);d()||(Ug(35),a.abort());this.oi(a);this.F.Zj(a);var g=this.gh,h;b:{if(!a.B(R.hb)||li(R.I)||1===a.Na)break b;a.yg=!0;}a.eventName===R.za?(a.B(R.hb)&&Gl(["aw","dc"]),My(a),h=Oy(a)):h={};g.call(this,h);a.eventName==
+R.za&&(a.Ji&&0<bj(a.o).length&&(Ug(68),1<Vg.configCount&&Ug(69)),a.B(R.Vb)||a.abort(),a.o.eventModel[R.X]&&(a.o.containerConfig[R.X]=a.o.eventModel[R.X],a.o.eventModel[R.X]=void 0),a.eventName=R.mc);var k=this.o,n=this.s,p=this.C,r=this.F,t=Dy(a);t||(t=p);var u=Sa(a.B(R.vc)),q;q=Sa(a.B(R.od));var v;a:{if(t){var w=t.split(".");if(!(5>w.length||6<w.length)){v={sessionId:w[0],Af:Number(w[1]),
+Td:!!Number(w[2]),lf:Number(w[3]),Gb:Number(w[4]||0),Oc:"1"===w[5]};break a}}v=void 0}v&&v.Gb&&(a.Gb=Math.max(0,v.Gb-Math.max(0,a.C-v.lf)));var y=!1;v||(y=a.td=!0,v={sessionId:String(a.C),Af:1,Td:!1,lf:a.C,Oc:!1});a.C>v.lf+60*u&&(y=!0,v.sessionId=String(a.C),v.Af++,v.Td=!1);if(y)a.F=!0,r.lj(a);else if(r.fj()>q||a.eventName==R.mc)v.Td=!0;
+a.Ia(R.wc,v.sessionId);a.Ia(R.ze,v.Af);a.Ia(R.ye,v.Td?1:0);var x=a.B(R.rb),z=a.Na;x||(x=wy(a),z=3);x||(x=k,z=4);if(!x){var A=li(R.I),C=oy();x=!C.from_cookie||A?C.vid:void 0;z=5}x?x=""+x:(a.td=a.vg=!0,x=jk(),z=6);a.lh(x,z);a:{}var F=
+"",N=H.location;if(N){var M=N.pathname||"";"/"!=M.charAt(0)&&(M="/"+M);F=N.protocol+"//"+N.hostname+M+N.search}a.Ia(R.wb,F);var P;a:{var O=Xj("_opt_expid",void 0,void 0,R.I)[0];if(O){var K=decodeURIComponent(O).split("$");if(3===K.length){P=K[2];break a}}if(void 0!==Vg.ga4_referrer_override)P=Vg.ga4_referrer_override;else{var L=oh("gtm.gtagReferrer."+a.s);P=L?""+L:H.referrer}}var T=P;T&&a.Ia(R.Qa,T);a.Ia(R.md,H.title);a.Ia(R.ub,(Wb.language||"").toLowerCase());var Z=m.screen,ia=Z?Z.width:0,Da=Z?Z.height:
+0;a.Oe=ia+"x"+Da;var Ba=!1!==a.B(R.Fa);Ba=!0;if(Ba&&!1!==a.B(R.nc)&&vq()&&li(R.D)){var U=a.Fb(R.eb,a.B(R.eb)),ka=a.Fb(R.Sb,a.B(R.Sb));a.Aj()&&(a.Fe=!!U);U&&!ka&&0===a.Gb&&(a.Gb=60,a.ob=!0)}Az(a);a.Ke=R.kg.hasOwnProperty(a.eventName);for(var Fa=a.B(R.ve)||[],Qa=0;Qa<Fa.length;Qa++){var jb=Fa[Qa];if(jb.rule_result){a.Ia(R.hg,jb.traffic_type);dy(3);break}}
+if(a.B(R.sa)){var Ya=Fy(a)||{},Fe=il(Ya[R.Tb],!!Ya[R.O])?al(!0)._fplc:void 0;a.K._fplc=Fe||(0<Xj("FPLC",void 0,void 0,R.I).length?void 0:"0")}if(void 0===a.B(R.ue)){var ic=a.B(R.nd),Ge,Qd;a:{if(Ly){var He=Fy(a)||{};if(He&&He[R.O])for(var Rc=tj(vj(a.B(R.Qa)),"host",!0),Rd=He[R.O],md=0;md<Rd.length;md++)if(Rd[md]instanceof RegExp){if(Rd[md].test(Rc)){Qd=!0;break a}}else if(0<=Rc.indexOf(Rd[md])){Qd=!0;break a}}Qd=!1}var nd;if(!(nd=Qd))if(Qy)nd=
+!1;else{var Sd=tj(vj(a.B(R.Qa)),"host",!0),Td;var Sc=String(a.B(R.ia));if("none"!==Sc)if("auto"!==Sc)Td=Sc;else{if(!Sy){for(var Of=String(a.B(R.ab)),Ud=dk(),jc=0;jc<Ud.length;jc++)if("none"!==Ud[jc]){var Pf=String(a.B(R.ra))+"_ga_autodomain";if(0===gk(Pf,Ry,{Ka:R.I,domain:Ud[jc],path:Of})){gk(Pf,void 0,{Ka:R.I,domain:Ud[jc],path:Of});Ty=Ud[jc];break}}Sy=!0}Td=Ty}else Td=void 0;var Lh=Td;nd=Lh?0<=Sd.indexOf(Lh):!1}if(!(Ge=nd)){var xa;if(xa=ic)a:{for(var oa=ic.include_conditions||[],Za=0;Za<oa.length;Za++)if(oa[Za].test(a.B(R.Qa))){xa=
+!0;break a}xa=!1}Ge=xa}Ge&&(a.Ia(R.ue,1),dy(4))}if(a.eventName==R.Oa){var Vd=a.B(R.Pa);a.B(R.cb)(a.B(Vd));a.abort()}if(a.K[R.Ad])delete a.K[R.Ad];else{var Dc=a.B(R.me);if(Dc){for(var Jb=Dc.edit_rules||[],Qb=0;Qb<Jb.length;Qb++)a:{var Ua=a,ob=Jb[Qb];if(ky(Ua,ob)){if(ob.new_event_name){var W="string"===typeof ob.new_event_name?String(ob.new_event_name):hy(Ua.eventName,Ua.K,ob.new_event_name);if(fy(W))break a;Ua.eventName=String(W)}iy(Ua.eventName,Ua.K,ob);if(ly){Ua.K[R.Ad]=!0;var Ie=Ua.eventName,Je=
+Ua.K,Ma=Ua.s;qr().insert("event",[Je,Ie],Ma);dy(2);Ua.abort()}else dy(2)}}for(var Ke=Dc.synthesis_rules||[],od=0;od<Ke.length;od++){var pd=a,Wd=Ke[od];if(ky(pd,Wd)){var qd=Wd.new_event_name;if(!fy(qd)){var Le=Wd.merge_source_event_params?Gc(pd.K):{};Le[R.Ad]=!0;iy(qd,Le,Wd);var Xd=qd,Yd=Le,Qf=pd.s;qr().insert("event",[Yd,Xd],Qf);dy(1)}}}}}var Me=a.K[R.Ae];if(Ia(Me))for(var Ab=0;Ab<Me.length;Ab++)dy(Me[Ab]);var fb=Tg("GA4_EVENT");fb&&(a.He=fb);var Xa=this.gh,Ra=this.o,Kb=this.s,Zd;var Tc=Ey(a);Tc?
+(Cy(Tc,a)||(Ug(25),a.abort()),Zd=Tc):Zd=void 0;var Rf=Zd,Mh;var rd=a.K[R.rb];Ra&&rd===Ra?Mh=rd:rd?(rd=""+rd,zy(rd,a)||(Ug(31),a.abort()),qy(rd,li(R.I)),Mh=rd):(Ug(32),a.abort(),Mh="");var Hz=Mh,Sf;a:{Sf=void 0}Xa.call(this,{clientId:Hz,Mg:Sf,kh:Rf});this.Yj();
+a.Ua()&&("page_view"===a.eventName||a.sd)&&xz(this,a);this.F.xf();this.Ag(a);a.o.onSuccess()}catch(Mz){a.o.onFailure()}delete Rg.GA4_EVENT};l.Ag=function(a){this.Na.add(a)};l.gh=function(a){var b=a.clientId,c=a.Mg,d=a.kh;b&&d&&(this.o=b,this.s=c,this.C=d)};l.flush=function(){this.Na.flush()};l.Yj=function(){var a=this;if(!this.N){var b=li(R.I);oi([R.I],function(){var c=li(R.I);if(b^c&&a.g&&a.C&&a.o){var d=a.o;if(c){var e=wy(a.g);e?(a.o=e,a.C=Dy(a.g),
+a.g.g&&(a.s=vy(a.g))):(zy(a.o,a.g),Cy(a.C,a.g),qy(a.o,!0),a.g.g&&a.s&&ty(a.s,a.g));}else{a.C=void 0;a.o=void 0;a.s=void 0;}b=c}});this.N=!0}};l.oi=function(a){a.eventName!==R.Oa&&this.F.ni(a)};var Az=function(a){var b=function(c){return!!c&&c.conversion};
+a.sd=b(a.Md());a.td&&(a.xg=b(a.Md("first_visit")));a.F&&(a.zg=b(a.Md("session_start")))};function zz(a){delete a.eventModel[R.Wb];Bz(a.eventModel)}var Bz=function(a){Oa(a,function(c){"_"===c.charAt(0)&&delete a[c]});var b=a[R.Ra]||{};Oa(b,function(c){"_"===c.charAt(0)&&delete b[c]})};var Cz=function(a){if("prerender"==H.visibilityState)return!1;a();return!0},Dz=function(a){if(!Cz(a)){var b=!1,c=function(){!b&&Cz(a)&&(b=!0,gc(H,"visibilitychange",c),Ug(55))};fc(H,"visibilitychange",c);Ug(54)}};var Ez=function(a,b,c){tr(b,c,a)},Fz=function(a,b,c){tr(b,c,a,!0)},Iz=function(a,b){var c=new yz(a,b);Dz(function(){Gz(a,c)});};
+function Gz(a,b){var c=b.F;sr(a,function(d,e,f,g){b.Hj(e,f,g)});c.Nj(function(){qr().flush();1E3<=c.Ld()&&Wb.sendBeacon&&Ez(a,R.be,{});by();b.flush();c.hh(function(){ay=!1;ay=!1;c.hh(void 0)})});}var Y={h:{}};
+
+
+Y.h.ehl=["google"],function(){function a(k){return k.target&&k.target.location&&k.target.location.href?k.target.location.href:ft()}function b(k,n){fc(k,"hashchange",function(p){var r=a(p);n({source:"hashchange",state:null,url:ht(r),R:gt(r)})})}function c(k,n){fc(k,"popstate",function(p){var r=a(p);n({source:"popstate",state:p.state,url:ht(r),R:gt(r)})})}function d(k,n,p){var r=n.history,t=r[k];if(Ea(t))try{r[k]=function(u,q,v){t.apply(r,[].slice.call(arguments,0));p({source:k,state:u,url:ht(ft()),
+R:gt(ft())})}}catch(u){}}function e(){var k={source:null,state:V("history").state||null,url:ht(ft()),R:gt(ft())};return function(n,p){var r=k,t={};t[r.source]=!0;t[n.source]=!0;if(!t.popstate||!t.hashchange||r.R!=n.R){var u={event:"gtm.historyChange-v2","gtm.historyChangeSource":n.source,"gtm.oldUrlFragment":k.R,"gtm.newUrlFragment":n.R,"gtm.oldHistoryState":k.state,"gtm.newHistoryState":n.state,"gtm.oldUrl":k.url,"gtm.newUrl":n.url,"gtm.triggers":p.join(",")};k=n;jt(u)}}}function f(k,n){var p=""+
+n;if(g[p])g[p].push(k);else{var r=[k];g[p]=r;var t=e(),u=-1;h.push(function(q){0<=u&&ct(u);n?u=dt(function(){t(q,r);u=-1},n):t(q,r)})}}var g={},h=[];(function(k){Y.__ehl=k;Y.__ehl.m="ehl";Y.__ehl.isVendorTemplate=!0;Y.__ehl.priorityOverride=0})(function(k){var n=V("self"),p=k.vtp_uniqueTriggerId||"0",r=k.vtp_groupEvents?Number(k.vtp_groupEventsInterval):0;0>r?r=0:isNaN(r)&&(r=1E3);if(ot("ehl")){var t=Js("ehl","reg");t?(t(p,r),
+I(k.vtp_gtmOnSuccess)):I(k.vtp_gtmOnFailure)}else{var u=function(q){for(var v=0;v<h.length;v++)h[v](q)};b(n,u);c(n,u);d("pushState",n,u);d("replaceState",n,u);f(p,r);Hs("ehl","reg",f);pt("ehl");I(k.vtp_gtmOnSuccess)}})}();
+Y.h.sdl=["google"],function(){function a(){return!!(Object.keys(k("horiz.pix")).length||Object.keys(k("horiz.pct")).length||Object.keys(k("vert.pix")).length||Object.keys(k("vert.pct")).length)}function b(x){for(var z=[],A=x.split(","),C=0;C<A.length;C++){var E=Number(A[C]);if(isNaN(E))return[];p.test(A[C])||z.push(E)}return z}function c(){var x=0,z=0;return function(){var A=hj(),C=A.height;x=Math.max(v.scrollLeft+A.width,x);z=Math.max(v.scrollTop+C,z);return{Xe:x,Ye:z}}}function d(){u=V("self");
+q=u.document;v=q.scrollingElement||q.body&&q.body.parentNode;y=c()}function e(x,z,A,C){var E=k(z),D={},F;for(F in E){D.Lb=F;if(E.hasOwnProperty(D.Lb)){var N=Number(D.Lb);x<N||(jt({event:"gtm.scrollDepth","gtm.scrollThreshold":N,"gtm.scrollUnits":A.toLowerCase(),"gtm.scrollDirection":C,"gtm.triggers":E[D.Lb].join(",")}),Is("sdl",z,function(M){return function(P){delete P[M.Lb];return P}}(D),{}))}D={Lb:D.Lb}}}function f(){var x=y(),z=x.Xe,A=x.Ye,C=z/v.scrollWidth*100,E=A/v.scrollHeight*100;e(z,"horiz.pix",
+r.wd,t.lg);e(C,"horiz.pct",r.vd,t.lg);e(A,"vert.pix",r.wd,t.wg);e(E,"vert.pct",r.vd,t.wg);Hs("sdl","pending",!1)}function g(){var x=250,z=!1;q.scrollingElement&&q.documentElement&&u.addEventListener&&(x=50,z=!0);var A=0,C=!1,E=function(){C?A=dt(E,x):(A=0,f(),ot("sdl")&&!a()&&(gc(u,"scroll",D),gc(u,"resize",D),Hs("sdl","init",!1)));C=!1},D=function(){z&&y();A?C=!0:(A=dt(E,x),Hs("sdl","pending",!0))};return D}function h(x,z,A){if(z){var C=b(String(x));Is("sdl",A,function(E){for(var D=0;D<C.length;D++){var F=
+String(C[D]);E.hasOwnProperty(F)||(E[F]=[]);E[F].push(z)}return E},{})}}function k(x){return Js("sdl",x,{})}function n(x){I(x.vtp_gtmOnSuccess);var z=x.vtp_uniqueTriggerId,A=x.vtp_horizontalThresholdsPixels,C=x.vtp_horizontalThresholdsPercent,E=x.vtp_verticalThresholdUnits,D=x.vtp_verticalThresholdsPixels,F=x.vtp_verticalThresholdsPercent;switch(x.vtp_horizontalThresholdUnits){case r.wd:h(A,z,"horiz.pix");break;case r.vd:h(C,z,"horiz.pct")}switch(E){case r.wd:h(D,z,"vert.pix");break;case r.vd:h(F,
+z,"vert.pct")}ot("sdl")?Js("sdl","pending")||(w||(d(),w=!0),I(function(){return f()})):(d(),w=!0,v&&(pt("sdl"),Hs("sdl","pending",!0),I(function(){f();if(a()){var N=g();fc(u,"scroll",N);fc(u,"resize",N)}else Hs("sdl","init",!1)})))}var p=/^\s*$/,r={vd:"PERCENT",wd:"PIXELS"},t={wg:"vertical",lg:"horizontal"},u,q,v,w=!1,y;(function(x){Y.__sdl=x;Y.__sdl.m="sdl";Y.__sdl.isVendorTemplate=!0;Y.__sdl.priorityOverride=0})(function(x){x.vtp_triggerStartOption?n(x):Wr(function(){n(x)})})}();
+
+
+
+Y.h.read_container_data=["google"],function(){(function(a){Y.__read_container_data=a;Y.__read_container_data.m="read_container_data";Y.__read_container_data.isVendorTemplate=!0;Y.__read_container_data.priorityOverride=0})(function(){return{assert:function(){},P:function(){return{}}}})}();Y.h.c=["google"],function(){(function(a){Y.__c=a;Y.__c.m="c";Y.__c.isVendorTemplate=!0;Y.__c.priorityOverride=0})(function(a){rt(a.vtp_value,"c",a.vtp_gtmEventId);return a.vtp_value})}();
+Y.h.e=["google"],function(){(function(a){Y.__e=a;Y.__e.m="e";Y.__e.isVendorTemplate=!0;Y.__e.priorityOverride=0})(function(a){var b=String(vh(a.vtp_gtmEventId,"event"));a.vtp_gtmCachedValues&&(b=String(a.vtp_gtmCachedValues.event));return b})}();
+Y.h.u=["google"],function(){var a=function(b){return{toString:function(){return b}}};(function(b){Y.__u=b;Y.__u.m="u";Y.__u.isVendorTemplate=!0;Y.__u.priorityOverride=0})(function(b){var c;c=(c=b.vtp_customUrlSource?b.vtp_customUrlSource:it("gtm.url",1))||ft();var d=b[a("vtp_component")];if(!d||"URL"==d)return ht(String(c));var e=vj(String(c)),f;if("QUERY"===d)a:{var g=b[a("vtp_multiQueryKeys").toString()],h=b[a("vtp_queryKey").toString()]||"",k=b[a("vtp_ignoreEmptyQueryParam").toString()],n;g?Ia(h)?
+n=h:n=String(h).replace(/\s+/g,"").split(","):n=[String(h)];for(var p=0;p<n.length;p++){var r=tj(e,"QUERY",void 0,void 0,n[p]);if(void 0!=r&&(!k||""!==r)){f=r;break a}}f=void 0}else f=tj(e,d,"HOST"==d?b[a("vtp_stripWww")]:void 0,"PATH"==d?b[a("vtp_defaultPages")]:void 0,void 0);return f})}();
+Y.h.v=["google"],function(){(function(a){Y.__v=a;Y.__v.m="v";Y.__v.isVendorTemplate=!0;Y.__v.priorityOverride=0})(function(a){var b=a.vtp_name;if(!b||!b.replace)return!1;var c=it(b.replace(/\\\./g,"."),a.vtp_dataLayerVersion||1),d=void 0!==c?c:a.vtp_defaultValue;rt(d,"v",a.vtp_gtmEventId);return d})}();
+
+Y.h.ytl=["google"],function(){function a(){var q=Math.round(1E9*Math.random())+"";return H.getElementById(q)?a():q}function b(q,v){if(!q)return!1;for(var w=0;w<p.length;w++)if(0<=q.indexOf("//"+p[w]+"/"+v))return!0;return!1}function c(q,v){var w=q.getAttribute("src");if(b(w,"embed/")){if(0<w.indexOf("enablejsapi=1"))return!0;if(v){var y=q.setAttribute,x;var z=-1!==w.indexOf("?")?"&":"?";if(-1<w.indexOf("origin="))x=w+z+"enablejsapi=1";else{if(!t){var A=V("document");t=A.location.protocol+"//"+A.location.hostname;
+A.location.port&&(t+=":"+A.location.port)}x=w+z+"enablejsapi=1&origin="+encodeURIComponent(t)}y.call(q,"src",x);return!0}}return!1}function d(q,v){if(!q.getAttribute("data-gtm-yt-inspected-"+v.Cf)&&(q.setAttribute("data-gtm-yt-inspected-"+v.Cf,"true"),c(q,v.Ic))){q.id||(q.id=a());var w=V("YT"),y=w.get(q.id);y||(y=new w.Player(q.id));var x=f(y,v),z={},A;for(A in x)z.kc=A,x.hasOwnProperty(z.kc)&&y.addEventListener(z.kc,function(C){return function(E){return x[C.kc](E.data)}}(z)),z={kc:z.kc}}}function e(q){I(function(){function v(){for(var y=
+w.getElementsByTagName("iframe"),x=y.length,z=0;z<x;z++)d(y[z],q)}var w=V("document");v();Rs(v)})}function f(q,v){var w,y;function x(){P=bt(function(){return{url:L,title:T,Ze:K,Jg:q.getCurrentTime(),playbackRate:Z}},v.Cf,q.getIframe());K=0;T=L="";Z=1;return z}function z(U){switch(U){case r.PLAYING:K=Math.round(q.getDuration());L=q.getVideoUrl();if(q.getVideoData){var ka=q.getVideoData();T=ka?ka.title:""}Z=q.getPlaybackRate();v.Te?jt(P.createEvent("start")):P.Zb();O=k(v.vf,v.uf,q.getDuration());return A(U);
+default:return z}}function A(){ia=q.getCurrentTime();Da=et().getTime();P.jh();M();return C}function C(U){var ka;switch(U){case r.ENDED:return D(U);case r.PAUSED:ka="pause";case r.BUFFERING:var Fa=q.getCurrentTime()-ia;ka=1<Math.abs((et().getTime()-Da)/1E3*Z-Fa)?"seek":ka||"buffering";q.getCurrentTime()&&(v.Se?jt(P.createEvent(ka)):P.Zb());N();return E;case r.UNSTARTED:return x(U);default:return C}}function E(U){switch(U){case r.ENDED:return D(U);case r.PLAYING:return A(U);case r.UNSTARTED:return x(U);
+default:return E}}function D(){for(;y;){var U=w;ct(y);U()}v.Re&&jt(P.createEvent("complete",1));return x(r.UNSTARTED)}function F(){}function N(){y&&(ct(y),y=0,w=F)}function M(){if(O.length&&0!==Z){var U=-1,ka;do{ka=O[0];if(ka.ca>q.getDuration())return;U=(ka.ca-q.getCurrentTime())/Z;if(0>U&&(O.shift(),0===O.length))return}while(0>U);w=function(){y=0;w=F;0<O.length&&O[0].ca===ka.ca&&(O.shift(),jt(P.createEvent("progress",ka.Rc,ka.Uc)));M()};y=dt(w,1E3*U)}}var P,O=[],K,L,T,Z,ia,Da,Ba=x(r.UNSTARTED);
+y=0;w=F;return{onStateChange:function(U){Ba=Ba(U)},onPlaybackRateChange:function(U){ia=q.getCurrentTime();Da=et().getTime();P.Zb();Z=U;N();M()}}}function g(q){for(var v=q.split(","),w=v.length,y=[],x=0;x<w;x++){var z=parseInt(v[x],10);isNaN(z)||100<z||0>z||y.push(z/100)}y.sort(function(A,C){return A-C});return y}function h(q){for(var v=q.split(","),w=v.length,y=[],x=0;x<w;x++){var z=parseInt(v[x],10);isNaN(z)||0>z||y.push(z)}y.sort(function(A,C){return A-C});return y}function k(q,v,w){var y=q.map(function(A){return{ca:A,
+Uc:A,Rc:void 0}});if(!v.length)return y;var x=v.map(function(A){return{ca:A*w,Uc:void 0,Rc:A}});if(!y.length)return x;var z=y.concat(x);z.sort(function(A,C){return A.ca-C.ca});return z}function n(q){var v=!!q.vtp_captureStart,w=!!q.vtp_captureComplete,y=!!q.vtp_capturePause,x=g(q.vtp_progressThresholdsPercent+""),z=h(q.vtp_progressThresholdsTimeInSeconds+""),A=!!q.vtp_fixMissingApi;if(v||w||y||x.length||z.length){var C={Te:v,Re:w,Se:y,uf:x,vf:z,Ic:A,Cf:void 0===q.vtp_uniqueTriggerId?"":q.vtp_uniqueTriggerId},
+E=V("YT"),D=function(){e(C)};I(q.vtp_gtmOnSuccess);if(E)E.ready&&E.ready(D);else{var F=V("onYouTubeIframeAPIReady");kt("onYouTubeIframeAPIReady",function(){F&&F();D()});I(function(){for(var N=V("document"),M=N.getElementsByTagName("script"),P=M.length,O=0;O<P;O++){var K=M[O].getAttribute("src");if(b(K,"iframe_api")||b(K,"player_api"))return}for(var L=N.getElementsByTagName("iframe"),T=L.length,Z=0;Z<T;Z++)if(!u&&c(L[Z],C.Ic)){S("https://www.youtube.com/iframe_api");u=!0;break}})}}else I(q.vtp_gtmOnSuccess)}
+var p=["www.youtube.com","www.youtube-nocookie.com"],r={UNSTARTED:-1,ENDED:0,PLAYING:1,PAUSED:2,BUFFERING:3,CUED:5},t,u=!1;(function(q){Y.__ytl=q;Y.__ytl.m="ytl";Y.__ytl.isVendorTemplate=!0;Y.__ytl.priorityOverride=0})(function(q){q.vtp_triggerStartOption?n(q):im(function(){n(q)})})}();
+
+Y.h.aev=["google"],function(){function a(u,q,v){var w=u||vh(q,"gtm");if(w)return w[v]}function b(u,q,v,w,y){y||(y="element");var x=q+"."+v,z;if(p.hasOwnProperty(x))z=p[x];else{var A=a(u,q,y);if(A&&(z=w(A),p[x]=z,r.push(x),35<r.length)){var C=r.shift();delete p[C]}}return z}function c(u,q,v,w){var y=a(u,q,t[v]);return void 0!==y?y:w}function d(u,q){if(!u)return!1;var v=e(ft());Ia(q)||(q=String(q||"").replace(/\s+/g,"").split(","));for(var w=[v],y=0;y<q.length;y++){var x=q[y];if(x.hasOwnProperty("is_regex"))if(x.is_regex)try{x=
+new RegExp(x.domain)}catch(A){continue}else x=x.domain;if(x instanceof RegExp){if(x.test(u))return!1}else{var z=x;if(0!=z.length){if(0<=e(u).indexOf(z))return!1;w.push(e(z))}}}return!Ow(u,w)}function e(u){n.test(u)||(u="http://"+u);return tj(vj(u),"HOST",!0)}function f(u,q,v,w){switch(u){case "SUBMIT_TEXT":return b(q,v,"FORM."+u,g,"formSubmitElement")||w;case "LENGTH":var y=b(q,v,"FORM."+u,h);return void 0===y?w:y;case "INTERACTED_FIELD_ID":return k(q,v,"id",w);case "INTERACTED_FIELD_NAME":return k(q,
+v,"name",w);case "INTERACTED_FIELD_TYPE":return k(q,v,"type",w);case "INTERACTED_FIELD_POSITION":var x=a(q,v,"interactedFormFieldPosition");return void 0===x?w:x;case "INTERACT_SEQUENCE_NUMBER":var z=a(q,v,"interactSequenceNumber");return void 0===z?w:z;default:return w}}function g(u){switch(u.tagName.toLowerCase()){case "input":return hc(u,"value");case "button":return kc(u);default:return null}}function h(u){if("form"===u.tagName.toLowerCase()&&u.elements){for(var q=0,v=0;v<u.elements.length;v++)Ms(u.elements[v])&&
+q++;return q}}function k(u,q,v,w){var y=a(u,q,"interactedFormField");return y&&hc(y,v)||w}var n=/^https?:\/\//i,p={},r=[],t={ATTRIBUTE:"elementAttribute",CLASSES:"elementClasses",ELEMENT:"element",ID:"elementId",HISTORY_CHANGE_SOURCE:"historyChangeSource",HISTORY_NEW_STATE:"newHistoryState",HISTORY_NEW_URL_FRAGMENT:"newUrlFragment",HISTORY_OLD_STATE:"oldHistoryState",HISTORY_OLD_URL_FRAGMENT:"oldUrlFragment",TARGET:"elementTarget"};(function(u){Y.__aev=u;Y.__aev.m="aev";Y.__aev.isVendorTemplate=!0;
+Y.__aev.priorityOverride=0})(function(u){var q=u.vtp_gtmEventId,v=u.vtp_defaultValue,w=u.vtp_varType,y;u.vtp_gtmCachedValues&&(y=u.vtp_gtmCachedValues.gtm);switch(w){case "TAG_NAME":var x=a(y,q,"element");return x&&x.tagName||v;case "TEXT":return b(y,q,w,kc)||v;case "URL":var z;a:{var A=String(a(y,q,"elementUrl")||v||""),C=vj(A),E=String(u.vtp_component||"URL");switch(E){case "URL":z=A;break a;
+case "IS_OUTBOUND":z=d(A,u.vtp_affiliatedDomains);break a;default:z=tj(C,E,u.vtp_stripWww,u.vtp_defaultPages,u.vtp_queryKey)}}return z;case "ATTRIBUTE":var D;if(void 0===u.vtp_attribute)D=c(y,q,w,v);else{var F=u.vtp_attribute,N=a(y,q,"element");D=N&&hc(N,F)||v||""}return D;case "MD":var M=u.vtp_mdValue,P=b(y,q,"MD",Ys);return M&&P?at(P,M)||v:P||v;case "FORM":return f(String(u.vtp_component||"SUBMIT_TEXT"),y,q,v);default:var O=c(y,q,w,v);rt(O,"aev",u.vtp_gtmEventId);return O}})}();
+
+Y.h.dlm=["google"],function(){(function(a){Y.__dlm=a;Y.__dlm.m="dlm";Y.__dlm.isVendorTemplate=!0;Y.__dlm.priorityOverride=0})(function(a){var b=Pw(a.vtp_userInput||[],"key","value")||{};a.vtp_synchronousWrite?Oa(b,function(c,d){rh(c,d)}):jt(b);I(a.vtp_gtmOnSuccess)})}();
+
+Y.h.gct=["google"],function(){function a(d){for(var e=[],f=0;f<d.length;f++)try{e.push(new RegExp(d[f]))}catch(g){}return e}function b(d){return d.replace(/[.*+\-?^${}()|[\]\\]/g,"\\$&")}function c(d){for(var e=[],f=0;f<d.length;f++){var g=d[f].matchValue,h;switch(d[f].matchType){case "BEGINS_WITH":h="^"+b(g);break;case "ENDS_WITH":h=b(g)+"$";break;case "EQUALS":h="^"+b(g)+"$";break;case "REGEX":h=g;break;default:h=b(g)}e.push(h)}return e}(function(d){Y.__gct=d;Y.__gct.m="gct";Y.__gct.isVendorTemplate=
+!0;Y.__gct.priorityOverride=0})(function(d){var e={};0<d.vtp_sessionDuration&&(e[R.vc]=d.vtp_sessionDuration);e[R.gd]=d.vtp_eventSettings;e[R.me]=d.vtp_dynamicEventSettings;e[R.eb]=1===d.vtp_googleSignals;e[R.kd]=d.vtp_foreignTld;e[R.Sb]=1===d.vtp_restrictDomain;e[R.ve]=d.vtp_internalTrafficResults;var f=R.ja,g=d.vtp_linker;g&&g[R.O]&&(g[R.O]=a(g[R.O]));e[f]=g;var h=R.nd,k=d.vtp_referralExclusionDefinition;k&&k.include_conditions&&(k.include_conditions=a(k.include_conditions));e[h]=k;var n=wr(d.vtp_trackingId),
+p=n.referral_exclusion_conditions;p&&(p.length&&"object"===typeof p[0]&&(p=c(p)),e[R.nd]={include_conditions:a(p)});var r=n.cross_domain_conditions;if(r){r.length&&"object"===typeof r[0]&&(r=c(r));var t={};e[R.ja]=(t[R.O]=a(r),t[R.vb]=!0,t[R.Tb]=!0,t[R.Ub]="query",t)}Iz(d.vtp_trackingId,e);I(d.vtp_gtmOnSuccess)})}();
+
+
+
+
+Y.h.get=["google"],function(){(function(a){Y.__get=a;Y.__get.m="get";Y.__get.isVendorTemplate=!0;Y.__get.priorityOverride=0})(function(a){var b=a.vtp_settings;(a.vtp_deferrable?Fz:Ez)(String(b.streamId),String(a.vtp_eventName),b.eventParameters||{});a.vtp_gtmOnSuccess()})}();
+
+
+
+
+
+
+
+
+Y.h.lcl=[],function(){function a(){var c=V("document"),d=0,e=function(f){var g=f.target;if(g&&3!==f.which&&!(f.jf||f.timeStamp&&f.timeStamp===d)){d=f.timeStamp;g=mc(g,["a","area"],100);if(!g)return f.returnValue;var h=f.defaultPrevented||!1===f.returnValue,k=Js("lcl",h?"nv.mwt":"mwt",0),n;n=h?Js("lcl","nv.ids",[]):Js("lcl","ids",[]);if(n.length){var p=Fs(g,"gtm.linkClick",n);if(b(f,g,c)&&!h&&k&&g.href){var r=!!Ja(String(oc(g,"rel")||"").split(" "),function(v){return"noreferrer"===v.toLowerCase()});
+r&&Ug(36);var t=V((oc(g,"target")||"_self").substring(1)),u=!0,q=ss(function(){var v;if(v=u&&t){var w;a:if(r){var y;try{y=new MouseEvent(f.type,{bubbles:!0})}catch(x){if(!c.createEvent){w=!1;break a}y=c.createEvent("MouseEvents");y.initEvent(f.type,!0,!0)}y.jf=!0;f.target.dispatchEvent(y);w=!0}else w=!1;v=!w}v&&(t.location.href=oc(g,"href"))},k);if(jt(p,q,k))u=!1;else return f.preventDefault&&f.preventDefault(),f.returnValue=!1}else jt(p,function(){},k||2E3);return!0}}};fc(c,"click",e,!1);fc(c,"auxclick",
+e,!1)}function b(c,d,e){if(2===c.which||c.ctrlKey||c.shiftKey||c.altKey||c.metaKey)return!1;var f=oc(d,"href"),g=f.indexOf("#"),h=oc(d,"target");if(h&&"_self"!==h&&"_parent"!==h&&"_top"!==h||0===g)return!1;if(0<g){var k=ht(f),n=ht(e.location);return k!==n}return!0}(function(c){Y.__lcl=c;Y.__lcl.m="lcl";Y.__lcl.isVendorTemplate=!0;Y.__lcl.priorityOverride=0})(function(c){var d=void 0===c.vtp_waitForTags?!0:c.vtp_waitForTags,e=void 0===c.vtp_checkValidation?!0:c.vtp_checkValidation,f=Number(c.vtp_waitForTagsTimeout);
+if(!f||0>=f)f=2E3;var g=c.vtp_uniqueTriggerId||"0";if(d){var h=function(n){return Math.max(f,n)};Is("lcl","mwt",h,0);e||Is("lcl","nv.mwt",h,0)}var k=function(n){n.push(g);return n};Is("lcl","ids",k,[]);e||Is("lcl","nv.ids",k,[]);ot("lcl")||(a(),pt("lcl"));I(c.vtp_gtmOnSuccess)})}();
+var Jz={};Jz.dataLayer=ph;Jz.callback=function(a){fh.hasOwnProperty(a)&&Ea(fh[a])&&fh[a]();delete fh[a]};Jz.bootstrap=0;Jz._spx=!1;
+function Kz(){Vg[J.J]=Jz;db(gh,Y.h);bf=qf}
+function Lz(){var a=!1;a&&qm("INIT");Nh().g(Ih.g);Vg=m.google_tag_manager=m.google_tag_manager||{};Do();
+jl.enable_gbraid_cookie_write=!0;var b=!!Vg[J.J];if(b){var c=Vg.zones;c&&c.unregisterChild(J.J);}else{for(var f=data.resource||{},g=f.macros||[],h=0;h<g.length;h++)Ue.push(g[h]);for(var k=f.tags||[],n=0;n<k.length;n++)Xe.push(k[n]);for(var p=f.predicates||[],r=0;r<p.length;r++)We.push(p[r]);for(var t=f.rules||[],u=0;u<t.length;u++){for(var q=t[u],v={},w=0;w<q.length;w++)v[q[w][0]]=Array.prototype.slice.call(q[w],1);Ve.push(v)}Ze=Y;$e=Tt;xf=new wf;var y=data.sandboxed_scripts,x=data.security_groups,
+z=data.runtime||[],A=data.runtime_lines;Hw=new me;Kw();Te=Iw();var C=Hw,E=Ew();vb(C.g,"require",E);for(var D=0;D<z.length;D++){var F=z[D];if(!Ia(F)||3>F.length){if(0===F.length)continue;break}A&&A[D]&&A[D].length&&jf(F,A[D]);Hw.execute(F)}if(void 0!==y)for(var N=["sandboxedScripts"],M=0;M<y.length;M++){var P=y[M].replace(/^_*/,"");gh[P]=N}Lw(x);Kz();ys();dm=!1;em=0;if("interactive"==H.readyState&&!H.createEventObject||"complete"==H.readyState)gm();else{fc(H,"DOMContentLoaded",gm);fc(H,"readystatechange",
+gm);if(H.createEventObject&&H.documentElement.doScroll){var O=!0;try{O=!m.frameElement}catch(ia){}O&&hm()}fc(m,"load",gm)}Tr=!1;"complete"===H.readyState?Vr():fc(m,"load",Vr);nn&&m.setInterval(gn,864E5);
+dh=(new Date).getTime();Jz.bootstrap=dh;if(a){var Z=rm("INIT");}}}
+(function(a){if(!m["__TAGGY_INSTALLED"]){var b=!1;if(H.referrer){var c=vj(H.referrer);b="cct.google"===sj(c,"host")}if(!b){var d=Xj("googTaggyReferrer");b=d.length&&d[0].length}b&&(m["__TAGGY_INSTALLED"]=!0,bc("https://cct.google/taggy/agent.js"))}var f=function(r){var t="GTM",u="GTM";t="OGT",u="GTAG";var q=m["google.tagmanager.debugui2.queue"];q||(q=[],m["google.tagmanager.debugui2.queue"]=q,bc("https://"+J.Zd+"/debug/bootstrap?id="+J.J+"&src="+u+"&cond="+r+"&gtm="+$n()));var v={messageType:"CONTAINER_STARTING",data:{scriptSource:Xb,
+containerProduct:t,debug:!1,id:J.J}};v.data.resume=function(){a()};J.Dh&&(v.data.initialPublish=!0);q.push(v)},g=void 0,h=tj(m.location,"query",!1,void 0,"gtm_debug");zs(h)&&(g=2);if(!g&&H.referrer){var k=vj(H.referrer);"tagassistant.google.com"===sj(k,"host")&&(g=3)}if(!g){var n=Xj("__TAG_ASSISTANT");n.length&&n[0].length&&(g=4)}if(!g){var p=H.documentElement.getAttribute("data-tag-assistant-present");zs(p)&&(g=5)}g&&Xb?f(g):a()})(Lz);
+
+})()

@@ -1,0 +1,1976 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin-when-crossorigin" />
+    
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>拓荒者 - 博客园</title>
+    <link id="favicon" rel="shortcut icon" href="//common.cnblogs.com/favicon.svg" type="image/svg+xml" />
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=2gvkDF6FFxGA7IN9yjbKCOKiFA_wS6nUueKoZFr98U4" />
+    <link id="MainCss" rel="stylesheet" href="/skins/anothereon001/bundle-anothereon001.min.css?v=9x2ZP2K8SSBJowZA6xv0D5FvOmlvd5g21u0NBEAEwfQ" />
+    
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/anothereon001/bundle-anothereon001-mobile.min.css?v=GzcDacyFq45b2aGsZmapzmY8adL_GxJWtSWQjXCqRZc" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/dstang2000/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/dstang2000/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/dstang2000/wlwmanifest.xml" />
+    <script>
+        var currentBlogId = 9986;
+        var currentBlogApp = 'dstang2000';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var isBlogOwner = false;
+        var skinName = 'AnotherEon001';
+        var visitorUserId = '';
+        var hasCustomScript = false;
+        try {
+            if (hasCustomScript && document.referrer && document.referrer.indexOf('baidu.com') >= 0) {
+                Object.defineProperty(document, 'referrer', { value: '' });
+                Object.defineProperty(Document.prototype, 'referrer', { get: function(){ return ''; } });
+            }
+        } catch(error) { }
+        window.codeHighlightEngine = 1;
+        window.enableCodeLineNumber = false;
+        window.codeHighlightTheme = 'cnblogs';
+    </script>
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=ipEYs_c030HmnVMZyHu9lVVwL0pUAQXcdQQNAwmBpRU"></script>
+    
+    
+    
+</head>
+<body class="skin-anothereon001 has-navbar has-bannerbar">
+    <a name="top"></a>
+        <a href="https://c.gridsumdissector.com/r/?gid=gad_545_4aplmo5c&amp;ck=1057&amp;adk=10645&amp;autorefresh=__AUTOREFRESH__" target="_blank" rel="nofollow" onclick="countClicks('ad', 'C0-火山引擎')">
+            <div class="bannerbar forpc" style="display: flex; background-color: #11225a;">
+                <img src="//common.cnblogs.com/images/banner/2021/volcengine-b0c0-1.jpg" onload="impressC0('火山引擎', 'https://i.gridsumdissector.com/v/?gscmd=impress&amp;gid=gad_545_4aplmo5c&amp;ck=1057&amp;adk=10645&amp;autorefresh=__AUTOREFRESH__&amp;ts=__TS__')" alt="" />
+                <img src="//common.cnblogs.com/images/banner/2021/volcengine-b0c0-2.jpg" alt="" />
+                <img style="margin-left: auto;" src="//common.cnblogs.com/images/banner/2021/volcengine-b0c0-3.jpg" alt="" />
+            </div>
+        </a>
+            <div id="bannerbar" class="bannerbar-mobile formobile">
+                <a href="https://c.gridsumdissector.com/r/?gid=gad_545_24h80y3t&amp;ck=1057&amp;adk=10648&amp;autorefresh=__AUTOREFRESH__" onclick="countClicks('ad', 'M2-火山引擎')" rel="nofollow">
+                    <img src="https://common.cnblogs.com/images/banner/2021/volcengine-m2.jpg" alt="" onload="impressM2('火山引擎', 'https://i.gridsumdissector.com/v/?gscmd=impress&amp;gid=gad_545_24h80y3t&amp;ck=1057&amp;adk=10648&amp;autorefresh=__AUTOREFRESH__&amp;ts=__TS__')" />
+                </a>
+            </div>
+    <div id="top_nav" class="navbar forpc">
+        <nav id="nav_main" class="navbar-main">
+            <ul id="nav_left" class="navbar-list navbar-left">
+                <li class="navbar-branding"><a href="https://www.cnblogs.com/" title="开发者的网上家园"><img src="/images/logo.svg?v=R9M0WmLAIPVydmdzE2keuvnjl-bPR7_35oHqtiBzGsM" alt="博客园Logo" /></a></li>
+                <li><a href="/" onclick="countClicks('skin-navbar-sitehome')">首页</a></li>
+                <li><a href="https://news.cnblogs.com/" onclick="countClicks('nav', 'skin-navbar-news')">新闻</a></li>
+                <li><a href="https://q.cnblogs.com/" onclick="countClicks('nav', 'skin-navbar-q')">博问</a></li>
+                <li><a id="nav_brandzone" href="https://brands.cnblogs.com/" onclick="countClicks('nav', 'skin-navbar-brands')">专区</a></li>
+                <li><a href="https://ing.cnblogs.com/" onclick="countClicks('nav', 'skin-navbar-ing')">闪存</a></li>
+                <li><a href="https://edu.cnblogs.com/" onclick="countClicks('nav', 'skin-navbar-edu')">班级</a></li>
+            </ul>
+            <ul id="nav_right" class="navbar-list navbar-right">
+                <li>
+                    <form id="zzk_search" class="navbar-search" action="https://zzk.cnblogs.com/s" method="get">
+                        <input name="w" id="zzk_search_input" placeholder="代码改变世界" type="text" tabindex="3" />
+                        <button type="submit" id="zzk_search_button">
+                            <img src="/images/aggsite/search.svg" alt="搜索" />
+                        </button>
+                    </form>
+                </li>
+                <li id="navbar_login_status" class="navbar-list">
+                    <a class="navbar-user-info navbar-blog" href="https://i.cnblogs.com/EditPosts.aspx?opt=1" alt="写随笔" title="写随笔">
+                        <img id="new_post_icon" class="navbar-icon" src="/images/aggsite/newpost.svg" alt="写随笔" />
+                    </a>
+                    <a id="navblog-myblog-icon" class="navbar-user-info navbar-blog" href="https://passport.cnblogs.com/GetBlogApplyStatus.aspx" alt="我的博客" title="我的博客">
+                        <img id="myblog_icon" class="navbar-icon" src="/images/aggsite/myblog.svg" alt="我的博客" />
+                    </a>
+                    <a class="navbar-user-info navbar-message navbar-icon-wrapper" href="https://msg.cnblogs.com/" alt="短消息" title="短消息">
+                        <img id="msg_icon" class="navbar-icon" src="/images/aggsite/message.svg?v=J0WS2P2iPgaIVgXxcAhliw4AFZIpaTWxtdoNAv9eiCA" alt="短消息" />
+                        <span id="msg_count" style="display: none"></span>
+                    </a>
+                    <div id="user_info" class="navbar-user-info dropdown">
+                        <a class="dropdown-button" href="https://home.cnblogs.com/">
+                            <img id="user_icon" class="navbar-avatar" src="/images/aggsite/avatar-default.svg" alt="用户头像" />
+                        </a>
+                        <div class="dropdown-menu">
+                            <a id="navblog-myblog-text" href="https://passport.cnblogs.com/GetBlogApplyStatus.aspx">我的博客</a>
+                            <a href="https://home.cnblogs.com/">我的园子</a>
+                            <a href="https://account.cnblogs.com/settings/account">账号设置</a>
+                            <a href="javascript:void(0)" id="navbar_lite_mode_toggle" title="简洁模式会使用简洁款皮肤显示所有博客">
+    简洁模式 <img id="navbar_lite_mode_on" src="/images/lite-mode-check.svg" class="hide" /><span id="navbar_lite_mode_spinner" class="hide">...</span>
+</a>
+                            <a href="javascript:void(0)" onclick="account.logout();">退出登录</a>
+                        </div>
+                    </div>
+                    <a class="navbar-anonymous" href="https://account.cnblogs.com/signup/">注册</a>
+                    <a class="navbar-anonymous" href="javascript:void(0);" onclick="account.login()">登录</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    
+    <div id="wrapper">
+<div id="header">
+
+<div id="top">
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/dstang2000/">拓荒者 dstang2000 <a href="http://www.dstang.com"><font size=-1 color=red>http://www.dstang.com</font></a>
+</h1>
+<div id="subtitle">KISS：Keeping things that work，Improve systems procedures styles，Start things of value，Stop things of no value </div>
+</div>
+<div id="sub"><div id="blog_stats_place_holder"><script>loadBlogStats();</script></div></div>
+
+
+
+
+</div>
+<div id="main_container">
+<div id="main_content">
+<div id="content">
+	
+
+
+
+
+
+		
+<p class="date">
+	<span>		  
+	<a href="https://www.cnblogs.com/dstang2000/archive/2010/11/02.html">2010年11月2日</a>
+	</span>
+</p>
+
+    <div class="post">
+        <h2>
+            
+
+<a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/dstang2000/archive/2010/11/02/1867406.html">
+    <span>
+        实测:xml与json速度约差4倍
+    </span>
+    
+
+
+
+</a>
+
+        </h2>
+        <div class="postbody">
+            
+
+    <div class="c_b_p_desc">
+摘要：            
+xml与json在javascript中解析并使用，速度大约相差4倍。（在IE中测试的结果）。其中主要不在于eval,与xml parse的时间差别，主要在于属性访问上的差别：xml中使用这样的方式 markers[i].getAttribute("info") 与json中使用这样的方式 var info = markers[i].info;相比， xml要慢不少。以下为测试的详情：代码Code...        <a href="https://www.cnblogs.com/dstang2000/archive/2010/11/02/1867406.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <p class="postfoot">
+            posted @ 2010-11-02 17:43
+拓荒者
+<span data-post-id="1867406" class="post-view-count">阅读(1233)</span> 
+<span data-post-id="1867406" class="post-comment-count">评论(0)</span> 
+<span data-post-id="1867406" class="post-digg-count">推荐(0)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=1867406" rel="nofollow">
+    编辑
+</a>
+
+        </p>
+    </div>
+
+
+		
+<p class="date">
+	<span>		  
+	<a href="https://www.cnblogs.com/dstang2000/archive/2005/10/08.html">2005年10月8日</a>
+	</span>
+</p>
+
+    <div class="post">
+        <h2>
+            
+
+<a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/dstang2000/archive/2005/10/08/250188.html">
+    <span>
+        使用 NDoc 对 asp.net (Web) 项目产生文档的方法
+    </span>
+    
+
+
+
+</a>
+
+        </h2>
+        <div class="postbody">
+            
+
+    <div class="c_b_p_desc">
+摘要：            
+NDoc是一个非常好的文档生成工具，现在还出了一些不错的中文版，如破宝的http://www.percyboy.com/w/ndoc/。但是由于NDoc现在的版本1.3 不支持Web项目，也不支持中文文件名，下面提出一个临时性的解决办法1. 解决不认识http://的Web项目的问题方法： （1）将.csproj文件复制一份，其中将项目类型由&#8220;Web&#8221;改为&#8220;Lo...        <a href="https://www.cnblogs.com/dstang2000/archive/2005/10/08/250188.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <p class="postfoot">
+            posted @ 2005-10-08 12:12
+拓荒者
+<span data-post-id="250188" class="post-view-count">阅读(1225)</span> 
+<span data-post-id="250188" class="post-comment-count">评论(3)</span> 
+<span data-post-id="250188" class="post-digg-count">推荐(0)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=250188" rel="nofollow">
+    编辑
+</a>
+
+        </p>
+    </div>
+
+
+		
+<p class="date">
+	<span>		  
+	<a href="https://www.cnblogs.com/dstang2000/archive/2005/03/06.html">2005年3月6日</a>
+	</span>
+</p>
+
+    <div class="post">
+        <h2>
+            
+
+<a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/dstang2000/archive/2005/03/06/113761.html">
+    <span>
+        小工具RssInIE： 在IE中点右键，可以直接查看RSS
+    </span>
+    
+
+
+
+</a>
+
+        </h2>
+        <div class="postbody">
+            
+
+    <div class="c_b_p_desc">
+摘要：            
+最近RSS越来越流行，一般都需要专用的软件，有时候，在IE中看见的只是xml文件，很不方便。 我这里做了一个小工具，作为IE的插件，使得点右键&#8220;选Rss In IE&#8221;时，可以直接查看RSS。 程序的原理是使用xslt将RSS的xml转成为链接，放到窗口左边，而右边用一个iframe来放内容。 （由于iframe使用得不太好，欢迎提出改进意见）。 下载RssInIE：RssI...        <a href="https://www.cnblogs.com/dstang2000/archive/2005/03/06/113761.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <p class="postfoot">
+            posted @ 2005-03-06 00:56
+拓荒者
+<span data-post-id="113761" class="post-view-count">阅读(1625)</span> 
+<span data-post-id="113761" class="post-comment-count">评论(5)</span> 
+<span data-post-id="113761" class="post-digg-count">推荐(0)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=113761" rel="nofollow">
+    编辑
+</a>
+
+        </p>
+    </div>
+
+
+		
+<p class="date">
+	<span>		  
+	<a href="https://www.cnblogs.com/dstang2000/archive/2005/03/05.html">2005年3月5日</a>
+	</span>
+</p>
+
+    <div class="post">
+        <h2>
+            
+
+<a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/dstang2000/archive/2005/03/05/113513.html">
+    <span>
+        分不清正数负数，是我错了，还是VS.NET错了
+    </span>
+    
+
+
+
+</a>
+
+        </h2>
+        <div class="postbody">
+            
+
+    <div class="c_b_p_desc">
+摘要：            
+三年前做的一个ASP.NET的项目（www.SurveyStar.net），一直运行好好的， 前几天，客户打电话来说，出了问题。 反复跟踪，发现是一个正数、负数的判断与ToString()的问题。 将问题简化后，源程序可表示为只有4句的程序，如下： class&#160;Test { &#160;&#160;&#160;&#160;static&#160;void&#160;Main() &#16...        <a href="https://www.cnblogs.com/dstang2000/archive/2005/03/05/113513.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <p class="postfoot">
+            posted @ 2005-03-05 14:45
+拓荒者
+<span data-post-id="113513" class="post-view-count">阅读(2701)</span> 
+<span data-post-id="113513" class="post-comment-count">评论(5)</span> 
+<span data-post-id="113513" class="post-digg-count">推荐(1)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=113513" rel="nofollow">
+    编辑
+</a>
+
+        </p>
+    </div>
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+    
+
+    </div>    
+</div>
+
+
+
+
+
+
+<script>
+    updatePostStats(
+        $(".post-view-count").map(function () { return this.dataset.postId }).get(),
+        function(id, count) { $(".post-view-count[data-post-id=" + id + "]").text("阅读(" + count + ")") },
+        function(id, count) { $(".post-comment-count[data-post-id=" + id + "]").text("评论(" + count + ")") },
+        function(id, count) { $(".post-digg-count[data-post-id=" + id + "]").text("推荐(" + count + ")") });
+</script>
+</div>
+</div>
+<div id="leftmenu">
+
+
+<h3>导航</h3>
+<ul>
+    <li>
+        <a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+
+    </li>
+    <li>
+        
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/dstang2000/">
+首页</a>
+
+    </li>
+    <li>
+        
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+
+    </li>
+    <li>
+        
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E6%8B%93%E8%8D%92%E8%80%85">
+联系</a>
+    </li>
+    <li>
+        
+<a id="blog_nav_rss" class="menu" href="javascript:void(0)" data-rss="https://www.cnblogs.com/dstang2000/rss/">
+订阅</a>
+        
+<a id="blog_nav_rss_image" href="https://www.cnblogs.com/dstang2000/rss/">
+    <img src="/skins/anothereon001/images/xml.gif" alt="订阅" />
+</a>
+    </li>
+    <li>
+        
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+
+    </li>
+</ul>
+
+
+<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+<div id="sidebar_c3"></div>
+<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+
+</div>
+</div>
+<div class="clear"></div>
+<div id="footer">
+<p id="footer">
+	Powered by: 
+	<br />
+	
+	<a href="https://www.cnblogs.com/" id="footer_site_link">博客园</a>
+	<br />
+	Copyright &copy; 2021 拓荒者
+<br /><span id="poweredby">Powered by .NET 6 on Kubernetes</span>
+
+</p>
+
+
+</div>
+</div>
+
+
+    
+
+    <input type="hidden" id="antiforgery_token" value="CfDJ8FO3GXnjClZGrNGr2Ic8Z1oIpq8uUnIhCT8WeXxizQi-oSncQD-QcAXtQ626dX5GOcb2bE1JY9GjOiu28qgn_O0eKiIPEA5WZrznFvG0p2d7uXD494jxY63RMbKg8nXLhn7aHixrpJJoEGxWDnwEKgQ" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-476124-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    var kv = getGACustom();
+    if (kv) {
+        gtag('set', kv);
+    }
+    gtag('config', 'UA-476124-1');
+    </script>
+    <script defer src="https://hm.baidu.com/hm.js?866c9be12d4a814454792b1fd0fed295"></script>
+</body>
+</html>f="https://www.cnblogs.com/rossiXYZ/p/15605349.html" target="_blank">源码解析] PyTorch 分布式(12) ----- DistributedDataParallel 之 前向传播</a></p>
+<h2 id="0x01-回顾">0x01 回顾</h2>
+<h3 id="11-前文回顾">1.1 前文回顾</h3>
+<p>前文我们已经给出了前向传播的逻辑，前向传播结束之后，我们得到了如下：</p>
+<ul>
+<li>需要计算梯度的参数已经分桶。</li>
+<li>桶已经重建完毕。</li>
+<li>前向传播已经完成。</li>
+<li>从指定的输出进行回溯，遍历autograd计算图来找到所有没有使用过的参数，并且一一标记为就绪 ready。</li>
+</ul>
+<p>这样，DDP做梯度归并的基础就有了，它知道哪些参数不需要autograd引擎操作就能直接归并（ready状态），哪些参数可以一起通信归并（分桶），<u>后续的事情主动权就在 PyTorch autograd 引擎了，是引擎在一边做反向计算，一边进行跨进程梯度规约</u>。</p>
+<h3 id="12-总体逻辑">1.2 总体逻辑</h3>
+<p>我们再给出一个后向传播的总体策略如下：</p>
+<p><strong>Backward Pass</strong>:</p>
+<ul>
+<li><code>backward()</code> 是在 loss 上直接调用，这是autograd engine 的工作，是 DDP 无法控制的，所以DDP采用了Hook来达到目的。
+<ul>
+<li>DDP 在构造时注册了 autograd hooks。</li>
+<li>Autograd 引擎进行梯度计算。</li>
+<li>当一个梯度准备好时，它在该梯度累加器上的相应 DDP 钩子将被触发。</li>
+</ul>
+</li>
+<li>在 autograd_hook 之中进行all-reduce。假设参数index是param_index，则利用param_index获取到参数，标示为ready，如果某个桶里面梯度都ready，则该桶是ready。</li>
+<li>当一个桶中的梯度都准备好时，会 在该桶上<code>Reducer</code>启动异步<code>allreduce</code>以计算所有进程的梯度平均值。</li>
+<li>如果所有桶都ready，则等待所有 all-reduce 完成。当所有桶都准备好时，<code>Reducer</code>将阻塞等待所有<code>allreduce</code>操作完成。完成此操作后，将平均梯度写入<code>param.grad</code>所有参数的字段。</li>
+<li>所有进程的梯度都会reduce，更新之后，大家的模型权重都相同。所以在向后传播完成之后，跨不同DDP进程的对应的相同参数上的 grad 字段应该是相等的。</li>
+<li>梯度被归并之后，会再传输回autograd引擎。</li>
+<li>不需要像 DP 那样每次迭代之后还要广播参数。但是 Buffers 还是需要在每次迭代由 rank 0 进程广播到其他进程之上。</li>
+</ul>
+<p>接下来我们就看看如何进行后向传播。</p>
+<h2 id="0x02-从hook开始">0x02 从Hook开始</h2>
+<p>下图来自快手的一篇论文（请参见参考1，后续应该也会对该论文项目进行分析）。图上半部分是原生autograd引擎处理方式，下面是 Horovod 和 Torch-DDP 的处理方式。从中可以看到，对于梯度归并是在后向传播过程中就会开始。</p>
+<p><img src="https://img2020.cnblogs.com/blog/1850883/202111/1850883-20211125231415168-1477987991.png" alt="" loading="lazy"></p>
+<p>具体来说就是，除了分桶，<code>Reducer</code>还在构造期间注册 autograd 钩子，每个参数一个钩子。当梯度准备好时，将在向后传递期间触发这些钩子，进行梯度规约。如果某个桶里面梯度都ready，则该桶是ready。当一个桶中的梯度都准备好时，会 在该桶上<code>Reducer</code>启动异步<code>allreduce</code>以计算所有进程的梯度平均值。所以，我们就从反向传播的入口点 Hook 开始分析。</p>
+<h3 id="21-如何注册hook">2.1 如何注册hook</h3>
+<p>我们首先看看如何注册hook，这涉及到 AutogradMeta 和 Node。</p>
+<h4 id="211-autogradmeta">2.1.1 AutogradMeta</h4>
+<p><code>AutoGradMeta</code> : 记录 <code>Variable</code> 的autograd历史信息，主要成员变量是。</p>
+<ul>
+<li><strong>grad_</strong> ：存储当前Variable实例的梯度，本身也是一个Variable。</li>
+<li><strong>grad_fn</strong> ：是个Node实例，<strong>非叶子节点才有</strong>。通过 grad_fn() 方法来访问，实际上，PyTorch中就是通过 grad_fn是否为空 来判断一个Variable是否是leaf variable。</li>
+<li><strong>grad_accumulator_</strong> ：也是Node的实例，只有叶子节点才有。
+<ul>
+<li>通过Variable的grad_accumulator()来访问。</li>
+<li>叶子节点负责对梯度进行累加，grad_accumulator_ 就是梯度累加处理函数。</li>
+<li>其对应梯度就被保存在 grad_ 变量之中。</li>
+</ul>
+</li>
+<li><strong>output_nr_</strong>：是个数字。output_nr_表明是 Node 的第几个输出，比如为 0 就 表明这个Variable是Node 的第 1 个输出。</li>
+<li>我们总结一下：
+<ul>
+<li>对于非叶子节点，grad_fn是计算梯度操作，梯度不会累积在 grad_ 之上，而是传递给计算图反向传播下一站。grad_fn 就是一个 Node。</li>
+<li>对于叶子节点，PyTorch 虚拟出了一个特殊计算操作，输出这个叶子节点，同时此虚拟计算操作也作为叶子节点的<code>grad_accumulator_</code>来累加其梯度，梯度会累积在 grad_ 之上，因此叶子节点的 <code>output_nr_</code> 必定为 0。<code>grad_accumulator_</code> 也是一个 Node，就是 AccumulateGrad。</li>
+</ul>
+</li>
+</ul>
+<p>其定义如下：</p>
+<pre><code class="language-c++">struct TORCH_API AutogradMeta : public c10::AutogradMetaInterface {
+  std::string name_;
+
+  Variable grad_;
+  std::shared_ptr&lt;Node&gt; grad_fn_;
+  std::weak_ptr&lt;Node&gt; grad_accumulator_;
+
+  // This field is used to store all the forward AD gradients
+  // associated with this AutogradMeta (and the Tensor it corresponds to)
+  std::shared_ptr&lt;ForwardGrad&gt; fw_grad_;
+
+  std::vector&lt;std::shared_ptr&lt;FunctionPreHook&gt;&gt; hooks_;
+  std::shared_ptr&lt;hooks_list&gt; cpp_hooks_list_;
+
+  // Only meaningful on leaf variables (must be false otherwise)
+  bool requires_grad_;
+  // Only meaningful on non-leaf variables (must be false otherwise)
+  bool retains_grad_;
+  bool is_view_;
+
+  // The "output number" of this variable; e.g., if this variable
+  // was the second output of a function, then output_nr == 1.
+  // We use this to make sure we can setup the backwards trace
+  // correctly when this variable is passed to another function.
+  uint32_t output_nr_;
+  mutable std::mutex mutex_;
+};
+</code></pre>
+<h4 id="212-node">2.1.2 Node</h4>
+<p>在计算图中，一个计算操作用一个节点（Node）表示，不同的 <code>Node</code>子类实现了不同操作。</p>
+<p>AutogradMeta 的 grad_fn_  和 grad_accumulator_ 都是 Node。</p>
+<p>这里针对的主要成员变量是 post_hooks_，就是在 运行梯度计算之后，会执行的 hook。</p>
+<p>add_post_hook 会往 post_hooks_ 之中添加一个 hook。</p>
+<pre><code class="language-cpp">struct TORCH_API Node : std::enable_shared_from_this&lt;Node&gt; {
+  public:
+  std::vector&lt;std::unique_ptr&lt;FunctionPreHook&gt;&gt; pre_hooks_;
+  std::vector&lt;std::unique_ptr&lt;FunctionPostHook&gt;&gt; post_hooks_;  
+  
+  uintptr_t add_post_hook(std::unique_ptr&lt;FunctionPostHook&gt;&amp;&amp; post_hook) {
+    post_hooks_.push_back(std::move(post_hook));
+    // Use the raw pointer as the unique key to identify this hook. This key
+    // can then be used in del_post_hook(key) to remove this hook.
+    return reinterpret_cast&lt;std::uintptr_t&gt;(post_hooks_.back().get());
+  }
+}
+</code></pre>
+<h4 id="213-accumulategrad">2.1.3 AccumulateGrad</h4>
+<p>AccumulateGrad 是 Node 的派生类。</p>
+<h3 id="22-构造函数">2.2 构造函数</h3>
+<p>我们回顾一下 Reducer 构造函数，其中会：</p>
+<ul>
+<li>每个张量都得到其 Variable::AutogradMeta的 grad_accumulator_，即用于累加叶子 Variable 的梯度累加器。</li>
+<li>针对每个梯度累加器都配置一个autograd_hook，这个 hook 挂在 autograd graph 之上，在 backward 时负责梯度同步。</li>
+<li>设定 gradAccToVariableMap_ 存了grad_accumulator &amp; index 的对应关系（函数指针和参数张量的对应关系），这样以后在 autograd graph 遍历寻找 unused parameters 就方便了。</li>
+<li>这些 梯度累加器 都存储于 grad_accumulators_ 之中。</li>
+</ul>
+<p>具体代码如下：</p>
+<pre><code class="language-c++">Reducer::Reducer(
+    std::vector&lt;std::vector&lt;at::Tensor&gt;&gt; replicas, // 张量
+    std::vector&lt;std::vector&lt;size_t&gt;&gt; bucket_indices, // 桶信息
+    ......) {
+
+    for (size_t replica_index = 0; replica_index &lt; replica_count; // 遍历replica
+         replica_index++) {
+      
+      for (size_t variable_index = 0; variable_index &lt; variable_count; // 遍历张量
+           variable_index++) { 
+        auto&amp; variable = replicas_[replica_index][variable_index]; //得到具体的张量
+        const auto index = VariableIndex(replica_index, variable_index); //每个张量一个index
+				// 得到Variable::AutogradMeta的grad_accumulator_，即用于累加叶子 Variable 的梯度累加器
+        auto grad_accumulator = torch::autograd::impl::grad_accumulator(variable); 
+
+        hooks_.emplace_back(
+            // 累加器添加hook,这个 hook 挂在 autograd graph 之上，在 backward 时负责梯度同步。
+            // grad_accumulator 执行完后，autograd_hook 就会运行
+            grad_accumulator-&gt;add_post_hook(
+                torch::make_unique&lt;torch::autograd::utils::LambdaPostHook&gt;(
+                    [=](const torch::autograd::variable_list&amp; outputs,
+                        const torch::autograd::variable_list&amp; ) {
+#ifndef _WIN32
+                      this-&gt;rpc_context_.set(
+                          ThreadLocalDistAutogradContext::getContextPtr());
+#endif
+                      this-&gt;autograd_hook(index); // 把reducer的autograd_hook函数添加进去
+                      return outputs;
+                    })),
+            grad_accumulator);
+          
+        // gradAccToVariableMap_ 存了grad_accumulator &amp; index 的对应关系（函数指针和参数张量的对应关系），这样以后在 autograd graph 遍历寻找 unused parameters 就方便了
+        if (find_unused_parameters_) {
+          gradAccToVariableMap_[grad_accumulator.get()] = index;
+        }
+
+        grad_accumulators_[replica_index][variable_index] =
+            std::move(grad_accumulator);
+      }
+    }
+  }
+}
+</code></pre>
+<h4 id="221-grad_accumulator">2.2.1 grad_accumulator</h4>
+<p>这里 grad_accumulator 代码如下，可以看到，就是获取张量的  <code>autograd_meta-&gt;grad_accumulator_</code>，然后返回，对于叶子节点，<code>grad_accumulator_</code>  就是 AccumulateGrad。</p>
+<pre><code class="language-cpp">std::shared_ptr&lt;Node&gt; grad_accumulator(const Variable&amp; self) {
+  auto autograd_meta = get_autograd_meta(self); // 获取 autograd_meta
+  if (!autograd_meta) {
+    return nullptr;
+  }
+  if (autograd_meta-&gt;grad_fn_) {
+    throw std::logic_error(
+        "grad_accumulator() should be only called on leaf Variables");
+  }
+  if (!autograd_meta-&gt;requires_grad_) {
+    return nullptr;
+  }
+
+  std::lock_guard&lt;std::mutex&gt; lock(autograd_meta-&gt;mutex_);
+
+  // 获取autograd_meta-&gt;grad_accumulator_
+  auto result = autograd_meta-&gt;grad_accumulator_.lock(); 
+  if (result) 
+    return result;
+
+  c10::raw::intrusive_ptr::incref(self.unsafeGetTensorImpl());
+  auto intrusive_from_this = c10::intrusive_ptr&lt;at::TensorImpl&gt;::reclaim(self.unsafeGetTensorImpl());
+  result = std::make_shared&lt;AccumulateGrad&gt;(Variable(std::move(intrusive_from_this)));
+  autograd_meta-&gt;grad_accumulator_ = result; // 获取 autograd_meta-&gt;grad_accumulator_
+  return result;
+}
+</code></pre>
+<h4 id="222-图示">2.2.2 图示</h4>
+<p>一个张量为 variable1，张量对应的 VariableIndex 是 index1，具体配置如下，AccumulateGrad 在使用 apply 计算完梯度之后，会调用 post_hooks 之中的 hook。</p>
+<pre><code class="language-python">+-----------------------------------------+
+| Reducer                                 |
+|                                         |
+|                                         |
+|  +------------------------------------+ |   +------------------+    +----------------+
+|  | grad_accumulators_                 | |   |  variable1       |    | AccumulateGrad |
+|  |                                    | |   |                  |    |                |
+|  |                                    | |   |                  |    |                |
+|  |  [replica_index][variable_index]+------&gt; |   autograd_meta_+---&gt; |    post_hooks  |
+|  |                                    | |   |                  |    |        +       |
+|  |                                    | |   |                  |    |        |       |
+|  +------------------------------------+ |   +------------------+    +----------------+
+|                                         |                                    |
+|  +-------------------------------+      |                                    |
+|  | gradAccToVariableMap_         |      |                                    v
+|  |                               |      |
+|  |                               |      |                    +-----------------------+
+|  |        [variable1 : index1]   |      |                    |  autograd_hook(index1)|
+|  |                               |      |                    +-----------------------+
+|  +-------------------------------+      |
+|                                         |
++-----------------------------------------+
+
+
+                                               +---------------------------------------+
+                                  index1 +--&gt;  |VariableIndex                          |
+                                               |                                       |
+                                               |          replica_index of Variable1   |
+                                               |                                       |
+                                               |          variable_index of Variable1  |
+                                               |                                       |
+                                               +---------------------------------------+
+</code></pre>
+<h3 id="23-hook-函数">2.3 Hook 函数</h3>
+<p>当梯度准备好时，引擎会回调 Hook 函数，Hook 就是如下的 autograd_hook 方法，其就是依据相关条件来设定本变量是否就绪。逻辑如下：</p>
+<ul>
+<li>
+<p>如果是动态图&amp;找到未用张量 或者 静态图第一次迭代，则把 local_used_maps_ 之中变量对应位置置为1。</p>
+<ul>
+<li>local_used_maps_ 记录本地使用过的CPU张量。</li>
+<li>动态图每次迭代都可能不一致，桶和变量可能每次都不一样，所以local_used_maps_需要每次迭代都更新。</li>
+<li>静态图每次迭代都一样，只要第一次迭代时候，在回调之中设定即可。</li>
+</ul>
+</li>
+<li>
+<p>如果是静态图第一次迭代，则把 numGradHooksTriggeredMap_ 之中该变量对应之处变成1</p>
+</li>
+<li>
+<p>如果没有标示未使用变量，则遍历没有用到的variable，未用到的标示为ready，调用 mark_variable_ready。</p>
+</li>
+<li>
+<p>如果是静态图&amp;第二次迭代之后，则 如果numGradHooksTriggeredMapPerIteration_对应递减后为0，则设定变量为就绪，调用 mark_variable_ready。</p>
+</li>
+<li>
+<p>否则就是动态图，动态图每次都要设定variable为就绪，调用 mark_variable_ready。</p>
+</li>
+</ul>
+<pre><code class="language-c++">// The function `autograd_hook` is called after the gradient for a
+// model parameter has been accumulated into its gradient tensor.
+// This function is only to be called from the autograd thread.
+void Reducer::autograd_hook(VariableIndex index) {
+  std::lock_guard&lt;std::mutex&gt; lock(this-&gt;mutex_);
+
+  // Carry over thread local state from main thread. This allows for
+  // thread-local flags such as profiler enabled to be configure correctly.
+  at::ThreadLocalStateGuard g(thread_local_state_);
+
+  // Ignore if we don't expect to be called.
+  // This may be the case if the user wants to accumulate gradients
+  // for number of iterations before reducing them.
+  if (!expect_autograd_hooks_) {
+    return;
+  }
+
+// Note [Skip allreducing local_used_maps_dev]
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~
+// If find_unused_parameters_ is set to false, there is no need to allreduce
+// local_used_maps_dev_, because all parameters will be reduced anyway.
+// Therefore, we can avoid allocating memory for local_used_maps and
+// local_used_maps_dev_ if find_unused_parameters_ is false. 
+        
+  // See Note [Skip allreducing local_used_maps_dev]
+  // 动态图&amp;找到未用张量 或者 静态图第一次迭代
+  if (dynamic_graph_find_unused() || static_graph_first_iteration()) {
+    // Since it gets here, this param has been used for this iteration. We want
+    // to mark it in local_used_maps_. During no_sync session, the same var can
+    // be set multiple times, which is OK as does not affect correctness. As
+    // long as it is used once during no_sync session, it is marked as used.
+    // 在 no_sync 的session之中，只要参数被用过一次，就会被标记为用过
+    // local_used_maps_ 记录本地使用过的CPU张量
+    // 动态图每次迭代都可能不一致，桶和变量可能每次都不一样，所以local_used_maps_需要每次迭代都更新
+    // 静态图每次迭代都一样，只要第一次迭代时候，在回调之中设定即可
+    local_used_maps_[index.replica_index][index.variable_index] = 1;
+  }
+
+  if (static_graph_first_iteration()) { // 静态图第一次迭代
+    numGradHooksTriggeredMap_[index] += 1;// 只是静态图第一次迭代时候，会增加1
+    return;
+  }
+
+  // If `find_unused_parameters_` is true there may be model parameters that
+  // went unused when computing the model output, they won't be part of the
+  // autograd graph, and won't receive gradients. These parameters are
+  // discovered in the `prepare_for_backward` function and their indexes stored
+  // in the `unused_parameters_` vector.
+  if (!has_marked_unused_parameters_) {
+    has_marked_unused_parameters_ = true;
+    for (const auto&amp; unused_index : unused_parameters_) { // 遍历没有用到的variable
+      mark_variable_ready(unused_index); //未用到的当然就标示为ready了
+    }
+  }
+
+  // If it is static graph, after 1st iteration, check a avariable
+  // is ready for communication based on numGradHooksTriggeredMap_.
+  if (static_graph_after_first_iteration()) {// 第二次迭代之后确实用到了
+    // 为何从第二次迭代开始处理？因为第一次迭代，当进入到这里时候，梯度还没有准备好（就是没有经过Reducer处理过，只有经过Reducer处理过之后，才算处理好）
+    // 静态图时，numGradHooksTriggeredMapPerIteration_ = numGradHooksTriggeredMap_;
+    if (--numGradHooksTriggeredMapPerIteration_[index] == 0) {
+      // Finally mark variable for which this function was originally called.
+      mark_variable_ready(index); // 从1变成0，就是就绪了，所以设定variable为就绪
+    }
+  } else {
+    // Finally mark variable for which this function was originally called.
+    mark_variable_ready(index);// 动态图每次都要设定variable为就绪
+  }
+}
+</code></pre>
+<h2 id="0x03-就绪">0x03 就绪</h2>
+<p>如果在反向传播过程之中，某一个参数的 hook之中发现该变量是就绪的，则会开始调用mark_variable_ready(index)，我们继续看如何处理。</p>
+<p>大致顺序就是：处理就绪的变量，处理就绪的桶，处理使用情况，从DDP拷贝回autograd之中对应的梯度。</p>
+<h3 id="31-变量ready">3.1 变量ready</h3>
+<h4 id="311-设定就绪">3.1.1 设定就绪</h4>
+<p>mark_variable_ready 是把一个变量标示为就绪，逻辑如下。</p>
+<ul>
+<li>
+<p>如果需要重建桶，则把index插入到需重建列表之中。</p>
+<ul>
+<li>重建桶会发生在如下情况：1）第一次重建存储桶。2）静态图为真或查找未使用的参数为假时。3）此反向过程需要运行allreduce。</li>
+<li>在这里，我们只需将张量及其参数索引转储到基于梯度到达顺序的重建参数和重建参数索引中，然后在finalize_backward()结束时，将基于重建参数和重建参数索引重建存储桶，然后广播和初始化存储桶。此外，我们只需要转储一个副本的张量和参数索引。</li>
+</ul>
+</li>
+<li>
+<p>找到本变量对应的副本index，找到本变量在副本中哪个位置。</p>
+</li>
+<li>
+<p>这个variable是被使用过的，记录下来，插入到perIterationReadyParams_。</p>
+</li>
+<li>
+<p>每当某个变量被标记成 ready，都要设置调用一下finalize。</p>
+</li>
+<li>
+<p>检查桶里的梯度是不是都ready，如果有没有pending，就是桶也ready了</p>
+</li>
+<li>
+<p>本模型副本pending数目减1，因为又一个张量ready了。</p>
+</li>
+<li>
+<p>如果本副本pending数目为0，则本桶pending数目减1。</p>
+<ul>
+<li>因为如果本模型副本的pending为0，则说明桶对应的模型副本pending数目应该减一。</li>
+<li>如果本桶pending为0，则使用 mark_bucket_ready 设置桶就绪。</li>
+</ul>
+</li>
+<li>
+<p><u>如果所有桶都ready</u>，则会：</p>
+<ul>
+<li>调用all_reduce_local_used_map。</li>
+<li>调用Engine::get_default_engine().queue_callback 注册 一个callback，这个callback将在engine完成全部 backward 之后调用，后续将对使用过的variable进行规约，里面调用了finalize_backward。</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-c++">void Reducer::mark_variable_ready(VariableIndex index) {
+  // Rebuild bucket only if 1) it is the first time to rebuild bucket 2)
+  // static_graph_ is true or find_unused_parameters_ is false,
+  // 3) this backward pass needs to run allreduce.
+  // Here, we just dump tensors and their parameter indices into
+  // rebuilt_params_ and rebuilt_param_indices_ based on gradient arriving
+  // order, and then at the end of finalize_backward(), buckets will be
+  // rebuilt based on rebuilt_params_ and rebuilt_param_indices_, and then
+  // will be broadcasted and initialized. Also we only need to dump tensors
+  // and parameter indices of one replica.
+ 
+  if (should_rebuild_buckets()) {
+    push_rebuilt_params(index); // 如果需要重建，就把index插入到需重建列表之中
+  }
+
+  const auto replica_index = index.replica_index; // 找到副本index
+  const auto variable_index = index.variable_index; // 找到在副本中哪个位置
+
+  if (replica_index == 0) {
+    checkAndRaiseMarkedTwiceError(variable_index);
+    perIterationReadyParams_.insert(variable_index); // 这个variable是被使用过的，记录下来
+  }
+  backward_stats_[replica_index][variable_index] =
+      current_time_in_nanos() - cpu_timer_.backward_compute_start_time;
+
+  // Any time we mark a variable ready (be it in line due to unused parameters,
+  // or via an autograd hook), we require a call to the finalize function. If
+  // this doesn't happen before the next iteration (or call to
+  // `prepare_for_backwards`), we know something is wrong.
+  require_finalize_ = true;  // 每当某个变量被标记成 ready，都要调用一下 finalize
+
+  const auto&amp; bucket_index = variable_locators_[variable_index]; // 找到variable的index信息
+  auto&amp; bucket = buckets_[bucket_index.bucket_index]; // 找到variable位于哪个桶
+  auto&amp; replica = bucket.replicas[replica_index]; // 找到副本
+
+
+  set_divide_factor();
+
+  if (bucket.expect_sparse_gradient) {
+    mark_variable_ready_sparse(index); // sparse variable
+  } else {
+    mark_variable_ready_dense(index); // dense variable
+  }
+
+  // TODO(@pietern): Make this work for both CPU/CUDA tensors.
+  // When using CPU tensors we don't need to do this.
+  // // Record event so that we can wait for all of them.
+  // auto&amp; event = replica.events[bucket_index.intra_bucket_index];
+  // event.record();
+
+  // Check if this was the final gradient for this bucket.
+  // 检查桶里的梯度是不是都ready，如果有没有pending，就是桶也ready了
+  if (--replica.pending == 0) { // 减去本模型副本pending数目，因为又一个张量ready了
+    // Kick off reduction if all replicas for this bucket are ready.
+    if (--bucket.pending == 0) {// 如果本模型副本的pending为0，则说明桶对应的模型副本pending数目应该减一
+      mark_bucket_ready(bucket_index.bucket_index); // 那么就设置桶就绪
+    }
+  }
+
+  // Run finalizer function and kick off reduction for local_used_maps once the
+  // final bucket was marked ready.
+  if (next_bucket_ == buckets_.size()) { // 如果所有桶都ready
+
+    if (dynamic_graph_find_unused()) {
+      all_reduce_local_used_map(); // 对使用过的variable进行规约
+    }
+
+    // The autograd engine uses the default stream when running callbacks, so we
+    // pass in the current CUDA stream in case it is not the default.
+    const c10::Stream currentStream = get_current_stream();
+    // 这里会注册 finalize_backward 到 engine
+    torch::autograd::Engine::get_default_engine().queue_callback([=] {
+      
+      std::lock_guard&lt;std::mutex&gt; lock(this-&gt;mutex_);
+      // Run callback with the current stream
+      c10::OptionalStreamGuard currentStreamGuard{currentStream};
+      if (should_collect_runtime_stats()) {
+        record_backward_compute_end_time();
+      }
+      // Check that all buckets were completed and had their work kicked off.
+      TORCH_INTERNAL_ASSERT(next_bucket_ == buckets_.size());
+      this-&gt;finalize_backward(); 
+    });
+  }
+}
+</code></pre>
+<p>逻辑如下：</p>
+<ol>
+<li>Reduer 会注册autograd_hook到AccumulateGrad的post_hooks之上。</li>
+<li>Autograd Engine 在反向传播过程中，如果发现某个参数ready，就调用autograd_hook。</li>
+<li>autograd_hook 之中继续处理。</li>
+<li>会注册一个 finalize_backward到 engine。</li>
+</ol>
+<pre><code class="language-python">Engine        AccumulateGrad                Reducer
+
+  +                  +                         +
+  |                  |                         |
+  |                  |           1             |
+  |                  | &lt;-----------------------v
+  |                  |
+  |                  |
+  |                  |
+  |                  v           2
+  |             post_hooks  +--------&gt;  autograd_hook
+  |                                            +
+  |                                            |
+  |                                            | 3
+  |                                            v
+  |                         +------------------+---------------------------+
+  |                         |    mark_variable_ready                       |
+  |                         |                                              |
+  |                         |                                              |
+  |                         |     All variable in replica are ready?       |
+  |                         |                   +                          |
+  |                         |                   | YES                      |
+  |                         |                   v                          |
+  |                         |     All replica in bucket are ready?         |
+  |                         |                   +                          |
+  |                         |                   | YES                      |
+  |                         |                   v                          |
+  |                         |            mark_bucket_ready                 |
+  |                         |                                              |
+  |                         |                                              |
+  |                         |                                              |
+  |                         |                   +                          |
+  |                         |                   |                          |
+  |                         |                   |                          |
+  |                         |                   v                          |
+  |                         |          All buckets are ready?              |
+  |                         |                   +                          |
+  |                         |                   | YES                      |
+  |                         |                   v                          |
+  |   queue_back   4        |          all_reduce_local_used_map           |
+  | &lt;----------------------------+  queue_callback(finalize_backward)      |
+  |                         |                                              |
+  |                         |                                              |
+  v                         +----------------------------------------------+
+</code></pre>
+<h4 id="312-注册callback">3.1.2 注册callback</h4>
+<p>上面代码之中，使用了 torch::autograd::Engine::get_default_engine().queue_callback 来注册了一个回调函数。我们就来分析一下。</p>
+<p>在engine之中有定义，就是往 final_callbacks_ 插入callback：</p>
+<pre><code class="language-cpp">void Engine::queue_callback(std::function&lt;void()&gt; callback) {
+  std::lock_guard&lt;std::mutex&gt; lock(current_graph_task-&gt;final_callbacks_lock_);
+  current_graph_task-&gt;final_callbacks_.emplace_back(std::move(callback));
+}
+</code></pre>
+<p>对于 final_callbacks_ 处理，在  exec_post_processing 之中，就是当 engine 全部完成 backward 的时候会调用 callback。</p>
+<pre><code class="language-cpp">void GraphTask::exec_post_processing() {
+  if (!not_ready_.empty()) {
+    throw std::runtime_error("could not compute gradients for some functions");
+  }
+
+  // set the thread_local current_graph_task_ as more callbacks can be installed
+  // by existing final callbacks.
+  GraphTaskGuard guard(shared_from_this());
+  // Lock mutex during each iteration for accessing final_callbacks.size()
+  // Unlocking is necessary, because the callback can register
+  // more callbacks (or they can be registered from other threads
+  // while it's waiting.
+  std::unique_lock&lt;std::mutex&gt; cb_lock(final_callbacks_lock_);
+  // WARNING: Don't use a range-for loop here because more callbacks may be
+  // added in between callback calls, so iterators may become invalidated.
+  // NOLINTNEXTLINE(modernize-loop-convert)
+  for (size_t i = 0; i &lt; final_callbacks_.size(); ++i) {
+    cb_lock.unlock();
+    final_callbacks_[i](); // 调用了callback
+    cb_lock.lock();
+  }
+
+  // Syncs leaf streams with default streams (if necessary)
+  // See note "Streaming backwards"
+  for (const auto&amp; leaf_stream : leaf_streams) {
+    const auto guard = c10::impl::VirtualGuardImpl{c10::DeviceType::CUDA};
+    const auto default_stream = guard.getDefaultStream(leaf_stream.device());
+    if (leaf_stream != default_stream) {
+      auto event = c10::Event{c10::DeviceType::CUDA};
+      event.record(leaf_stream);
+      default_stream.wait(event);
+    }
+  }
+}
+</code></pre>
+<p>于是逻辑拓展如下：</p>
+<ol>
+<li>Reduer 会注册autograd_hook到AccumulateGrad的post_hooks之上。</li>
+<li>Autograd Engine 在反向传播过程中，如果发现某个参数ready，就调用autograd_hook。</li>
+<li>autograd_hook 之中继续处理。</li>
+<li>会注册一个 finalize_backward到 engine。</li>
+<li>在 GraphTask::exec_post_processing 之中会调用 finalize_backward。</li>
+</ol>
+<pre><code class="language-python">          Engine        AccumulateGrad                Reducer
+
+            +                  +                         +
+            |                  |                         |
+            |                  |           1             |
+            |                  | &lt;-----------------------+
+            |                  |
+            |                  |
+            |                  |
+            |                  v
+            |                              2
+            |             post_hooks  +--------&gt;  autograd_hook
+            |                                            +
+            |                                            |
+            |                                            |  3
+            |                                            v
+            |                         +------------------+---------------------------+
+            |                         | mark_variable_ready                          |
+            |                         |                                              |
+            |                         |                                              |
+            |                         |     All variable in replica are ready?       |
+            |                         |                   +                          |
+            |                         |                   | YES                      |
+            |                         |                   v                          |
+            |                         |     All replica in bucket are ready?         |
+            |                         |                   +                          |
+            |                         |                   | YES                      |
+            |                         |                   v                          |
+            |                         |            mark_bucket_ready                 |
+            |                         |                                              |
+            |                         |                                              |
+            |                         |                                              |
+            |                         |                   +                          |
+            |                         |                   |                          |
+            |                         |                   |                          |
+            |                         |                   v                          |
+            |                         |          All buckets are ready?              |
+            |                         |                   +                          |
+            |                         |                   | YES                      |
+            |                         |                   v                          |
+            |   queue_back    4       |          all_reduce_local_used_map           |
+            | &lt;----------------------------+  queue_callback(finalize_backward)      |
+            |                         |                                              |
+            |                         |                                              |
+            |                         +-------------------+--------------------------+
+            v                                             |
+                                                          |
+GraphTask::exec_post_processing                           |
+            +                                             |
+            |                                             |
+            |                 5                           v
+            +---------------------------------&gt;   finalize_backward
+            |                                             +
+            |                                             |
+            |                                             |
+            v                                             v
+</code></pre>
+<h4 id="313-mark_variable_ready_sparse">3.1.3 mark_variable_ready_sparse</h4>
+<p>mark_variable_ready_sparse 函数用来处理sparse类型的variable，其实就是拷贝梯度到Reducer。</p>
+<pre><code class="language-cpp">void Reducer::mark_variable_ready_sparse(VariableIndex index) {
+  const auto replica_index = index.replica_index;
+  const auto variable_index = index.variable_index;
+  const auto&amp; bucket_index = variable_locators_[variable_index];
+  auto&amp; bucket = buckets_[bucket_index.bucket_index]; // 哪个桶
+  auto&amp; replica = bucket.replicas[replica_index]; // 桶的哪个副本
+  auto&amp; variable = replica.variables[bucket_index.intra_bucket_index]; // 副本之中哪个variable
+
+  runGradCallbackForVariable(variable, [&amp;](auto&amp; grad) {
+    TORCH_CHECK(grad.defined(), "Expected sparse gradient to be defined.");
+    TORCH_CHECK(
+        grad.options().layout() == c10::kSparse,
+        "Expected variable to have sparse gradient.");
+
+    // Sparse tensors cannot be grouped together with other sparse tensors
+    // in a single reduction operation like we can for dense tensors.
+    // Therefore, the `offsets` and `lengths` vectors in the bucket replica
+    // struct are empty, and there is no pre-existing accumulation tensor.
+    // Directly assign the sparse tensor to the `contents` field.
+    replica.contents = grad; //直接拷贝
+    // See Note [DDP Communication Hook]
+    if (comm_hook_ == nullptr) {
+      replica.contents.div_(divFactor_);
+    }
+    // The grad is modified in place and needs to be written back.
+    return true;
+  });
+}
+</code></pre>
+<h4 id="314-mark_variable_ready_dense">3.1.4 mark_variable_ready_dense</h4>
+<p>mark_variable_ready_dense 会处理 dense tensors，其实就是拷贝梯度到Reducer。</p>
+<p>我们首先看一个成员变量：gradient_as_bucket_view_，其：</p>
+<ul>
+<li>
+<p>如果为false，在 allreduce 桶之后，需要把桶拷贝回grads。</p>
+</li>
+<li>
+<p>当设置为“True”时，梯度将是指向“allreduce”的不同偏移的视图。这可以减少峰值内存使用，其中保存的内存大小将等于梯度总大小。此外，它还避免了在梯度和“allreduce”通信桶之间进行复制的开销。当梯度为视图时，不能对梯度调用<code>detach_()</code>。</p>
+</li>
+</ul>
+<p>mark_variable_ready_dense 逻辑为：</p>
+<ul>
+<li>依据index找到本变量属于哪个桶，哪个副本，然后得到副本中的张量variable，进而得到variable的offset和size。最终得到张量对应的 bucket_view。</li>
+<li>使用 runGradCallbackForVariable 对张量进行处理。runGradCallbackForVariable 其实是使用 DistAutogradContext 处理callback，最后传回 DistAutogradContext。</li>
+<li>callback 内部执行逻辑是：
+<ul>
+<li>当 gradient_as_bucket_view_ 为false时，或者即使<code>gradient_as_bucket_view_</code>为true时，在极少数情况下，用户可以在每次迭代后将grad设置为None。</li>
+<li>在这些情况下，grad和bucket_view指向不同的存储，因此需要将grad复制到bucket_view。</li>
+<li>如果 gradient_as_bucket_view_ 设置为true，则让 grad 指向 bucket_view。</li>
+<li>如果 grad 在以前的迭代中已经被设置为bucket_view，则不需要复制。</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-cpp">void Reducer::mark_variable_ready_dense(VariableIndex index) {
+  const auto replica_index = index.replica_index;
+  const auto variable_index = index.variable_index;
+  const auto&amp; bucket_index = variable_locators_[variable_index];
+  auto&amp; bucket = buckets_[bucket_index.bucket_index]; // 哪个桶
+  auto&amp; replica = bucket.replicas[replica_index]; // 桶的哪个副本
+  auto&amp; variable = replica.variables[bucket_index.intra_bucket_index]; // 得到副本中的variable
+  const auto offset = replica.offsets[bucket_index.intra_bucket_index]; // variable的offset
+  const auto length = replica.lengths[bucket_index.intra_bucket_index]; // variable的size
+  auto&amp; bucket_view = replica.bucket_views_in[bucket_index.intra_bucket_index]; //插入view
+
+  // Copy contents of gradient tensor to bucket tensor.
+  // If the gradient is not set, we assume it wasn't computed
+  // as part of the current backwards pass, and zero the part
+  // of the bucket it would otherwise hold.
+  runGradCallbackForVariable(variable, [&amp;](auto&amp; grad) {
+    // 拿到张量对应的梯度 grad
+    if (grad.defined()) {
+      this-&gt;check_grad_layout(grad, bucket_view);
+      // When gradient_as_bucket_view_ is false, or even when
+      // gradient_as_bucket_view_ is true, in rare cases users may set grad to
+      // be None after every iteration. In these cases, grad and bucket_view are
+      // pointing to different storages and thus need to copy grads to
+      // bucket_view. If gradient_as_bucket_view_ is set as true, let grad point
+      // to bucket_view. If grad has already been set as views of buckets in
+      // previous iterations, no copy is needed.
+      if (!grad.is_alias_of(bucket_view)) {
+        this-&gt;copy_grad_to_bucket(grad, bucket_view); // 把梯度拷贝进入contents
+        if (gradient_as_bucket_view_) {
+          // Let grad point to bucket_view buffer.
+          grad = bucket_view; // 为了省内存，grad指向了bucket_view
+          // The grad is modified and need to be written back.
+          return true;
+        }
+      } else {
+        // If grad and bucket view point to the same storage, no need to copy
+        if (comm_hook_ == nullptr) {
+          bucket_view.div_(divFactor_);
+        }
+      }
+    } else {
+      bucket_view.zero_(); // 设置为0
+    }
+    // The grad is not modified and doesn't need to be written back.
+    return false;
+  });
+}
+</code></pre>
+<p>copy_grad_to_bucket的作用是把梯度拷贝到 contents</p>
+<pre><code class="language-cpp">void Reducer::copy_grad_to_bucket(
+    const at::Tensor&amp; grad,
+    at::Tensor&amp; bucket_view) {
+  // See Note [DDP Communication Hook]
+  if (comm_hook_ == nullptr) {
+    auto wrapped = at::native::wrapped_scalar_tensor(double(1.) / divFactor_);
+    // Divides while copying into the bucket view.
+    at::mul_out(bucket_view, grad, wrapped);
+  } else {
+    bucket_view.copy_(grad); // 通过bucket_view把梯度拷贝到 桶副本的contents
+  }
+}
+</code></pre>
+<h3 id="32-桶ready">3.2 桶ready</h3>
+<p>前面代码中有，检查桶里的梯度是不是都ready，如果有没有pending，就是桶也ready了，这时候就调用 mark_bucket_ready。</p>
+<p>mark_bucket_ready 之中会遍历桶，对于就绪的桶进行规约。</p>
+<pre><code class="language-c++">// Called when the bucket at the specified index is ready to be reduced.
+void Reducer::mark_bucket_ready(size_t bucket_index) {
+  TORCH_INTERNAL_ASSERT(bucket_index &gt;= next_bucket_);
+
+  // Buckets are reduced in sequence. Ignore this bucket if
+  // it's not its turn to be reduced.
+  if (bucket_index &gt; next_bucket_) {
+    return;
+  }
+
+  // Keep going, until we either:
+  // - have kicked off reduction for all buckets, or
+  // - found a bucket that's not yet ready for reduction.
+  //   
+    
+  // 遍历桶，直到遇到下面两种情况：
+	// - 已经发起了对所有桶的规约
+	// - 发现一个桶其实没有就绪
+  for (; next_bucket_ &lt; buckets_.size() &amp;&amp; buckets_[next_bucket_].pending == 0;
+       next_bucket_++) {
+    num_buckets_ready_++; // 增加
+    if (num_buckets_ready_ == 1 &amp;&amp; should_collect_runtime_stats()) {
+      record_backward_comm_start_time();
+    }
+    auto&amp; bucket = buckets_[next_bucket_];
+    all_reduce_bucket(bucket); // 对于就绪的桶，进行规约
+  }
+}
+</code></pre>
+<h4 id="321-all_reduce_bucket">3.2.1 all_reduce_bucket</h4>
+<p>all_reduce_bucket 是对于 contents 进行同步。</p>
+<ul>
+<li>遍历桶的副本，把副本张量插入到 tensors。</li>
+<li>如果没注册 comm_hook，直接 allreduce 这些tensors。</li>
+<li>注册了 comm_hook 那就使用 hook 进行allreduce，需要注意的是，这个comm_hook 只是处理通信的底层hook，如果想在 reduce 前分别进行梯度裁剪，还是需要在 autograph 挂 hook。</li>
+</ul>
+<pre><code class="language-c++">void Reducer::all_reduce_bucket(Bucket&amp; bucket) {
+  std::vector&lt;at::Tensor&gt; tensors;
+  tensors.reserve(bucket.replicas.size());
+  for (const auto&amp; replica : bucket.replicas) {
+    // TODO(@pietern): Ensure proper synchronization with the CUDA events
+    // that recorded copies into this contents tensor. If these copies are
+    // executed on non-default streams, the current stream for the device
+    // that holds the contents tensor must wait on these events.
+    //
+    // As long as autograd uses the default stream for every device,
+    // these operations are implicitly sequenced, and we don't need to
+    // do any extra synchronization here.
+    //
+    // CUDA default stream 都按时序排好了
+    tensors.push_back(replica.contents);
+  }
+  // See Note [DDP Communication Hook]
+  if (comm_hook_ == nullptr) {
+    // 如果没注册 comm_hook，直接 allreduce
+    bucket.work = process_group_-&gt;allreduce(tensors);
+  } else {
+    // 注册了 comm_hook 那就使用 hook 进行allreduce
+    // 需要注意的是，这个comm_hook 只是处理通信的底层hook，如果想在 reduce 前分别进行梯度裁剪，还是需要在 autograph 挂 hook
+      
+    GradBucket grad_bucket(
+        next_bucket_,
+        tensors[0], // 从下面注解可以知道，一个桶只有一个replica
+        // Since currently we do not support single-process multiple-device
+        // mode, we can assume only one replica in the bucket.
+        bucket.replicas[0].offsets,
+        bucket.replicas[0].lengths,
+        bucket.replicas[0].sizes_vec);
+    bucket.future_work = comm_hook_-&gt;runHook(grad_bucket);
+  }
+}
+</code></pre>
+<p>逻辑拓展如下：</p>
+<ol>
+<li>Reduer 会注册autograd_hook到AccumulateGrad的post_hooks之上。</li>
+<li>Autograd Engine 在反向传播过程中，如果发现某个参数ready，就调用autograd_hook。</li>
+<li>autograd_hook 之中继续处理。</li>
+<li>调用all_reduce_bucket进行同步梯度。</li>
+<li>会注册一个 finalize_backward到 engine。</li>
+<li>在 GraphTask::exec_post_processing 之中会调用 finalize_backward。</li>
+</ol>
+<pre><code class="language-python">                                                                             +
+                                                                  Worker 1   |   Worker 2
+                                                                             |
+  Engine    AccumulateGrad                Reducer                            |    Reducer
+                                                                             |
+    +              +                         +                               |        +
+    |              |                         |                               |        |
+    |              |          1              |                               |        |
+    |              | &lt;-----------------------+                               |        |
+    |              |                                                         |        |
+    |              |                                                         |        |
+    |              v                                                         |        |
+    |                         2                                              |        |
+    |         post_hooks  +--------&gt;  autograd_hook                          |        |
+    |                                        +                               |        |
+    |                                        |                               |        |
+    |                                        |  3                            |        |
+    |                                        v                               |        |
+    |                     +------------------+---------------------------+   |        |
+    |                     | mark_variable_ready                          |   |        |
+    |                     |                                              |   |        |
+    |                     |                                              |   |        |
+    |                     |     All variable in replica are ready?       |   |        |
+    |                     |                   +                          |   |        |
+    |                     |                   | YES                      |   |        |
+    |                     |                   v                          |   |        |
+    |                     |     All replica in bucket are ready?         |   |        |
+    |                     |                   +                          +   +        |
+    |                     |                   | YES                                   |
+    |                     |                   v               4   all_reduce_bucket   |
+    |                     |            mark_bucket_ready  &lt;--------------+---+-----&gt;  |
+    |                     |                                              |   |        |
+    |                     |                                              |   |        |
+    |                     |                                              |   |        |
+    |                     |                   +                          |   |        |
+    |                     |                   |                          |   |        |
+    |                     |                   |                          |   |        |
+    |                     |                   v                          |   |        |
+    |                     |          All buckets are ready?              |   |        |
+    |                     |                   +                          |   |        |
+    |                     |                   | YES                      |   |        |
+    |                     |                   v                          |   |        |
+    |      queue_back 5   |          all_reduce_local_used_map           |   |        |
+    | &lt;------------------------+  queue_callback(finalize_backward)      |   |        |
+    |                     |                                              |   |        |
+    |                     |                                              |   |        |
+    |                     +-------------------+--------------------------+   |        |
+    v                                         |                              |        |
+                                              |                              |        |
+GraphTask::exec_post_processing               |                              |        |
+    +                                         |                              |        |
+    |                                         |                              |        |
+    |                                         v                              |        |
+    +-----------------------------&gt;   finalize_backward                      |        |
+    |                 6                       +                              |        |
+    |                                         |                              |        |
+    |                                         |                              |        |
+    v                                         v                              +        v
+</code></pre>
+<h4 id="322-pythoncommhook">3.2.2 PythonCommHook</h4>
+<p>PythonCommHook 用来实现用户的特殊需求，我们前文提到过，这里再给出两个例子。</p>
+<p>PythonCommHook 举例</p>
+<pre><code class="language-cpp">c10::intrusive_ptr&lt;c10::ivalue::Future&gt; PythonCommHook::runHook(
+    GradBucket&amp; bucket) {
+  py::gil_scoped_acquire acquire;
+
+  py::object py_fut = hook_(state_, bucket);
+
+  try {
+    return py_fut.cast&lt;std::shared_ptr&lt;torch::jit::PythonFutureWrapper&gt;&gt;()-&gt;fut;
+  } catch (const py::cast_error&amp; e) {
+    auto type = py_fut.get_type();
+    auto errMsg = c10::str(
+        e.what(),
+        ". DDP communication hook's callback must return a "
+        "torch.futures.Future or torch._C.Future object, but got ",
+        type.attr("__module__").cast&lt;std::string&gt;(),
+        ".",
+        type.attr("__qualname__").cast&lt;std::string&gt;());
+    throw std::runtime_error(errMsg);
+  }
+}
+</code></pre>
+<p>或者</p>
+<pre><code class="language-cpp">c10::intrusive_ptr&lt;c10::ivalue::Future&gt; AllReduceCommHook::runHook(
+    GradBucket&amp; bucket) {
+  std::vector&lt;at::Tensor&gt; tensors = {bucket.getTensorRef()};
+  auto allreduce_work = state_-&gt;allreduce(tensors);
+
+  // FIXME Access the result through the Future passed as argument, instead of
+  // capturing the Work.
+  auto div_by_process_group_size = [allreduce_work,
+                                    this](c10::ivalue::Future&amp; /* unused */) {
+    auto tensor = allreduce_work-&gt;result()[0] / state_-&gt;getSize();
+    return c10::IValue(tensor);
+  };
+
+  auto fut = allreduce_work-&gt;getFuture();
+  return fut-&gt;then(div_by_process_group_size, fut-&gt;elementType());
+}
+</code></pre>
+<h4 id="323-gradbucket">3.2.3 GradBucket</h4>
+<p>GradBucket 是用来拷贝信息的类。</p>
+<pre><code class="language-cpp">// This class passes bucket contents tensor to DDP communication hook.
+class GradBucket {
+ public:
+  explicit GradBucket(
+      size_t index,
+      const at::Tensor&amp; tensor,
+      const std::vector&lt;size_t&gt;&amp; offsets,
+      const std::vector&lt;size_t&gt;&amp; lengths,
+      const std::vector&lt;c10::IntArrayRef&gt;&amp; sizes_vec)
+      : index_(index),
+        tensor_(tensor),
+        offsets_(offsets),
+        lengths_(lengths),
+        sizes_vec_(sizes_vec) {}
+
+  // Returns the index of the bucket, which is unique across all the buckets.
+  size_t getIndex() const {
+    return index_;
+  }
+
+  const at::Tensor&amp; getTensor() const {
+    return tensor_;
+  }
+
+  // Returns a mutable tensor compared with the above method.
+  at::Tensor&amp; getTensorRef() {
+    return tensor_;
+  }
+
+  // Overwrites tensors at a specific index.
+  void setTensor(at::Tensor&amp; tensor) {
+    tensor_ = tensor;
+  }
+
+  // Each tensor in the list that getPerParameterTensors corresponds to a
+  // parameter.
+  std::vector&lt;at::Tensor&gt; getPerParameterTensors() const;
+
+  // Returns whther this bucket is the last bucket to allreduce in an iteration.
+  bool isTheLastBucketToAllreduce() const {
+    return index_ == 0;
+  }
+
+ private:
+  size_t index_;
+  at::Tensor tensor_;
+
+  // Per-variable info in tensors_[0].
+  std::vector&lt;size_t&gt; offsets_;
+  std::vector&lt;size_t&gt; lengths_;
+  std::vector&lt;c10::IntArrayRef&gt; sizes_vec_;
+};
+</code></pre>
+<h3 id="33-all_reduce_local_used_map">3.3 all_reduce_local_used_map</h3>
+<p>注意，这里是对张量使用情况这个local_used_maps_变量进行规约，不是张量的梯度进行规约。</p>
+<h4 id="331-定义">3.3.1 定义</h4>
+<p>我们回忆下定义。</p>
+<p>以下两个变量用来记录本地使用过的参数，其标示在未启用同步的情况下（no_sync is on），在当前迭代或者 no_sync session 之中，这些参数是否在本地被使用过。</p>
+<p>每个模型副本对应map中的一个张量，每个张量是参数数量的一维int32（one-dim int32）张量。</p>
+<p>这些张量在autograd_hook中标记，以指示已使用了相应的参数。这些张量会在当前迭代或无同步会话（no_sync session）的后向传播结束时进行allreduce，以计算出全局未使用的参数。</p>
+<pre><code class="language-cpp">// Locally used parameter maps indicating if parameters are used locally
+// during the current iteration or no_sync session if no_sync is on. One
+// tensor for each model replica and each tensor is one-dim int32 tensor of
+// number of parameters. These tensors are marked in autograd_hook to indicate
+// the corresponding param has been used, and get allreduced in the end of
+// backward of current iteration or no_sync session for figuring out the
+// globally unused parameters.
+//
+// local_used_maps_:     CPU tensors for bookkeeping locally used params
+// local_used_maps_dev_: dev tensors for reducing globally unused params
+std::vector&lt;at::Tensor&gt; local_used_maps_; // autograd_hook中会设置，对应论文中的
+std::vector&lt;at::Tensor&gt; local_used_maps_dev_; // GPU
+</code></pre>
+<h4 id="332-同步">3.3.2 同步</h4>
+<p>all_reduce_local_used_map 这里使用了异步 H2D 来避免阻塞开销。即把 local_used_maps_ 拷贝到 <code>local_used_maps_dev_</code>，然后对 <code>local_used_maps_dev_</code> 进行规约。</p>
+<pre><code class="language-cpp">void Reducer::all_reduce_local_used_map() {
+  // See Note [Skip allreducing local_used_maps_dev]
+    // H2D from local_used_maps_ to local_used_maps_dev_
+    for (size_t i = 0; i &lt; local_used_maps_.size(); i++) {
+      if (local_used_maps_dev_[i].is_cuda()) {
+        // Note [local_used_maps_ -&gt; local_used_maps_dev copying]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // We do async H2D to avoid the blocking overhead. The async copy and
+        // allreduce respect the current stream, so will be sequenced
+        // correctly.
+        //
+        // Correct sequencing with respect to host operations is also
+        // essential. The H2D copy_ is stream ordered, while the host's
+        // changes to local_used_maps_ are host ordered. If a large backlog of
+        // cuda-stream work pushes the copy_ far into the future, and if no
+        // blocking calls occur between now and finalize_backward()** such
+        // that finalize_backward() re-zeroes local_used_maps_ on the host
+        // before the stream executes the copy_, copy_ will read those zeros
+        // instead of the values we thought we told it to read here. Copying
+        // local_used_maps_[i] to a pinned temporary (which the pinned caching
+        // allocator should supply asynchronously) avoids this nasty, rare
+        // race condition.
+        //
+        // ** In the hoped-for case where all params are used, DDP itself
+        // won't do any blocking work between now and the re-zeroing, so the
+        // danger is real.
+        //
+        // Defensively ensures local_used_maps_tmp is distinct from
+        // local_used_maps_[i]
+        auto local_used_maps_tmp = at::native::empty_like(
+            local_used_maps_[i],
+            optTypeMetaToScalarType(local_used_maps_[i].options().dtype_opt()),
+            local_used_maps_[i].options().layout_opt(),
+            local_used_maps_[i].options().device_opt(),
+            true /* pinned_memory */);
+        // Paranoid asserts here because in some workloads, the pinned
+        // allocator behaves in a way we don't understand, and may be bugged.
+        // See https://github.com/pytorch/pytorch/pull/54474
+        TORCH_INTERNAL_ASSERT(local_used_maps_tmp.is_pinned());
+        TORCH_INTERNAL_ASSERT(
+            local_used_maps_tmp.data_ptr() != local_used_maps_[i].data_ptr());
+        local_used_maps_tmp.copy_(local_used_maps_[i]);
+        local_used_maps_dev_[i].copy_(local_used_maps_tmp, true);
+      } else {
+        local_used_maps_dev_[i].copy_(local_used_maps_[i], true);
+      }
+    }
+    local_used_work_ = process_group_-&gt;allreduce(local_used_maps_dev_);
+}
+</code></pre>
+<p>拓展如下：</p>
+<ol>
+<li>Reduer 会注册autograd_hook到AccumulateGrad的post_hooks之上。</li>
+<li>Autograd Engine 在反向传播过程中，如果发现某个参数ready，就调用autograd_hook。</li>
+<li>autograd_hook 之中继续处理。</li>
+<li>调用all_reduce_bucket进行同步梯度。</li>
+<li>调用 allreduce 对 local_used_maps_变量进行规约。</li>
+<li>会注册一个 finalize_backward到 engine。</li>
+<li>在 GraphTask::exec_post_processing 之中会调用 finalize_backward。</li>
+</ol>
+<pre><code class="language-python">                                                                             +
+                                                                  Worker 1   |   Worker 2
+                                                                             |
+  Engine    AccumulateGrad                Reducer                            |    Reducer
+                                                                             |
+    +              +                         +                               |        +
+    |              |                         |                               |        |
+    |              |          1              |                               |        |
+    |              | &lt;-----------------------+                               |        |
+    |              |                                                         |        |
+    |              |                                                         |        |
+    |              |                                                         |        |
+    |              |                                                         |        |
+    |              v                                                         |        |
+    |                         2                                              |        |
+    |         post_hooks  +--------&gt;  autograd_hook                          |        |
+    |                                        +                               |        |
+    |                                        |                               |        |
+    |                                        |  3                            |        |
+    |                                        v                               |        |
+    |                     +------------------+---------------------------+   |        |
+    |                     | mark_variable_ready                          |   |        |
+    |                     |                                              |   |        |
+    |                     |                                              |   |        |
+    |                     |     All variable in replica are ready?       |   |        |
+    |                     |                   +                          |   |        |
+    |                     |                   | YES                      |   |        |
+    |                     |                   v                          |   |        |
+    |                     |     All replica in bucket are ready?         |   |        |
+    |                     |                   +                          +   +        |
+    |                     |                   | YES            4  all_reduce_bucket   |
+    |                     |                   v                                       |
+    |                     |            mark_bucket_ready  &lt;--------------+---+-----&gt;  |
+    |                     |                                              |   |        |
+    |                     |                                              |   |        |
+    |                     |                                              |   |        |
+    |                     |                   +                          |   |        |
+    |                     |                   |                          |   |        |
+    |                     |                   |                          |   |        |
+    |                     |                   v                          |   |        |
+    |                     |          All buckets are ready?              |   |        |
+    |                     |                   +                          |   |        |
+    |                     |                   | YES                      +   +        |
+    |                     |                   v                     5  allreduce      |
+    |   6  queue_back     |          all_reduce_local_used_map  &lt;--------+---+-----&gt;  |
+    | &lt;------------------------+  queue_callback(finalize_backward)      |   |        |
+    |                     |                                              |   |        |
+    |                     |                                              |   |        |
+    |                     +-------------------+--------------------------+   |        |
+    v                                         |                              |        |
+                                              |                              |        |
+GraphTask::exec_post_processing               |                              |        |
+    +                                         |                              |        |
+    |                                         |                              |        |
+    |                                         v                              |        |
+    +-----------------------------&gt;   finalize_backward                      |        |
+    |             7                           +                              |        |
+    |                                         |                              |        |
+    |                                         |                              |        |
+    v                                         v                              +        v
+</code></pre>
+<h3 id="34-finalize_backward">3.4 finalize_backward</h3>
+<p>finalize_backward 完成了收尾工作，逻辑为：</p>
+<ul>
+<li>遍历桶，对于每个桶：
+<ul>
+<li>等待同步张量完成。</li>
+<li>从future结果拷贝回contents。</li>
+</ul>
+</li>
+<li>等待 local_used_maps_dev 同步完成。</li>
+</ul>
+<pre><code class="language-cpp">void Reducer::finalize_backward() {
+  // No longer expect autograd hooks to fire after this function returns.
+  expect_autograd_hooks_ = false;
+  // No longer require call to finalize after this function returns.
+  require_finalize_ = false;
+
+  // Unset allreduce division factor, as it may change in next backwards pass
+  // when running with DDP join mode.
+  divFactor_ = kUnsetDivFactor;
+
+  // Wait for asynchronous reduction to complete and unflatten contents.
+  for (auto&amp; bucket : buckets_) { // 遍历桶
+    // See Note [DDP Communication Hook]
+    if (comm_hook_ == nullptr) {
+      bucket.work-&gt;wait(); // 等待同步完成
+    } else {
+      bucket.future_work-&gt;wait(); // 等待同步完成
+
+      auto future_result =
+          comm_hook_-&gt;parseHookResult(bucket.future_work-&gt;value());
+
+      for (size_t i = 0; i &lt; future_result.size(); i++) { // 
+        auto&amp; replica = bucket.replicas[i];
+        if (bucket.expect_sparse_gradient) {
+          replica.contents.copy_(future_result[i]); // 从future结果拷贝回contents
+        } else {
+          // Reinitialize only `bucket_views_out` with the future_result by
+          // following the same logic in `initialize_buckets`.
+          // 把 future_result[i] 解析到 bucket_views_out 之中
+          populate_bucket_views_out(replica, future_result[i]);
+        }
+      }
+    }
+    if (!bucket.expect_sparse_gradient) {
+      // We don't need to finalize the sparse bucket since the sparse grad and
+      // the bucket essentially point to the same storage. As a result, once
+      // the allreduce is done, the sparse grads are automatically updated.
+      finalize_bucket_dense(bucket); // 
+    }
+  }
+
+  // See Note [Skip allreducing local_used_maps_dev]
+  if (dynamic_graph_find_unused() || static_graph_first_iteration()) {
+    // Due to the lazy wait, it is possible that reduction of the current
+    // iteration is still going when the one for next iteration gets kicked off.
+    // For such case, we want to wait explicitly to make sure the reduction does
+    // complete before kicking off next one. Otherwise the previous one may
+    // interfere, write to the device-side memory and clobber the content of
+    // local_unused_maps_dev_.
+    if (!local_used_maps_reduced_) {
+      local_used_work_-&gt;wait(); // 等待 local_used_maps_dev 同步完成
+    }
+  }
+
+  if (dynamic_graph_find_unused()) {
+    // Reset unused parameter accounting.
+    // See Note [local_used_maps_ -&gt; local_used_maps_dev copying]
+    for (auto&amp; local_used : local_used_maps_) {
+      local_used.fill_(0);
+    }
+    local_used_maps_reduced_ = false;
+  }
+
+  if (should_collect_runtime_stats()) {
+    record_backward_comm_end_time();
+  }
+}
+</code></pre>
+<p>这个过程会用到如下函数。</p>
+<h4 id="461-populate_bucket_views_out">4.6.1 populate_bucket_views_out</h4>
+<p>populate_bucket_views_out 从contents构建输出view</p>
+<pre><code class="language-cpp">// (see Note:  "Gradient Layout Contract" in initialize_buckets).
+void Reducer::populate_bucket_views_out(
+    Reducer::BucketReplica&amp; replica,
+    at::Tensor&amp; tensor) { // 把tensor解析到 bucket_views_out 之中
+  replica.bucket_views_out.clear(); // 清空
+  for (size_t i = 0; i &lt; replica.variables.size(); i++) { // 重新初始化 bucket_views_out
+    const auto&amp; v = replica.variables[i]; // 遍历副本的张量
+    const auto offset = replica.offsets[i];
+    const auto length = replica.lengths[i];
+    if (v.is_non_overlapping_and_dense()) {
+      // If the param's memory is dense, match its layout, anticipating
+      // the autograd engine (AccumulateGrad) will also create gradients
+      // matching its layout.
+      replica.bucket_views_out.push_back( // 把tensor解析到 bucket_views_out 之中
+          tensor.as_strided(v.sizes(), v.strides(), offset));
+    } else {
+      // Fall back to a C-style contiguous view, again anticipating
+      // AccumulateGrad will do the same when stashing grads for non-dense
+      // params.
+      replica.bucket_views_out.push_back( // 把tensor解析到 bucket_views_out 之中
+          tensor.narrow(0, offset, length).view(v.sizes()));
+    }
+  }
+}
+</code></pre>
+<h4 id="461-finalize_bucket_dense">4.6.1 finalize_bucket_dense</h4>
+<p>finalize_bucket_dense 作用是调用 runGradCallbackForVariable 或者 copy_bucket_to_grad 把规约好的梯度拷贝会引擎。</p>
+<pre><code class="language-cpp">// A bucket with one or more dense tensors needs to be unflattened.
+void Reducer::finalize_bucket_dense(Bucket&amp; bucket) {
+  for (size_t replica_index = 0; replica_index &lt; bucket.replicas.size();
+       replica_index++) {
+    auto&amp; replica = bucket.replicas[replica_index];
+    for (size_t intra_bucket_index = 0;
+         intra_bucket_index &lt; replica.variables.size();
+         intra_bucket_index++) {
+      auto&amp; variable = replica.variables[intra_bucket_index];
+      const auto offset = replica.offsets[intra_bucket_index];
+      const auto length = replica.lengths[intra_bucket_index];
+
+      bool global_unused = false;
+      // See Note [Skip allreducing local_used_maps_dev]
+      if (static_graph_ || find_unused_parameters_) {
+        // Determine if this param has been used globally or not.
+        //
+        // If the variable was used locally, it is also used globally and then
+        // we don't need to wait for the reduction. Otherwise we lazily wait for
+        // the reduction to complete, only when we see a variable that was
+        // unused locally. Then we end up delaying the synchronization point
+        // that local_used_work_-&gt;wait() implies. If we don't have any unused
+        // parameters at all, we can skip waiting for the work to complete
+        // altogether, and cause negligible performance overhead for models
+        // where all parameters are used. Such lazily waiting means minimizing
+        // performance impact for the big majority of models where all
+        // parameters are always used. Then we only pay the overhead cost if
+        // there is indeed a parameter that is locally unused, because we need
+        // to check if it's also globally unused.
+        size_t variable_index = bucket.variable_indices[intra_bucket_index];
+        // Note: global_unused might not be global yet. As we lazily wait for
+        // the reduction to complete, it becomes really global only if we get to
+        // the point as below where we wait for the reduction work, make D2H
+        // copy, and update global_unused with the real global consensus, i.e.
+        // local_used_maps_reduced_ is true.
+        global_unused =
+            local_used_maps_[replica_index][variable_index].item&lt;int&gt;() == 0;
+        if (global_unused &amp;&amp; !local_used_maps_reduced_) {
+          // Wait for local_used_maps reduction to complete.
+          local_used_work_-&gt;wait();
+          // D2H from local_used_maps_dev_ to local_used_maps_
+          for (size_t i = 0; i &lt; local_used_maps_.size(); i++) {
+            // Blocking copy, if local_used_maps_dev_ is cuda
+            local_used_maps_[i].copy_(local_used_maps_dev_[i]);
+          }
+          global_unused =
+              local_used_maps_[replica_index][variable_index].item&lt;int&gt;() == 0;
+          local_used_maps_reduced_ = true;
+        }
+      }
+
+      if (!gradient_as_bucket_view_) {
+        copy_bucket_to_grad( // 拷贝回 dist.context 去
+            variable, replica, intra_bucket_index, global_unused);
+      } else {
+        const auto&amp; bucket_view_out =
+            replica.bucket_views_out[intra_bucket_index];
+        auto&amp; bucket_view_in = replica.bucket_views_in[intra_bucket_index];
+        // If communication_hook is registered, bucket_view_out stores
+        // allreduced results in a newly allocated tensor, copy bucket_view_out
+        // back to bucket_view_in that referring to replica.content tensor and
+        // grad.
+        if (!bucket_view_in.is_alias_of(bucket_view_out)) {
+          bucket_view_in.copy_(bucket_view_out); // 从out拷贝回in view
+        }
+        runGradCallbackForVariable(variable, [&amp;](auto&amp; grad) {
+          // If a parameter is globally unused, we keep its grad untouched.
+          if (!global_unused) {
+            // If grad is globally used but locally unused, let grad point to
+            // bucket_view_in
+            if (!grad.defined()) {
+              grad = bucket_view_in;
+            } else {
+              if (!grad.is_alias_of(bucket_view_in)) {
+                TORCH_CHECK(
+                    false,
+                    "Detected at least one parameter gradient is not the "
+                    "expected DDP bucket view with gradient_as_bucket_view=True. "
+                    "This may happen (for example) if multiple allreduce hooks "
+                    "were registered onto the same parameter. If you hit this error, "
+                    "please file an issue with a minimal repro.");
+              }
+            }
+            // The grad is modified and needs to be written back.
+            return true;
+          }
+          // The grad is not modified.
+          return false;
+        });
+      }
+    }
+  }
+}
+</code></pre>
+<h4 id="463-copy_bucket_to_grad">4.6.3 copy_bucket_to_grad</h4>
+<p>这里是从桶拷贝回autograd engine之中对应的梯度。</p>
+<pre><code class="language-cpp">void Reducer::copy_bucket_to_grad(
+    at::Tensor&amp; variable,
+    Reducer::BucketReplica&amp; replica,
+    size_t intra_bucket_index,
+    bool global_unused) {
+  const auto&amp; bucket_view = replica.bucket_views_out[intra_bucket_index]; // 拿到输出view
+  runGradCallbackForVariable(variable, [&amp;](auto&amp; grad) {
+    // If a parameter is globally unused, we keep its grad untouched.
+    if (!global_unused) {
+      if (!grad.defined()) {
+        // Creates grad according to the "Gradient Layout Contract"
+        // (see torch/csrc/grad/AccumulateGrad.h)
+        grad =
+            torch::autograd::utils::clone_obey_contract(bucket_view, variable);
+      } else {
+        grad.copy_(bucket_view); // 从桶拷贝回梯度
+      }
+      // The grad is modified and needs to be written back.
+      return true;
+    }
+    // The grad is not modified.
+    return false;
+  });
+}
+</code></pre>
+<p>至此，我们拓展如下：</p>
+<ol>
+<li>Reduer 会注册autograd_hook到AccumulateGrad的post_hooks之上。</li>
+<li>Autograd Engine 在反向传播过程中，如果发现某个参数ready，就调用autograd_hook。</li>
+<li>autograd_hook 之中继续处理。</li>
+<li>调用all_reduce_bucket进行同步梯度。</li>
+<li>调用 allreduce 对 local_used_maps_变量进行规约。</li>
+<li>会注册一个 finalize_backward到 engine。</li>
+<li>在 GraphTask::exec_post_processing 之中会调用 finalize_backward。</li>
+<li>调用 wait 于其他 worker 同步。</li>
+<li>调用 copy_bucket_to_grad 从桶拷贝回autograd引擎对应的梯度。</li>
+</ol>
+<p>因此，我们就知道了一个在反向传播过程之中，autograd 引擎如何与DDP交互，如何一边做反向计算，一边利用DDP归并梯度的完整过程。</p>
+<pre><code class="language-python">                                                                             +
+                                                                  Worker 1   |   Worker 2
+                                                                             |
+  Engine    AccumulateGrad                Reducer                            |    Reducer
+                                                                             |
+    +              +                         +                               |        +
+    |              |                         |                               |        |
+    |              |          1              |                               |        |
+    |              |  &lt;----------------------+                               |        |
+    |              |                                                         |        |
+    |              |                                                         |        |
+    |              v                                                         |        |
+    |                         2                                              |        |
+    |         post_hooks  +--------&gt;  autograd_hook                          |        |
+    |                                        +                               |        |
+    |                                        |                               |        |
+    |                                        |  3                            |        |
+    |                                        v                               |        |
+    |                     +------------------+---------------------------+   |        |
+    |                     | mark_variable_ready                          |   |        |
+    |                     |                                              |   |        |
+    |                     |                                              |   |        |
+    |                     |     All variable in replica are ready?       |   |        |
+    |                     |                   +                          |   |        |
+    |                     |                   | YES                      |   |        |
+    |                     |                   v                          |   |        |
+    |                     |     All replica in bucket are ready?         |   |        |
+    |                     |                   +                          +   +        |
+    |                     |                   | YES           4   all_reduce_bucket   |
+    |                     |                   v                                       |
+    |                     |            mark_bucket_ready  &lt;--------------+---+-----&gt;  |
+    |                     |                                              |   |        |
+    |                     |                                              |   |        |
+    |                     |                                              |   |        |
+    |                     |                   +                          |   |        |
+    |                     |                   |                          |   |        |
+    |                     |                   |                          |   |        |
+    |                     |                   v                          |   |        |
+    |                     |          All buckets are ready?              |   |        |
+    |                     |                   +                          |   |        |
+    |                     |                   | YES                      +   +        |
+    |                     |                   v                    5   allreduce      |
+    |   6  queue_back     |          all_reduce_local_used_map  &lt;--------+---+-----&gt;  |
+    | &lt;------------------------+  queue_callback(finalize_backward)      |   |        |
+    |                     |                                              |   |        |
+    |                     |                                              |   |        |
+    |                     +-------------------+--------------------------+   |        |
+    v                                         |                              |        |
+                                              |                              |        |
+GraphTask::exec_post_processing               |                              |        |
+    +                                         |                              |        |
+    |                                         |                              |        |
+    |              7                          v                              |        |
+    +-----------------------------&gt;   finalize_backward                      |        |
+    |                                         +                 8       wait |        |
+    |                                         |  &lt;---------------------------------&gt;  |
+    | &lt;-------------------------------------+ |                              |        |
+    v         copy_bucket_to_grad     9       v                              +        v
+</code></pre>
+<p>至此，反向传播分析完毕，DDP 的全部分析也结束，我们接下来对分布式autograd进行分析。</p>
+<h2 id="0xff-参考">0xFF 参考</h2>
+<p><a href="https://arxiv.org/pdf/2107.01499.pdf" target="_blank">BAGUA: Scaling up Distributed Learning with System Relaxations</a></p>
+<p><a href="https://blog.csdn.net/searobbers_duck/article/details/115299691" target="_blank">pytorch分布式系列3——分布式训练时，torch.utils.data.distributed.DistributedSampler做了什么？</a></p>
+<p><a href="https://blog.csdn.net/searobbers_duck/article/details/115209880" target="_blank">pytorch分布式系列1——搞清torch.distributed.launch相关的环境变量</a></p>
+<p><a href="https://blog.csdn.net/searobbers_duck/article/details/115247025" target="_blank">pytorch分布式系列2——DistributedDataParallel是如何做同步的？</a></p>
+<p><a href="https://www.cnblogs.com/yh-blog/p/12877922.html" target="_blank">pytorch(分布式)数据并行个人实践总结——DataParallel/DistributedDataParallel</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/102697821" target="_blank">Pytorch的nn.DataParallel</a></p>
+<p><a href="https://discuss.pytorch.org/t/dataparallel-imbalanced-memory-usage/22551/20" target="_blank">https://discuss.pytorch.org/t/dataparallel-imbalanced-memory-usage/22551/20</a></p>
+<p><a href="https://pytorch.org/docs/stable/distributed.html" target="_blank">https://pytorch.org/docs/stable/distributed.html</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/376367363" target="_blank">PyTorch 源码解读之分布式训练了解一下？</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/339039943" target="_blank">实操教程｜PyTorch AutoGrad C++层实现</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/111239415" target="_blank">PYTORCH 自动微分（一）</a></p>
+<p><a href="https://www.sohu.com/a/407168343_129720" target="_blank">PyTorch如何加速数据并行训练？分布式秘籍大揭秘 </a></p>
+<p><a href="https://blog.csdn.net/m0_37400316/article/details/107225030" target="_blank">pytorch分布式训练（二init_process_group）</a></p>
+<p><a href="https://pytorch.org/tutorials/intermediate/ddp_tutorial.html" target="_blank">https://pytorch.org/tutorials/intermediate/ddp_tutorial.html</a></p>
+<p><a href="https://pytorch.org/docs/master/notes/ddp.html" target="_blank">https://pytorch.org/docs/master/notes/ddp.html</a></p>
+<p><a href="https://pytorch.org/tutorials/intermediate/dist_tuto.html" target="_blank">https://pytorch.org/tutorials/intermediate/dist_tuto.html</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/343951042" target="_blank">PyTorch 源码解读之 DP &amp; DDP：模型并行和分布式训练解析</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/89442276" target="_blank">Pytorch模型中的parameter与buffer</a></p>
+
+</div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+            </div>
+            <div class="postDesc">posted @ 
+<span id="post-date">2021-11-28 10:40</span>&nbsp;
+<a href="https://www.cnblogs.com/rossiXYZ/">罗西的思考</a>&nbsp;
+阅读(<span id="post_view_count">6</span>)&nbsp;
+评论(<span id="post_comment_count">0</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=15605597" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(15605597);return false;">收藏</a>&nbsp;
+<a href="javascript:void(0)" onclick="reportManager.report({ currentUserId: '', targetType: 'blogPost', targetId: '15605597', targetLink: 'https://www.cnblogs.com/rossiXYZ/p/15605597.html', title: '[源码解析] PyTorch 分布式(13) ----- DistributedDataParallel 之 反向传播' })">举报</a></div>
+        </div>
+        
+<script>
+    markdown_highlight()
+    var allowComments = true, cb_blogId = 556264, cb_blogApp = 'rossiXYZ', cb_blogUserGuid = '3d1961d5-3b13-4975-9d25-08d753a9a8fd';
+    var cb_entryId = 15605597, cb_entryCreatedDate = '2021-11-28 10:40', cb_postType = 1;
+    updatePostStats(
+        [cb_entryId],
+        function(id, count) { $("#post_view_count").text(count) },
+        function(id, count) { $("#post_comment_count").text(count) })
+    zoomManager.apply("#cnblogs_post_body img:not(.code_img_closed):not(.code_img_opened)");
+</script>
+        <a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="cnblogs_ch"></div>
+    <div id="opt_under_post"></div>
+    <div id="cnblogs_c1" class="under-post-card">
+        <div id='div-gpt-ad-1592365906576-0' style='width: 300px; height: 250px;'></div>
+    </div>
+    <div id="under_post_card1"></div>
+        <div id="cnblogs_c2" class="under-post-card">
+            <a href="https://c.gridsumdissector.com/r/?gid=gad_545_ermn27t4&amp;ck=1057&amp;adk=10647&amp;autorefresh=__AUTOREFRESH__" rel="nofollow" target="_blank">
+                <img src="https://common.cnblogs.com/images/banner/2021/volcengine-c2.jpg" alt="" onload="impressC2('火山引擎', 'https://i.gridsumdissector.com/v/?gscmd=impress&amp;gid=gad_545_ermn27t4&amp;ck=1057&amp;adk=10647&amp;autorefresh=__AUTOREFRESH__&amp;ts=__TS__')" />
+            </a>
+        </div>
+    <div id="under_post_card2"></div>
+    <div id="HistoryToday" class="under-post-card"></div>
+    <script type="text/javascript">
+       var commentManager = new blogCommentManager();
+       commentManager.renderComments(0);
+       fixPostBody();
+
+           window.tocManager.displayDisableTocTips = false
+           window.tocManager.generateToc();
+           setTimeout(function() { incrementViewCount(cb_entryId); }, 50);       deliverT2();
+       deliverC1C2();
+       loadNewsAndKb();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);       LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+       GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+       loadOptUnderPost();
+       GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div>
+
+    </div>
+</div>
+            </div>
+        </div>
+
+        <div id="sideBar">
+            <div id="sideBarMain">
+                <div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+<div id="sidebar_c3"></div>
+                <div id="calendar"><div id="blog-calendar" style="display:none"></div></div>                
+                <script>loadBlogDefaultCalendar();</script>
+                <div id="leftcontentcontainer">
+                    <!-- begin:SingleColumn -->
+                    <div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+                    <!-- end:  SingleColumn -->
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+    <div id="footer">
+        <!--done-->
+Copyright &copy; 2021 罗西的思考
+<br /><span id="poweredby">Powered by .NET 6 on Kubernetes</span>
+
+    </div>
+</div>
+
+    
+
+    <input type="hidden" id="antiforgery_token" value="CfDJ8FO3GXnjClZGrNGr2Ic8Z1ojGDrgw-xxxm60oByaKCVjlzF14UBpifOVXb-a64lpk64MS2VIqGAUCNOmtlW2dStetyqNIwAYLrZ576WytcfS06d0JHJJbIfhbcKAMTcpfm8aWQXErVYZxEZrnBfgiCY" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-476124-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    var kv = getGACustom();
+    if (kv) {
+        gtag('set', kv);
+    }
+    gtag('config', 'UA-476124-1');
+    </script>
+    <script defer src="https://hm.baidu.com/hm.js?866c9be12d4a814454792b1fd0fed295"></script>
+</body>
+</html>uot;}">Office for students</a></li><li><a aria-label="Office 365 for schools Education" class="c-uhff-link" href="https://products.office.com/en-sg/academic/compare-office-365-education-plans" data-m="{&quot;cN&quot;:&quot;Footer_Education_Office365ForSchools_nav&quot;,&quot;id&quot;:&quot;n3c3c1c1m1r1a2&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c3c1c1m1r1a2&quot;}">Office 365 for schools</a></li><li><a aria-label="Deals for students &amp; parents Education" class="c-uhff-link" href="https://www.microsoft.com/en-sg/store/b/student?icid=CNavfooter_Studentsandeducation" data-m="{&quot;cN&quot;:&quot;Footer_Education_DealsForStudentsandParents_nav&quot;,&quot;id&quot;:&quot;n4c3c1c1m1r1a2&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c3c1c1m1r1a2&quot;}">Deals for students &amp; parents</a></li></ul></div></div><div class="c-uhff-nav-row"><div class="c-uhff-nav-group" data-m="{&quot;cN&quot;:&quot;footerNavColumn4_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c4c1c1m1r1a2&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c1c1m1r1a2&quot;}"><div class="c-heading-4" role="heading" aria-level="4">Enterprise</div><ul class="c-list f-bare"><li><a aria-label="Azure Enterprise" class="c-uhff-link" href="https://azure.microsoft.com/" data-m="{&quot;cN&quot;:&quot;Footer_Enterprise_MicrosoftAzure_nav&quot;,&quot;id&quot;:&quot;n1c4c1c1m1r1a2&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c4c1c1m1r1a2&quot;}">Azure</a></li><li><a aria-label="AppSource Enterprise" class="c-uhff-link" href="https://go.microsoft.com/fwlink/?LinkID=808093" data-m="{&quot;cN&quot;:&quot;Footer_Enterprise_MicrosoftAppSource_nav&quot;,&quot;id&quot;:&quot;n2c4c1c1m1r1a2&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c4c1c1m1r1a2&quot;}">AppSource</a></li><li><a aria-label="Automotive Enterprise" class="c-uhff-link" href="https://www.microsoft.com/en-sg/industry/automotive" data-m="{&quot;cN&quot;:&quot;Footer_Enterprise_Automotive_nav&quot;,&quot;id&quot;:&quot;n3c4c1c1m1r1a2&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c4c1c1m1r1a2&quot;}">Automotive</a></li><li><a aria-label="Government Enterprise" class="c-uhff-link" href="https://www.microsoft.com/en-sg/industry/government" data-m="{&quot;cN&quot;:&quot;Footer_Enterprise_Government_nav&quot;,&quot;id&quot;:&quot;n4c4c1c1m1r1a2&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c4c1c1m1r1a2&quot;}">Government</a></li><li><a aria-label="Healthcare Enterprise" class="c-uhff-link" href="https://www.microsoft.com/en-sg/industry/health/microsoft-cloud-for-healthcare" data-m="{&quot;cN&quot;:&quot;Footer_Enterprise_Health_nav&quot;,&quot;id&quot;:&quot;n5c4c1c1m1r1a2&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c4c1c1m1r1a2&quot;}">Healthcare</a></li><li><a aria-label="Manufacturing Enterprise" class="c-uhff-link" href="https://www.microsoft.com/en-sg/industry/manufacturing/microsoft-cloud-for-manufacturing" data-m="{&quot;cN&quot;:&quot;Footer_Enterprise_Manufacturing_nav&quot;,&quot;id&quot;:&quot;n6c4c1c1m1r1a2&quot;,&quot;sN&quot;:6,&quot;aN&quot;:&quot;c4c1c1m1r1a2&quot;}">Manufacturing</a></li><li><a aria-label="Financial services Enterprise" class="c-uhff-link" href="https://www.microsoft.com/en-sg/industry/financial-services/microsoft-cloud-for-financial-services" data-m="{&quot;cN&quot;:&quot;Footer_Enterprise_FinanciaServices_nav&quot;,&quot;id&quot;:&quot;n7c4c1c1m1r1a2&quot;,&quot;sN&quot;:7,&quot;aN&quot;:&quot;c4c1c1m1r1a2&quot;}">Financial services</a></li><li><a aria-label="Retail Enterprise" class="c-uhff-link" href="https://www.microsoft.com/en-sg/industry/retail/microsoft-cloud-for-retail" data-m="{&quot;cN&quot;:&quot;Footer_Enterprise_Retail_nav&quot;,&quot;id&quot;:&quot;n8c4c1c1m1r1a2&quot;,&quot;sN&quot;:8,&quot;aN&quot;:&quot;c4c1c1m1r1a2&quot;}">Retail</a></li></ul></div><div class="c-uhff-nav-group" data-m="{&quot;cN&quot;:&quot;footerNavColumn5_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c5c1c1m1r1a2&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c1c1m1r1a2&quot;}"><div class="c-heading-4" role="heading" aria-level="4">Developer</div><ul class="c-list f-bare"><li><a aria-label="Microsoft Visual Studio Developer" class="c-uhff-link" href="https://visualstudio.microsoft.com/" data-m="{&quot;cN&quot;:&quot;Footer_Developer_MicrosoftVisualStudio_nav&quot;,&quot;id&quot;:&quot;n1c5c1c1m1r1a2&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c5c1c1m1r1a2&quot;}">Microsoft Visual Studio</a></li><li><a aria-label="Developer Center Developer" class="c-uhff-link" href="https://developer.microsoft.com/" data-m="{&quot;cN&quot;:&quot;Footer_Developer_DeveloperCenter_nav&quot;,&quot;id&quot;:&quot;n2c5c1c1m1r1a2&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c5c1c1m1r1a2&quot;}">Developer Center</a></li><li><a aria-label="Channel 9 Developer" class="c-uhff-link" href="https://channel9.msdn.com/" data-m="{&quot;cN&quot;:&quot;Footer_Developer_Channel9_nav&quot;,&quot;id&quot;:&quot;n3c5c1c1m1r1a2&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c5c1c1m1r1a2&quot;}">Channel 9</a></li><li><a aria-label="Microsoft 365 Dev Center Developer" class="c-uhff-link" href="https://developer.microsoft.com/microsoft-365" data-m="{&quot;cN&quot;:&quot;Footer_Developer_Microsoft365DevCenter_nav&quot;,&quot;id&quot;:&quot;n4c5c1c1m1r1a2&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c5c1c1m1r1a2&quot;}">Microsoft 365 Dev Center</a></li><li><a aria-label="Microsoft 365 Developer Program Developer" class="c-uhff-link" href="https://developer.microsoft.com/microsoft-365/dev-program" data-m="{&quot;cN&quot;:&quot;Footer_Developer_Microsoft365DeveloperProgram_nav&quot;,&quot;id&quot;:&quot;n5c5c1c1m1r1a2&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c5c1c1m1r1a2&quot;}">Microsoft 365 Developer Program</a></li></ul></div><div class="c-uhff-nav-group" data-m="{&quot;cN&quot;:&quot;footerNavColumn6_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c6c1c1m1r1a2&quot;,&quot;sN&quot;:6,&quot;aN&quot;:&quot;c1c1m1r1a2&quot;}"><div class="c-heading-4" role="heading" aria-level="4">Company</div><ul class="c-list f-bare"><li><a aria-label="Careers Company" class="c-uhff-link" href="https://careers.microsoft.com/" data-m="{&quot;cN&quot;:&quot;Footer_Company_Careers_nav&quot;,&quot;id&quot;:&quot;n1c6c1c1m1r1a2&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c6c1c1m1r1a2&quot;}">Careers</a></li><li><a aria-label="Company news Company" class="c-uhff-link" href="https://news.microsoft.com/en-sg" data-m="{&quot;cN&quot;:&quot;Footer_Company_CompanyNews_nav&quot;,&quot;id&quot;:&quot;n2c6c1c1m1r1a2&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c6c1c1m1r1a2&quot;}">Company news</a></li><li><a aria-label="Privacy at Microsoft Company" class="c-uhff-link" href="https://privacy.microsoft.com/en-sg" data-m="{&quot;cN&quot;:&quot;Footer_Company_PrivacyAtMicrosoft_nav&quot;,&quot;id&quot;:&quot;n3c6c1c1m1r1a2&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c6c1c1m1r1a2&quot;}">Privacy at Microsoft</a></li><li><a aria-label="Investors Company" class="c-uhff-link" href="https://www.microsoft.com/investor/default.aspx" data-m="{&quot;cN&quot;:&quot;Footer_Company_Investors_nav&quot;,&quot;id&quot;:&quot;n4c6c1c1m1r1a2&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c6c1c1m1r1a2&quot;}">Investors</a></li></ul></div></div></nav><div class="c-uhff-base"><a id="locale-picker-link" aria-label="Content Language Selector. Currently set to English (Singapore)" class="c-uhff-link c-uhff-lang-selector c-glyph glyph-world" href="/en-sg/surface/worldwide" data-m="{&quot;cN&quot;:&quot;locale_picker(SG)_nav&quot;,&quot;id&quot;:&quot;n7c1c1m1r1a2&quot;,&quot;sN&quot;:7,&quot;aN&quot;:&quot;c1c1m1r1a2&quot;}">English (Singapore)</a><nav aria-label="Microsoft corporate links"><ul class="c-list f-bare" data-m="{&quot;cN&quot;:&quot;Corp links_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c8c1c1m1r1a2&quot;,&quot;sN&quot;:8,&quot;aN&quot;:&quot;c1c1m1r1a2&quot;}"><li id="c-uhff-footer_contactus"><a class="c-uhff-link" href="https://support.microsoft.com/contactus" data-mscc-ic="false" data-m="{&quot;cN&quot;:&quot;Footer_ContactUs_nav&quot;,&quot;id&quot;:&quot;n1c8c1c1m1r1a2&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c8c1c1m1r1a2&quot;}">Contact Microsoft</a></li><li id="c-uhff-footer_privacyandcookies"><a class="c-uhff-link" href="https://go.microsoft.com/fwlink/?LinkId=521839" data-mscc-ic="false" data-m="{&quot;cN&quot;:&quot;Footer_PrivacyandCookies_nav&quot;,&quot;id&quot;:&quot;n2c8c1c1m1r1a2&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c8c1c1m1r1a2&quot;}">Privacy</a></li><li class=" x-hidden" id="c-uhff-footer_managecookies"><a class="c-uhff-link" href="#" data-mscc-ic="false" data-m="{&quot;cN&quot;:&quot;Footer_ManageCookies_nav&quot;,&quot;id&quot;:&quot;n3c8c1c1m1r1a2&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c8c1c1m1r1a2&quot;}">Manage cookies</a></li><li id="c-uhff-footer_termsofuse"><a class="c-uhff-link" href="https://go.microsoft.com/fwlink/?LinkID=206977" data-mscc-ic="false" data-m="{&quot;cN&quot;:&quot;Footer_TermsOfUse_nav&quot;,&quot;id&quot;:&quot;n4c8c1c1m1r1a2&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c8c1c1m1r1a2&quot;}">Terms of use</a></li><li id="c-uhff-footer_trademarks"><a class="c-uhff-link" href="https://www.microsoft.com/trademarks" data-mscc-ic="false" data-m="{&quot;cN&quot;:&quot;Footer_Trademarks_nav&quot;,&quot;id&quot;:&quot;n5c8c1c1m1r1a2&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c8c1c1m1r1a2&quot;}">Trademarks</a></li><li id="c-uhff-footer_aboutourads"><a class="c-uhff-link" href="https://choice.microsoft.com" data-mscc-ic="false" data-m="{&quot;cN&quot;:&quot;Footer_AboutourAds_nav&quot;,&quot;id&quot;:&quot;n6c8c1c1m1r1a2&quot;,&quot;sN&quot;:6,&quot;aN&quot;:&quot;c8c1c1m1r1a2&quot;}">About our ads</a></li><li>© Microsoft 2021</li></ul></nav></div></footer></div></div></div></span></div><div class="msw-section-poa-modal remodal" data-remodal-id="poa" data-remodal-options="hashTracking: false"><div class="row"><div class="col-1-1"></div></div></div><script type="text/javascript">/*<![CDATA[*/var siteLocle="en-sg"/*]]>*/</script><noscript><img alt="" width="1" height="1" src="http://c.microsoft.com/trans_pixel.aspx"></img></noscript><div class="x-hidden"><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/home"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/created-on-surface"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/architizer"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/dostal"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/jorge-sandra"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/uw"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/devices/surface-book/overview"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/devices/surface-book/compare-to-mac"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/devices/surface-book/innovation"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/devices/surface-book/tech-specs"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/devices/surface-studio/overview"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/devices/surface-studio/innovation"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/devices/surface-studio/tech-specs"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/devices/surface-pro-4/overview"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/devices/surface-pro-4/compare-to-mac"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/devices/surface-pro-4/innovation"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/devices/surface-pro-4/tech-specs"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/business/overview"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/accessories/browse"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/accessories/surface-dial"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/accessories/surface-ergonomic-keyboard"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/accessories/surface-keyboard"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/accessories/surface-mouse"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/devices/compare-devices"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/devices/surface-studio/app-partners"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/devices/help-me-choose"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/accessories/surface-pro-4-type-cover"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/accessories/surface-pro-4-type-cover-with-fingerprint-reader"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/accessories/surface-dock"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/accessories/pen"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/devices/surface-laptop/innovation"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/devices/surface-laptop/tech-specs"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/accessories/surface-arc-mouse"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/devices/surface-laptop/overview"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/for-students"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/devices/surface-pro/overview"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/devices/surface-pro/tech-specs"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/accessories/surface-pro-signature-type-cover"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/accessories/surface-pen"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/accessories/microsoft-complete"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/accessories/signature-type-cover"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/accessories/wireless-display-adapter"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/devices/surface-book-2/overview"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/devices/surface-book-2/innovation"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/devices/surface-book-2/tech-specs"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/devices/surface-book-2/for-business"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/accessories/surface-precision-mouse"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/devices/nfl"></a><!--<mscom:link controltheme="default"  disablebitracking="false" target="_self" md:payloadguid="b43790d8-ffc0-4726-9a95-f6d78ed13736"
+    classoverride="x-hidden"></mscom:link>--><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/devices/surface-go/tech-specs"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/devices/business/surface-go"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/devices/surface-pro-6/tech-specs"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/devices/surface-laptop-2/tech-specs"></a><a target="_self" class="mscom-link x-hidden" href="https://www.microsoft.com/en-sg/surface/devices/surface-studio-2/tech-specs"></a></div></body><div data-busniessskillid="" data-busniessskillset="" data-busniesslang="" data-consumerskillid="" data-consumerskillset="" data-consumerlang="" class="surface-mtagchat" data-chatbusniess="Disable" data-chatconsumer="Disable" style="display:none"><div class="surface-chatcontent surface-chatcopy"><div class="surface-chatbuttonlp" id="lpChatButton"></div></div></div><!--<script id="video-javascript" src="https://assets.onestore.ms/cdnfiles/external/mwf/long/v1/v1.23.1/scripts/mwf-video-player-main.var.min.js"></script>--><script type="text/javascript" src="https://assets.onestore.ms/cdnfiles/external/mwf/long/v1/v1.23.1/scripts/mwf-auto-init-main.var.min.js"></script><script type="text/javascript" src="https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWfyex"></script><a href="#mainContent" class="m-back-to-top" aria-disabled="true" title="Back to top" aria-label="Back to top"><div class="c-glyph glyph-up x-hidden-focus"></div></a></html>
