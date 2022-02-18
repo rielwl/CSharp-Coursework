@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="libraryhw.basicUser">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAgAAAAAAIAAAAAAAEAAAAAABIICAAAAgAAAAA=</HashCode>
+      <FileName>basicUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="libraryhw.normalUser">
+    <Position X="2" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAgAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>normalUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="libraryhw.libraryBooks">
+    <Position X="8.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAACkAEEEEgABAAAAAAAGAEAAEQAAAAAAHAAAAA=</HashCode>
+      <FileName>libraryBooks.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="libraryhw.librarySystem">
+    <Position X="6.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgQAABABAMABAAAAUACAAAASAAAAAAAABAAABgAgAA=</HashCode>
+      <FileName>librarySystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="libraryhw.highLevelUser">
+    <Position X="4.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAABAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>highLevelUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="libraryhw.systemFailException">
+    <Position X="5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>systemFailException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

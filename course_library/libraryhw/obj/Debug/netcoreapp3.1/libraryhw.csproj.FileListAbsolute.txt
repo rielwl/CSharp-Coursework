@@ -1,0 +1,17 @@
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\libraryhw\libraryhw\bin\Debug\netcoreapp3.1\libraryhw.exe
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\libraryhw\libraryhw\bin\Debug\netcoreapp3.1\libraryhw.deps.json
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\libraryhw\libraryhw\bin\Debug\netcoreapp3.1\libraryhw.runtimeconfig.json
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\libraryhw\libraryhw\bin\Debug\netcoreapp3.1\libraryhw.runtimeconfig.dev.json
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\libraryhw\libraryhw\bin\Debug\netcoreapp3.1\libraryhw.dll
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\libraryhw\libraryhw\bin\Debug\netcoreapp3.1\libraryhw.pdb
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\libraryhw\libraryhw\obj\Debug\netcoreapp3.1\libraryhw.csproj.AssemblyReference.cache
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\libraryhw\libraryhw\obj\Debug\netcoreapp3.1\libraryhw.Form1.resources
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\libraryhw\libraryhw\obj\Debug\netcoreapp3.1\libraryhw.csproj.GenerateResource.cache
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\libraryhw\libraryhw\obj\Debug\netcoreapp3.1\libraryhw.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\libraryhw\libraryhw\obj\Debug\netcoreapp3.1\libraryhw.AssemblyInfoInputs.cache
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\libraryhw\libraryhw\obj\Debug\netcoreapp3.1\libraryhw.AssemblyInfo.cs
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\libraryhw\libraryhw\obj\Debug\netcoreapp3.1\libraryhw.csproj.CoreCompileInputs.cache
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\libraryhw\libraryhw\obj\Debug\netcoreapp3.1\libraryhw.dll
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\libraryhw\libraryhw\obj\Debug\netcoreapp3.1\libraryhw.pdb
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\libraryhw\libraryhw\obj\Debug\netcoreapp3.1\libraryhw.genruntimeconfig.cache
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\course作业\libraryhw\libraryhw\obj\Debug\netcoreapp3.1\libraryhw.Form2.resources
