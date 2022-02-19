@@ -1,0 +1,4 @@
+代码中写出了各个代码的注释。
+可以注意的是我在 FormClosing时存了progress
+所以不管怎么样，在把form关掉时会存下progress
+基本思想其实很简单，只是把当前的wordIndex写入Progress.txt

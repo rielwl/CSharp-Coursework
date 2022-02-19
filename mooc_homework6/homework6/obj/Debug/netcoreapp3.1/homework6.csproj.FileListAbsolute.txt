@@ -1,0 +1,16 @@
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\homework6\homework6\bin\Debug\netcoreapp3.1\homework6.exe
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\homework6\homework6\bin\Debug\netcoreapp3.1\homework6.deps.json
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\homework6\homework6\bin\Debug\netcoreapp3.1\homework6.runtimeconfig.json
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\homework6\homework6\bin\Debug\netcoreapp3.1\homework6.runtimeconfig.dev.json
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\homework6\homework6\bin\Debug\netcoreapp3.1\homework6.dll
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\homework6\homework6\bin\Debug\netcoreapp3.1\homework6.pdb
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\homework6\homework6\obj\Debug\netcoreapp3.1\homework6.csproj.AssemblyReference.cache
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\homework6\homework6\obj\Debug\netcoreapp3.1\homework6.Form1.resources
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\homework6\homework6\obj\Debug\netcoreapp3.1\homework6.csproj.GenerateResource.cache
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\homework6\homework6\obj\Debug\netcoreapp3.1\homework6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\homework6\homework6\obj\Debug\netcoreapp3.1\homework6.AssemblyInfoInputs.cache
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\homework6\homework6\obj\Debug\netcoreapp3.1\homework6.AssemblyInfo.cs
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\homework6\homework6\obj\Debug\netcoreapp3.1\homework6.csproj.CoreCompileInputs.cache
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\homework6\homework6\obj\Debug\netcoreapp3.1\homework6.dll
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\homework6\homework6\obj\Debug\netcoreapp3.1\homework6.pdb
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\homework6\homework6\obj\Debug\netcoreapp3.1\homework6.genruntimeconfig.cache
