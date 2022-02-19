@@ -1,0 +1,17 @@
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\homework1\homework1\bin\Debug\netcoreapp3.1\homework1.exe
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\homework1\homework1\bin\Debug\netcoreapp3.1\homework1.deps.json
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\homework1\homework1\bin\Debug\netcoreapp3.1\homework1.runtimeconfig.json
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\homework1\homework1\bin\Debug\netcoreapp3.1\homework1.runtimeconfig.dev.json
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\homework1\homework1\bin\Debug\netcoreapp3.1\homework1.dll
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\homework1\homework1\bin\Debug\netcoreapp3.1\homework1.pdb
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\homework1\homework1\obj\Debug\netcoreapp3.1\homework1.csproj.AssemblyReference.cache
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\homework1\homework1\obj\Debug\netcoreapp3.1\homework1.Form1.resources
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\homework1\homework1\obj\Debug\netcoreapp3.1\homework1.Form2.resources
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\homework1\homework1\obj\Debug\netcoreapp3.1\homework1.csproj.GenerateResource.cache
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\homework1\homework1\obj\Debug\netcoreapp3.1\homework1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\homework1\homework1\obj\Debug\netcoreapp3.1\homework1.AssemblyInfoInputs.cache
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\homework1\homework1\obj\Debug\netcoreapp3.1\homework1.AssemblyInfo.cs
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\homework1\homework1\obj\Debug\netcoreapp3.1\homework1.csproj.CoreCompileInputs.cache
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\homework1\homework1\obj\Debug\netcoreapp3.1\homework1.dll
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\homework1\homework1\obj\Debug\netcoreapp3.1\homework1.pdb
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\homework1\homework1\obj\Debug\netcoreapp3.1\homework1.genruntimeconfig.cache
