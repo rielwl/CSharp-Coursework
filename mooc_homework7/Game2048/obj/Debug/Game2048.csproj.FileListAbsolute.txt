@@ -1,0 +1,17 @@
+c:\users\tds\documents\visual studio 2013\Projects\Game2048\Game2048\obj\Debug\Game2048.csprojResolveAssemblyReference.cache
+c:\users\tds\documents\visual studio 2013\Projects\Game2048\Game2048\obj\Debug\Game2048.Form1.resources
+c:\users\tds\documents\visual studio 2013\Projects\Game2048\Game2048\obj\Debug\Game2048.Properties.Resources.resources
+c:\users\tds\documents\visual studio 2013\Projects\Game2048\Game2048\obj\Debug\Game2048.csproj.GenerateResource.Cache
+c:\users\tds\documents\visual studio 2013\Projects\Game2048\Game2048\bin\Debug\Game2048.exe
+c:\users\tds\documents\visual studio 2013\Projects\Game2048\Game2048\bin\Debug\Game2048.pdb
+c:\users\tds\documents\visual studio 2013\Projects\Game2048\Game2048\obj\Debug\Game2048.exe
+c:\users\tds\documents\visual studio 2013\Projects\Game2048\Game2048\obj\Debug\Game2048.pdb
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\Game2048\Game2048\bin\Debug\Game2048.exe
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\Game2048\Game2048\bin\Debug\Game2048.pdb
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\Game2048\Game2048\obj\Debug\Game2048.csproj.AssemblyReference.cache
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\Game2048\Game2048\obj\Debug\Game2048.Form1.resources
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\Game2048\Game2048\obj\Debug\Game2048.Properties.Resources.resources
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\Game2048\Game2048\obj\Debug\Game2048.csproj.GenerateResource.cache
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\Game2048\Game2048\obj\Debug\Game2048.csproj.CoreCompileInputs.cache
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\Game2048\Game2048\obj\Debug\Game2048.exe
+C:\Users\Sherie\Desktop\University\大三上\C#程序设计及其应用\mooc作业\Game2048\Game2048\obj\Debug\Game2048.pdb
